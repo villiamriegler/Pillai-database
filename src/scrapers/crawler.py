@@ -25,7 +25,7 @@ for letter in ALPHABET:
 
     # Extract the actual text and link from each tag
     extracted_names = [name.get_text().strip() for name in names]
-    extracted_links = ["https://www.fass.se/LIF" + link.get('href').strip()[1:9] + link.get('href').strip()[link.get('href').strip().find('?') : ] for link in links]
+    extracted_links = ["https://www.fass.se/LIF" + (link.get('href')[1:9] + link.get('href')[link.get('href').find('?') : ]).strip() for link in links]
 
     for link in extracted_links:
         soup2 = fetch_url(link)
