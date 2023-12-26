@@ -1,0 +1,48 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\title{Pillai database design writeup}
+\author{Villiam Riegler}
+\date{\today}
+
+\begin{document}
+\pagenumbering{gobble}
+\maketitle
+\newpage
+\tableofcontents 
+\newpage 
+\pagenumbering{arabic}
+
+
+\section{Introduction}
+
+In order to provide a practical design proposition for the database, there are some requirements that need to be established and choices that need to be agreed on. 
+
+\section{Database Content}
+
+The first design requirement of the database should be what need to be stored. 
+
+\subsection{Medical Text}
+
+From our current app road-map the plan is to take the complicated medical texts and simplify them using ai. In order to achieve this the medical texts needs to be contained inside of the database. Since we also want the user to decide what information is relevant to them the text should also be split into different sections. This may be achieved using a number of methods such as post processing the text and only using the relevant parts before applying simplification or storing the different sections separately in the database. Performance wise the second option seems considerably better. 
+
+\subsubsection{Proposition}
+
+Fass.se categorises their medical texts into seven parts.
+\begin{itemize}
+    \item User information
+    \item Product information
+    \item Caution and Warnings
+    \item Usage and Administration
+    \item Side effects
+    \item Storage
+    \item Information Source
+\end{itemize}
+
+\noindent Whereas the first and last categories may not be relevant in our applicaion. I therefor propose that we store these medical texts in the following schema (with reservations for name changes): \\\\Bipacksedel(\underline{pillID Integer}, prodInfo String, precations String, usage String, sideEffects String, storage String)\\
+
+\noindent This is the medical text provided inside the pill box intended for the user to read. Fass.se also provides a more comprehensive medical text intended for medical professionals, we should also consider storing this information complementary to the information for users. This may allow the app to stand out by providing advanced information in a simple way. 
+
+
+\end{document}
+
