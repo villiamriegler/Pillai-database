@@ -21,18 +21,19 @@ def extract_medical_text(soup):
 
 def extract_data(soup):
     if soup:
-        data = {}
+        data = extract_medical_text(soup)
+
         fass_content_section = soup.find('div', class_='fass-content')
 
-        # Extract dosage
+        ## Extract dosage
         dosage_and_form_tag = fass_content_section.find('span', class_='strength-form') if fass_content_section else None
         data['dosage_and_form'] = dosage_and_form_tag.text.strip() if dosage_and_form_tag else 'Not Found'
 
-        # Extract active ingridient
+        ## Extract active ingridient
         active_ingredient_tag = fass_content_section.find('span', class_='word-explaination') if fass_content_section else None
         data['active_ingredient'] = active_ingredient_tag.text.strip() if active_ingredient_tag else 'Not Found'
 
-        data.update(extract_medical_text(soup))
+        return data
 
     else:
         raise ConnectionError('Could not load data')
