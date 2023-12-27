@@ -1,2 +1,2 @@
 -- File for database creation, 
--- Create tables, views etc
+-- Create tables, views etc 

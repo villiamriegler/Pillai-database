@@ -1,4 +1,6 @@
 
+PRODUCT_ID_INDEX = 5
+
 """
     Bipacksedel extraction
 """
@@ -9,13 +11,16 @@ def extract_medical_text(soup):
 
     # Every section is labled with an a tag defining what information followes
     #   used as index for our data dictionary
-    headers = fass_content[0].find_all('a')
+    headers = fass_content[0].find_all('a', id=True, recursive=False)
 
     for section in headers:
-        title = section.get('id')
-        headerpart_div = soup.find(id=title).find_next('div').get_text()    # Extract all text content folowing the lable
+        try:
+            title = section.get('id')
+        except:
+            continue
+        headerpart_div = fass_content[0].find(id=title).find_next('div').get_text()    # Extract all text content folowing the lable
         info = " ".join(headerpart_div.split())                             # Clean up text removing \n \t and whitespace 
-        data[title] = info
+        data[title] = data.get(title, "") + info
 
     return data
 
@@ -30,44 +35,73 @@ def extract_fass_text(soup):
 
 
     for section in headers:
-        title = section.find('a').get('id')
-        headerpart_div = soup.find(id=title).find_next('div').get_text()    # Extract all text content folowing the lable
+        try:
+            title = section.find('a', id=True).get('id')
+        except:
+            continue
+        
+        headerpart_div = fass_content[0].find(id=title).find_next('div').get_text()    # Extract all text content folowing the lable
         info = " ".join(headerpart_div.split())                             # Clean up text removing \n \t and whitespace 
-        data[title] = info
+        data[title] = data.get(title, "") + info
 
     return data
 
+def extract_product_resume(soup):
+    data = {}
+    # Select full div containing the medical text 
+    fass_content = soup.select('.fass-content')
+
+    # Every section is labled with an a tag defining what information followes
+    #   used as index for our data dictionary
+    headers = fass_content[0].find_all('h2')
+
+
+    for section in headers:
+        try:
+            title = section.find('a', id=True).get('id')
+        except:
+            title = 'övrig-information'
+
+        html = ""
+        for tag in section.next_siblings:
+            if tag.name == "h2":
+                break
+            else:
+                html += str(tag.get_text())
+
+        info = " ".join(html.split()) # Clean up text removing \n \t and whitespace 
+        data[title] = data.get(title, "") + info
+    
+    return data
+
+def extract_debarhet(soup):
+    div = soup.select(".tablet-delbarhet-information ")
+    if len(div) == 0:
+        return {}
+
+    result = " ".join(div[0].get_text().split())
+    colon_index = result.find(':') 
+
+    return {"delbarhets-information": result[colon_index + 2:]} if colon_index > 0 else {}
+
 def extract_package_info(soup):
+    # List to keep all found product ID:s
     productIDs = []
+
+    # Find all tables in fass-content
     tables = soup.select('.fass-content table')
     
+    # Go through all tables
     for table in tables:
+        # Get all rows in each table
         table_rows = table.select('tbody tr')
 
         for row in table_rows:
+            # Get all cells for the row
             cells = row.find_all('td')
-            productIDs.append(cells[5].get_text().strip())
+            # Only extract the product ID
+            productIDs.append(cells[PRODUCT_ID_INDEX].get_text().strip())
 
-    return productIDs        
-    
-
-def extract_data(soup):
-    if soup:
-        data = extract_medical_text(soup)
-
-        fass_content_section = soup.find('div', class_='fass-content')
-
-        ## Extract dosage
-        dosage_and_form_tag = fass_content_section.find('span', class_='strength-form') if fass_content_section else None
-        data['dosage_and_form'] = dosage_and_form_tag.text.strip() if dosage_and_form_tag else 'Not Found'
-
-        ### Extract active ingridient
-        active_ingredient_tag = fass_content_section.find('span', class_='word-explaination') if fass_content_section else None
-        data['active_ingredient'] = active_ingredient_tag.text.strip() if active_ingredient_tag else 'Not Found'
-
-        return data
-
-    else:
-        raise ConnectionError('Could not load data')
+    return {"product-id": productIDs}          
 
 
