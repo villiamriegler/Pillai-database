@@ -1,6 +1,7 @@
 
 PRODUCT_ID_INDEX = 5
 
+# before 0.011330406499328092
 
 # Scarping method for extracting the bipacksedel subcategory on fass.se
 # Example page: https://www.fass.se/LIF/product?userType=2&nplId=20190822000136&docType=7&scrollPosition=352
