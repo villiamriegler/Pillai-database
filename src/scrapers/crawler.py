@@ -2,9 +2,18 @@ import requests
 from bs4 import BeautifulSoup
 from scraper import *
 from pprint import pprint
+import json
 
 # viktig-patientinfo: https://www.fass.se/LIF/product?userType=2&nplId=20071201000025&docType=15&scrollPosition=0
-
+PAGES = {
+    "bipacksedel": 7,
+    "produktresume": 6,
+    "förpackningar": 30,
+    "fass-text": 3,
+    "bilder-och-delbarhet": 2000,
+    "miljöinformation": 78,
+    "skyddsinfo": 80
+}
 
 # Fetches html content for web ardress and returns as bs4 soup
 def fetch_url(url):
@@ -43,12 +52,12 @@ def debug(key, result):
             pass
 
 
+keys = {}
 # Scrapes the information from each page on a given url
 #       params: page(the page to scrape, used to differentiate diffrent scraping methods for diffrent pages) 
 #               soup(the html content of the page to scrape)
 def extract_page_information(page, soup):
     result = {}
-
     # NOTE: some subcategories may be scraped using the same scraping method
     # example of this is both the fass-text and miljöinformation.
     # This is because the inforamtion followes the same format
@@ -87,11 +96,21 @@ def extract_page_information(page, soup):
         case "bilder-och-delbarhet":
             result = extract_delbarhet(soup)
         case "miljöinformation":
-            result = extract_fass_text(soup)
+            result = extract_medical_text(soup,'h2',True,True)
         case "skyddsinfo":
-            result = extract_product_resume(soup)
+            result = extract_medical_text(soup, 'h2', True, True)
 
     debug(page, result)
+    
+    prev_len = len(keys[page])
+    for value in result.keys():
+        if value not in keys[page]:
+            keys[page].append(value)
+
+    if prev_len != len(keys[page]):
+        print(f"Keys updated {page}: {keys[page]}")
+
+
     return result
 
 
@@ -101,15 +120,6 @@ def crawl_pages(full_url):
     # The url for each subcategory of medecine information can be indexed as
     # the base_url with an appended docType selector. The docType selection
     # uses the following magic numbers for each subcategory
-    PAGES = {
-        "bipacksedel": 7,
-        "produktresume": 6,
-        "förpackningar": 30,
-        "fass-text": 3,
-        "bilder-och-delbarhet": 2000,
-        "miljöinformation": 78,
-        "skyddsinfo": 80
-    }
 
     url_result = {}
     # Iterate over the information subcategories
@@ -137,6 +147,10 @@ def crawl_alphabetical_list():
     ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZÅÄÖ"
     PRODUCT_BASE_LINK = "https://www.fass.se/LIF/product?nplId="
     # Loop over every page in the a-ö list of pharmaceuticals
+
+    for page in PAGES.keys():
+        keys[page] = []
+    page_information = {}
     for letter in ALPHABET:
         # Get reference to current letter page
         html_ref = f"https://www.fass.se/LIF/pharmaceuticallist?page={letter}"
@@ -163,7 +177,12 @@ def crawl_alphabetical_list():
                 f"*****************************\n{full_url} {count}\n********************************")
 
             # Retrive all information from pages
-            page_information = crawl_pages(full_url)
+            page_information[product_id] = crawl_pages(full_url)
+    
+            with open("data.json","w") as outfile:
+                json.dump(page_information, outfile, ensure_ascii=False)
+
+        
 
 
 if __name__ == '__main__':
