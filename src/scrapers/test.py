@@ -9,21 +9,21 @@ def pref_scrapers():
 
     print(f"Measuring avreage runtime over {AVERAGE_ITERATIONS} iterations for all scrapers\n----------------------")
     print("Medical text:\t\t", timeit.timeit(
-        'extract_medical_text(soup)',       # The code to test
+        "extract_medical_text(soup,'a',False,False)",       # The code to test
         'soup = fetch_url("https://www.fass.se/LIF/product?userType=2&nplId=20190822000136&docType=7&scrollPosition=352")',     # Any necessary setup
         number=AVERAGE_ITERATIONS,   # Number of times to run
         globals=globals()   # Imports all global symbols in the current scope
         ) / AVERAGE_ITERATIONS
     )
     print("Fass text:\t\t", timeit.timeit(
-        'extract_fass_text(soup)',       # The code to test
+        "extract_medical_text(soup,'h2',True,True)",       # The code to test
         'soup = fetch_url("https://www.fass.se/LIF/product?userType=2&nplId=20190822000136&docType=3&scrollPosition=352")',     # Any necessary setup
         number=AVERAGE_ITERATIONS,   # Number of times to run
         globals=globals()   # Imports all global symbols in the current scope
         ) / AVERAGE_ITERATIONS
     )
     print("Product resume:\t\t", timeit.timeit(
-        'extract_product_resume(soup)',       # The code to test
+        "extract_medical_text(soup, 'h2', True, True)",       # The code to test
         'soup = fetch_url("https://www.fass.se/LIF/product?userType=2&nplId=20190822000136&docType=6&scrollPosition=820")',     # Any necessary setup
         number=AVERAGE_ITERATIONS,   # Number of times to run
         globals=globals()   # Imports all global symbols in the current scope

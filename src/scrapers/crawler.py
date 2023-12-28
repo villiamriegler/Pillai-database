@@ -25,13 +25,13 @@ def debug(key, result):
     # 1 = Print keys
     # 2 = Print all
     DEBUGING_PAGES = {
-        "bipacksedel": 1,
-        "produktresume": 1,
-        "förpackningar": 1,
-        "fass-text": 1,
-        "bilder-och-delbarhet": 1,
-        "miljöinformation": 1,
-        "skyddsinfo": 1
+        "bipacksedel": 0,
+        "produktresume": 0,
+        "förpackningar": 0,
+        "fass-text": 0,
+        "bilder-och-delbarhet": 0,
+        "miljöinformation": 0,
+        "skyddsinfo": 0
     }
 
     match DEBUGING_PAGES[key]:
@@ -63,14 +63,15 @@ def extract_page_information(page, soup):
             # 'withdrawal', 'side-effects',
             # 'additionalMonitoringInfo', 'storage', 'information-source',
             # 'composition', 'appearance', 'prod-license'
-            result = extract_medical_text(soup)
+            result = extract_medical_text(soup,'a',False,False)
         case "produktresume":
             # Keys retrived from first entry
 
             # 'tradename', 'composition', 'product-form', 'clinical',
             # 'pharmacological', 'pharmaceutical',
             # 'prod-license', 'approval-number', 'approval-first-date', 'revision-date'
-            result = extract_product_resume(soup)
+            
+            result = extract_medical_text(soup, 'h2', True, True)
         case "förpackningar":
             # All the package information
             result = extract_package_info(soup)
@@ -82,7 +83,7 @@ def extract_page_information(page, soup):
             # driving', 'side-effects', 'overdosage', 'pharmacodynamic',
             # 'pharmacokinetic', 'preclinical-info', 'composition', 'env-effect',
             # 'handling-life-shelf-storage'
-            result = extract_fass_text(soup)
+            result = extract_medical_text(soup,'h2',True,True)
         case "bilder-och-delbarhet":
             result = extract_delbarhet(soup)
         case "miljöinformation":

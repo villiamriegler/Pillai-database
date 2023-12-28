@@ -4,23 +4,35 @@ PRODUCT_ID_INDEX = 5
 
 # Scarping method for extracting the bipacksedel subcategory on fass.se
 # Example page: https://www.fass.se/LIF/product?userType=2&nplId=20190822000136&docType=7&scrollPosition=352
-def extract_medical_text(soup):
+def extract_medical_text(soup, search_tag, recursive, nested):
     data = {}
     # Select full div containing the medical text
-    fass_content = soup.select('.fass-content')
+    fass_content = soup.select('.fass-content')[0]
 
     # Every section is labled with an a tag defining what information followes
     #   used as index for our data dictionary
-    headers = fass_content[0].find_all('a', id=True, recursive=False)
+    headers = fass_content.find_all(search_tag, recursive=recursive)
 
     for section in headers:
         try:
-            title = section.get('id')
+            # Get the title from the current section
+            if not nested:
+                title = section.get('id')
+            else:
+                title = section.find('a', id=True).get('id')
         except:
             continue
+    
+        # Collect all html between two <a> tags
+        html = ""
+        for tag in section.next_siblings:
+            if tag.name == search_tag:
+                break
+            else:
+                html += str(tag.get_text())
 
-        headerpart_div = fass_content[0].find(id=title).find_next('div').get_text()     # Extract all text content folowing the lable
-        info = " ".join(headerpart_div.split())                                         # Clean up text removing \n \t and whitespace
+        # Merge and clean data
+        info = " ".join(html.split())                                         # Clean up text removing \n \t and whitespace
         data[title] = data.get(title, "") + info
 
     return data
