@@ -1,0 +1,798 @@
+<?xml version="1.0"?>
+<npl:medprod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mpa="urn:schemas-npl:mpa:12" xsi:schemaLocation="urn:schemas-npl:instance:12 ../schemas/npl-schema_12.0.xsd" xmlns:npl="urn:schemas-npl:instance:12">
+  <mpa:nplid>20050519000101</mpa:nplid>
+  <npl:approvalnumber>
+    <mpa:semano>225270</mpa:semano>
+    <mpa:nat-ma-no>22527</mpa:nat-ma-no>
+  </npl:approvalnumber>
+  <npl:names>
+    <mpa:medprodname v="Amlodikon" />
+    <mpa:medprodnamelegal v="Amlodikon" />
+  </npl:names>
+  <mpa:strength-text>
+    <mpa:v>10 mg</mpa:v>
+  </mpa:strength-text>
+  <mpa:pharmaceutical-form-lx v="TABLET" lexicon="pharmaceutical-form-lx" />
+  <npl:organizations>
+    <mpa:organization>
+      <mpa:organization-lx v="ID4M1RXJYJWSIMSRV1" />
+      <mpa:organization-role-lx v="MAH" lexicon="organization-role-lx" />
+    </mpa:organization>
+  </npl:organizations>
+  <mpa:approvaldate>2007-03-16</mpa:approvaldate>
+  <mpa:withdrawaldate>2009-12-31</mpa:withdrawaldate>
+  <mpa:productclass-lx v="MEP" lexicon="productclass-lx" />
+  <mpa:prescription-lx v="1" lexicon="prescription-lx" />
+  <npl:classifications>
+    <mpa:atc-code-lx v="C08CA01" />
+    <mpa:controlled-medicinal-product-lx v="N" lexicon="yesno-lx" />
+    <mpa:narcotic-class-lx v="0" lexicon="narcotic-classification-lx" />
+  </npl:classifications>
+  <mpa:authorisation-procedure-lx v="1" lexicon="authorisation-procedure-lx" />
+  <npl:flags>
+    <mpa:salesstopped v="N" lexicon="yesno-lx" />
+    <mpa:biological-medprod-pharmaceutical-legislation v="N" lexicon="yesno-lx" />
+    <mpa:antimicrobial v="N" lexicon="yesno-lx" />
+  </npl:flags>
+  <npl:pharmaceutical-products>
+    <npl:pharmaceutical-product id="ID17FYSS5NHNDGFMSR">
+      <npl:composition>
+        <npl:ingredient id="ID17FYSS5NHNDJ1MSR">
+          <mpa:ingredient-role-lx v="ACTI" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="13.888" />
+          <mpa:quantity-unit-lx v="03" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="IDE4POI3UC5F7VERT1" />
+        </npl:ingredient>
+        <npl:ingredient id="ID17FYSS5NHNDNTMSR" related-to-id="ID17FYSS5NHNDJ1MSR">
+          <mpa:ingredient-role-lx v="ARES" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="10" />
+          <mpa:quantity-unit-lx v="03" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="IDE4POFKUB23AVERT1" />
+        </npl:ingredient>
+      </npl:composition>
+      <mpa:comp-ref-quantity-lx v="FGE" lexicon="comp-ref-quantity-lx" />
+    </npl:pharmaceutical-product>
+  </npl:pharmaceutical-products>
+  <npl:packages>
+    <npl:package>
+      <mpa:nplpackid>20061129100570</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Blister (PVC/PE/PVdC), 10 tabletter</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2009-12-31</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1O2B3LX1S2ZHNEMS" pharmaceutical-product-id="ID17FYSS5NHNDGFMSR">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="1" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20060124101193</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Blister (PVC/PE/PVdC), 100 tabletter</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2009-12-31</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID17FZ7KQNLMTKFMSR" pharmaceutical-product-id="ID17FYSS5NHNDGFMSR">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="1" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20060124101254</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Blister (PVC/PE/PVdC), 100 x 1 tabletter (endos)</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2009-12-31</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID17FZ7OWNLP6M2MSR" pharmaceutical-product-id="ID17FYSS5NHNDGFMSR">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="1" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20060124101117</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Blister (PVC/PE/PVdC), 14 tabletter</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2009-12-31</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID17FZ7I6NLLPF4MSR" pharmaceutical-product-id="ID17FYSS5NHNDGFMSR">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="1" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20060124101124</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Blister (PVC/PE/PVdC), 15 tabletter</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2009-12-31</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID17FZ7IENLLVQZMSR" pharmaceutical-product-id="ID17FYSS5NHNDGFMSR">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="1" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20060124101131</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Blister (PVC/PE/PVdC), 20 tabletter</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2009-12-31</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID17FZ7IHNLLY73MSR" pharmaceutical-product-id="ID17FYSS5NHNDGFMSR">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="1" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20060124101148</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Blister (PVC/PE/PVdC), 28 tabletter</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2009-12-31</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID17FZ7IONLM3BZMSR" pharmaceutical-product-id="ID17FYSS5NHNDGFMSR">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="1" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20060124101216</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Blister (PVC/PE/PVdC), 28 x 1 tabletter (endos)</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2009-12-31</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID17FZ7LUNLNODDMSR" pharmaceutical-product-id="ID17FYSS5NHNDGFMSR">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="1" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20060124101155</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Blister (PVC/PE/PVdC), 30 tabletter</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2009-12-31</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID17FZ7IVNLM95MMSR" pharmaceutical-product-id="ID17FYSS5NHNDGFMSR">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="1" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20060124101223</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Blister (PVC/PE/PVdC), 30 x 1 tabletter (endos)</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2009-12-31</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID17FZ7NPNLO9Y9MSR" pharmaceutical-product-id="ID17FYSS5NHNDGFMSR">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="1" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20060124101209</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Blister (PVC/PE/PVdC), 300 tabletter</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2009-12-31</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID17FZ7KXNLMZ8UMSR" pharmaceutical-product-id="ID17FYSS5NHNDGFMSR">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="1" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20060124101162</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Blister (PVC/PE/PVdC), 50 tabletter</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2009-12-31</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID17FZ7J2NLMEJ6MSR" pharmaceutical-product-id="ID17FYSS5NHNDGFMSR">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="1" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20060124101230</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Blister (PVC/PE/PVdC), 50 x 1 tabletter (endos)</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2009-12-31</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID17FZ7NWNLOER0MSR" pharmaceutical-product-id="ID17FYSS5NHNDGFMSR">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="1" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20060124101179</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Blister (PVC/PE/PVdC), 60 tabletter</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2009-12-31</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID17FZ7JANLMKIWMSR" pharmaceutical-product-id="ID17FYSS5NHNDGFMSR">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="1" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20060124101100</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Blister (PVC/PE/PVdC), 7 tabletter</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2009-12-31</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID17FZ7G2NLKXYTMSR" pharmaceutical-product-id="ID17FYSS5NHNDGFMSR">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="1" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20060124101186</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Blister (PVC/PE/PVdC), 98 tabletter</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2009-12-31</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID17FZ7JFNLMO48MSR" pharmaceutical-product-id="ID17FYSS5NHNDGFMSR">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="1" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20060124101247</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Blister (PVC/PE/PVdC), 98 x 1 tabletter (endos)</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2009-12-31</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID17FZ7OPNLP1H5MSR" pharmaceutical-product-id="ID17FYSS5NHNDGFMSR">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="1" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20061128101240</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Blister (PVC/PVdC), 10 tabletter</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2009-12-31</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1O1PXZA1QQQOWSMS" pharmaceutical-product-id="ID17FYSS5NHNDGFMSR">
+          <mpa:shelf-life v="21">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="2" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20061128101189</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Blister (PVC/PVdC), 100 tabletter</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2009-12-31</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1O1PXZ61QQQMGOMS" pharmaceutical-product-id="ID17FYSS5NHNDGFMSR">
+          <mpa:shelf-life v="21">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="2" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20061128101219</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Blister (PVC/PVdC), 100x1 tabletter (endos)</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2009-12-31</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1O1PXZ81QQQNPDMS" pharmaceutical-product-id="ID17FYSS5NHNDGFMSR">
+          <mpa:shelf-life v="21">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="2" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20061128101233</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Blister (PVC/PVdC), 14 tabletter</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2009-12-31</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1O1PXZ91QQQOIGMS" pharmaceutical-product-id="ID17FYSS5NHNDGFMSR">
+          <mpa:shelf-life v="21">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="2" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20061128101103</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Blister (PVC/PVdC), 15 tabletter</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2009-12-31</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1O1PXZ21QQQIT6MS" pharmaceutical-product-id="ID17FYSS5NHNDGFMSR">
+          <mpa:shelf-life v="21">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="2" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20061128101127</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Blister (PVC/PVdC), 20 tabletter</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2009-12-31</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1O1PXZ31QQQK04MS" pharmaceutical-product-id="ID17FYSS5NHNDGFMSR">
+          <mpa:shelf-life v="21">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="2" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20061128101257</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Blister (PVC/PVdC), 28 tabletter</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2009-12-31</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1O1PXZA1QQQPB3MS" pharmaceutical-product-id="ID17FYSS5NHNDGFMSR">
+          <mpa:shelf-life v="21">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="2" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20061128101097</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Blister (PVC/PVdC), 28x1 tabletter (endos)</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2009-12-31</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1O1PXT91QQNRL4MS" pharmaceutical-product-id="ID17FYSS5NHNDGFMSR">
+          <mpa:shelf-life v="21">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="2" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20061128101141</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Blister (PVC/PVdC), 30 tabletter</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2009-12-31</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1O1PXZ41QQQKTNMS" pharmaceutical-product-id="ID17FYSS5NHNDGFMSR">
+          <mpa:shelf-life v="21">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="2" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20061128101196</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Blister (PVC/PVdC), 300 tabletter</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2009-12-31</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1O1PXZ71QQQMVFMS" pharmaceutical-product-id="ID17FYSS5NHNDGFMSR">
+          <mpa:shelf-life v="21">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="2" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20061128101110</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Blister (PVC/PVdC), 30x1 tabletter (endos)</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2009-12-31</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1O1PXZ31QQQJM8MS" pharmaceutical-product-id="ID17FYSS5NHNDGFMSR">
+          <mpa:shelf-life v="21">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="2" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20061128101158</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Blister (PVC/PVdC), 50 tabletter</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2009-12-31</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1O1PXZ51QQQL8UMS" pharmaceutical-product-id="ID17FYSS5NHNDGFMSR">
+          <mpa:shelf-life v="21">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="2" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20061128101134</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Blister (PVC/PVdC), 50x1 tabletter (endos)</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2009-12-31</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1O1PXZ41QQQKFBMS" pharmaceutical-product-id="ID17FYSS5NHNDGFMSR">
+          <mpa:shelf-life v="21">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="2" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20061128101165</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Blister (PVC/PVdC), 60 tabletter</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2009-12-31</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1O1PXZ51QQQLNLMS" pharmaceutical-product-id="ID17FYSS5NHNDGFMSR">
+          <mpa:shelf-life v="21">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="2" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20061128101226</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Blister (PVC/PVdC), 7 tabletter</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2009-12-31</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1O1PXZ91QQQO45MS" pharmaceutical-product-id="ID17FYSS5NHNDGFMSR">
+          <mpa:shelf-life v="21">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="2" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20061128101172</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Blister (PVC/PVdC), 98 tabletter</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2009-12-31</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1O1PXZ61QQQM1XMS" pharmaceutical-product-id="ID17FYSS5NHNDGFMSR">
+          <mpa:shelf-life v="21">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="2" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20061128101202</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Blister (PVC/PVdC), 98x1 tabletter (endos)</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2009-12-31</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1O1PXZ81QQQN9RMS" pharmaceutical-product-id="ID17FYSS5NHNDGFMSR">
+          <mpa:shelf-life v="21">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="2" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20060124101322</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Plastburk, 100 tabletter</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2009-12-31</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID17FZ81JNLUNC3MSR" pharmaceutical-product-id="ID17FYSS5NHNDGFMSR">
+          <mpa:shelf-life v="30">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="1" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20060124101339</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Plastburk, 200 tabletter</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2009-12-31</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID17FZ81PNLUS3YMSR" pharmaceutical-product-id="ID17FYSS5NHNDGFMSR">
+          <mpa:shelf-life v="30">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="1" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20060124101346</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Plastburk, 250 tabletter</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2009-12-31</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID17FZ81YNLUYYHMSR" pharmaceutical-product-id="ID17FYSS5NHNDGFMSR">
+          <mpa:shelf-life v="30">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="1" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20060124101308</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Plastburk, 30 tabletter</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2009-12-31</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID17FZ7ZANLTRT3MSR" pharmaceutical-product-id="ID17FYSS5NHNDGFMSR">
+          <mpa:shelf-life v="30">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="1" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20060124101353</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Plastburk, 300 tabletter</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2009-12-31</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID17FZ827NLV66WMSR" pharmaceutical-product-id="ID17FYSS5NHNDGFMSR">
+          <mpa:shelf-life v="30">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="1" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20060124101315</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Plastburk, 50 tabletter</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2009-12-31</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID17FZ81FNLUK21MSR" pharmaceutical-product-id="ID17FYSS5NHNDGFMSR">
+          <mpa:shelf-life v="30">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="1" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20060124101360</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Plastburk, 500 tabletter</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2009-12-31</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID17FZ82DNLVANHMSR" pharmaceutical-product-id="ID17FYSS5NHNDGFMSR">
+          <mpa:shelf-life v="30">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="1" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+  </npl:packages>
+</npl:medprod>

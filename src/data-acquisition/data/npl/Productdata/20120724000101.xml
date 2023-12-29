@@ -1,0 +1,205 @@
+<?xml version="1.0"?>
+<npl:medprod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mpa="urn:schemas-npl:mpa:12" xsi:schemaLocation="urn:schemas-npl:instance:12 ../schemas/npl-schema_12.0.xsd" xmlns:npl="urn:schemas-npl:instance:12">
+  <mpa:nplid>20120724000101</mpa:nplid>
+  <npl:approvalnumber>
+    <mpa:semano>483600</mpa:semano>
+    <mpa:nat-ma-no>48360</mpa:nat-ma-no>
+  </npl:approvalnumber>
+  <npl:names>
+    <mpa:medprodname v="Oroxine" />
+    <mpa:medprodnamelegal v="Oroxine" />
+    <mpa:historicalmedprodname v="Eltroxin" vtodate="2016-05-09" />
+    <mpa:historicalmedprodnamelegal v="Eltroxin" vtodate="2016-05-09" />
+  </npl:names>
+  <mpa:strength-text>
+    <mpa:v>75 mikrogram</mpa:v>
+  </mpa:strength-text>
+  <mpa:pharmaceutical-form-lx v="TABLET" lexicon="pharmaceutical-form-lx" />
+  <npl:route-of-administrations>
+    <mpa:route-of-administration-lx v="ORAL" lexicon="route-of-administration-lx" />
+  </npl:route-of-administrations>
+  <npl:organizations>
+    <mpa:organization>
+      <mpa:organization-lx v="IDBP6RRWC10L11SRV0" />
+      <mpa:organization-role-lx v="MAH" lexicon="organization-role-lx" />
+    </mpa:organization>
+  </npl:organizations>
+  <mpa:approvaldate>2014-09-11</mpa:approvaldate>
+  <mpa:withdrawaldate>2021-11-01</mpa:withdrawaldate>
+  <mpa:productclass-lx v="MEP" lexicon="productclass-lx" />
+  <mpa:prescription-lx v="1" lexicon="prescription-lx" />
+  <npl:classifications>
+    <mpa:atc-code-lx v="H03AA01" />
+    <mpa:controlled-medicinal-product-lx v="N" lexicon="yesno-lx" />
+    <mpa:narcotic-class-lx v="0" lexicon="narcotic-classification-lx" />
+  </npl:classifications>
+  <mpa:authorisation-procedure-lx v="4" lexicon="authorisation-procedure-lx" />
+  <npl:flags>
+    <mpa:salesstopped v="N" lexicon="yesno-lx" />
+    <mpa:biological-medprod-pharmaceutical-legislation v="N" lexicon="yesno-lx" />
+    <mpa:antimicrobial v="N" lexicon="yesno-lx" />
+  </npl:flags>
+  <npl:pharmaceutical-products>
+    <npl:pharmaceutical-product id="ID1F7HPCE1J0QS38SR">
+      <npl:composition>
+        <npl:ingredient id="ID1F7HPCI1J0QV51SR">
+          <mpa:ingredient-role-lx v="ACTI" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="83.4" />
+          <mpa:quantity-unit-lx v="04" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="ID1AB7FATK6H4H7SRV" />
+        </npl:ingredient>
+        <npl:ingredient id="ID4ZGCZA1D1TF2NSRV" related-to-id="ID1F7HPCI1J0QV51SR" presentation-substance-name="Y">
+          <mpa:ingredient-role-lx v="ARES" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="72.94" />
+          <mpa:quantity-unit-lx v="04" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="IDE4POBSU90BJVERT1" />
+        </npl:ingredient>
+        <npl:ingredient id="IDTW4T1LHP7L3RSRV0" related-to-id="ID1F7HPCI1J0QV51SR" substance-for-reference-strength="Y">
+          <mpa:ingredient-role-lx v="ARES" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="75" />
+          <mpa:quantity-unit-lx v="04" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="IDE4POBTU910KVERT1" />
+        </npl:ingredient>
+      </npl:composition>
+      <mpa:comp-ref-quantity-lx v="FGE" lexicon="comp-ref-quantity-lx" />
+    </npl:pharmaceutical-product>
+  </npl:pharmaceutical-products>
+  <npl:packages>
+    <npl:package>
+      <mpa:nplpackid>20130806100254</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Burk, 100 tabletter</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2021-11-01</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="Y" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID4VA6KZ130RZSZSRV" pharmaceutical-product-id="ID1F7HPCE1J0QS38SR">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="3" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20130806100193</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Burk, 112 tabletter</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2021-11-01</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="Y" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID4VA6KZ130RZY6SRV" pharmaceutical-product-id="ID1F7HPCE1J0QS38SR">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="3" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20130806100247</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Burk, 28 tabletter</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2021-11-01</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="Y" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID4VA6KC130RIDISRV" pharmaceutical-product-id="ID1F7HPCE1J0QS38SR">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="3" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20130806100216</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Burk, 50 tabletter</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2021-11-01</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="Y" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID4VA6KY130RZ86SRV" pharmaceutical-product-id="ID1F7HPCE1J0QS38SR">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="3" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20130806100209</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Burk, 60 tabletter</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2021-11-01</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="Y" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID4VA6KY130RZDDSRV" pharmaceutical-product-id="ID1F7HPCE1J0QS38SR">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="3" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20130806100223</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Burk, 84 tabletter</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2021-11-01</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="Y" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID4VA6KY130RZILSRV" pharmaceutical-product-id="ID1F7HPCE1J0QS38SR">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="3" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20130806100230</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Burk, 90 tabletter</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2021-11-01</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="Y" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID4VA6KY130RZNSSRV" pharmaceutical-product-id="ID1F7HPCE1J0QS38SR">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="3" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+  </npl:packages>
+</npl:medprod>

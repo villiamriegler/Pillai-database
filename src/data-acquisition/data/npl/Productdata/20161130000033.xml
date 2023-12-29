@@ -1,0 +1,176 @@
+<?xml version="1.0"?>
+<npl:medprod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mpa="urn:schemas-npl:mpa:12" xsi:schemaLocation="urn:schemas-npl:instance:12 ../schemas/npl-schema_12.0.xsd" xmlns:npl="urn:schemas-npl:instance:12">
+  <mpa:nplid>20161130000033</mpa:nplid>
+  <npl:approvalnumber>
+    <mpa:semano>557680</mpa:semano>
+    <mpa:eumano>EU/1/17/1239</mpa:eumano>
+  </npl:approvalnumber>
+  <npl:names>
+    <mpa:medprodname v="VeraSeal" />
+    <mpa:medprodnamelegal v="VeraSeal" />
+  </npl:names>
+  <mpa:pharmaceutical-form-lx v="SOLSEL" lexicon="pharmaceutical-form-lx" />
+  <npl:route-of-administrations>
+    <mpa:route-of-administration-lx v="EPIL" lexicon="route-of-administration-lx" />
+  </npl:route-of-administrations>
+  <npl:organizations>
+    <mpa:organization>
+      <mpa:organization-lx v="ID1CBC031OASMTRSRV" />
+      <mpa:organization-role-lx v="AGENT" lexicon="organization-role-lx" />
+    </mpa:organization>
+    <mpa:organization>
+      <mpa:organization-lx v="IDX0000001957" />
+      <mpa:organization-role-lx v="MAH" lexicon="organization-role-lx" />
+    </mpa:organization>
+  </npl:organizations>
+  <mpa:approvaldate>2017-11-10</mpa:approvaldate>
+  <mpa:productclass-lx v="MEP" lexicon="productclass-lx" />
+  <mpa:prescription-lx v="1" lexicon="prescription-lx" />
+  <npl:classifications>
+    <mpa:atc-code-lx v="B02BC" />
+    <mpa:controlled-medicinal-product-lx v="N" lexicon="yesno-lx" />
+    <mpa:narcotic-class-lx v="0" lexicon="narcotic-classification-lx" />
+  </npl:classifications>
+  <mpa:authorisation-procedure-lx v="2" lexicon="authorisation-procedure-lx" />
+  <npl:flags>
+    <mpa:salesstopped v="N" lexicon="yesno-lx" />
+    <mpa:additional-monitoring v="Y" lexicon="yesno-lx" />
+    <mpa:biological-medprod-pharmaceutical-legislation v="Y" lexicon="yesno-lx" />
+    <mpa:antimicrobial v="N" lexicon="yesno-lx" />
+    <mpa:reserved-hum v="N" lexicon="yesno-lx" />
+  </npl:flags>
+  <npl:pharmaceutical-products>
+    <npl:pharmaceutical-product id="IDJ0IY2FI8NZIHSRV0">
+      <mpa:description>
+        <mpa:v>Fibrinogenlösning</mpa:v>
+      </mpa:description>
+      <npl:composition>
+        <npl:ingredient id="IDJ0IY2GI8NZQQSRV0" presentation-substance-name="Y">
+          <mpa:ingredient-role-lx v="ACTI" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="80" />
+          <mpa:quantity-unit-lx v="03" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="IDE4POECUA3ZFVERT1" />
+        </npl:ingredient>
+      </npl:composition>
+      <mpa:comp-ref-quantity-lx v="ML" lexicon="comp-ref-quantity-lx" />
+    </npl:pharmaceutical-product>
+    <npl:pharmaceutical-product id="IDJ0IY2EI8NYMVSRV0">
+      <mpa:description>
+        <mpa:v>Thrombinlösning</mpa:v>
+      </mpa:description>
+      <npl:composition>
+        <npl:ingredient id="IDJ0IY2FI8NZA9SRV0" presentation-substance-name="Y">
+          <mpa:ingredient-role-lx v="ACTI" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="500" />
+          <mpa:quantity-unit-lx v="11" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="ID8APTH11NIRM50MSR" />
+        </npl:ingredient>
+      </npl:composition>
+      <mpa:comp-ref-quantity-lx v="ML" lexicon="comp-ref-quantity-lx" />
+    </npl:pharmaceutical-product>
+  </npl:pharmaceutical-products>
+  <npl:packages>
+    <npl:package>
+      <mpa:nplpackid>20170316100627</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/17/1239/004</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Dubbelspruta , 10 ml (5 ml + 5 ml)  (med applikator)</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="Y" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDJ0J4E6IA5Z65SRV0" pharmaceutical-product-id="IDJ0IY2EI8NYMVSRV0">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="11" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDJ0J4E6IA5Z8BSRV0" pharmaceutical-product-id="IDJ0IY2FI8NZIHSRV0">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="11" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20170316100610</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/17/1239/003</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Dubbelspruta , 6 ml (3 ml + 3 ml)  (med applikator)</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="Y" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDJ0IZWMI9IGUASRV0" pharmaceutical-product-id="IDJ0IY2EI8NYMVSRV0">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="11" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDJ0J3RII9VCHISRV0" pharmaceutical-product-id="IDJ0IY2FI8NZIHSRV0">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="11" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20170316100641</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/17/1239/001</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Dubbelspruta, 2 ml (1 ml + 1 ml)  (med applikator)</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="Y" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDJ0J4E9IA60WJSRV0" pharmaceutical-product-id="IDJ0IY2EI8NYMVSRV0">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="11" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDJ0J4E9IA60YPSRV0" pharmaceutical-product-id="IDJ0IY2FI8NZIHSRV0">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="11" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20170316100634</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/17/1239/002</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Dubbelspruta, 4 ml (2 ml + 2 ml)  (med applikator)</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="Y" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDJ0J4E8IA60AVSRV0" pharmaceutical-product-id="IDJ0IY2EI8NYMVSRV0">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="11" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDJ0J4E8IA60D1SRV0" pharmaceutical-product-id="IDJ0IY2FI8NZIHSRV0">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="11" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+  </npl:packages>
+</npl:medprod>

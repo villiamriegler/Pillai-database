@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+<npl:medprod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mpa="urn:schemas-npl:mpa:12" xsi:schemaLocation="urn:schemas-npl:instance:12 ../schemas/npl-schema_12.0.xsd" xmlns:npl="urn:schemas-npl:instance:12">
+  <mpa:nplid>20211227000016</mpa:nplid>
+  <npl:approvalnumber>
+    <mpa:semano>629470</mpa:semano>
+    <mpa:nat-ma-no>62947</mpa:nat-ma-no>
+  </npl:approvalnumber>
+  <npl:names>
+    <mpa:medprodname v="octaplasLG" />
+    <mpa:medprodnamelegal v="octaplasLG" />
+  </npl:names>
+  <mpa:pharmaceutical-form-lx v="PSSOIF" lexicon="pharmaceutical-form-lx" />
+  <npl:route-of-administrations>
+    <mpa:route-of-administration-lx v="INVE" lexicon="route-of-administration-lx" />
+  </npl:route-of-administrations>
+  <npl:organizations>
+    <mpa:organization>
+      <mpa:organization-lx v="ID17B7PDYC5HTRMMSR" />
+      <mpa:organization-role-lx v="AGENT" lexicon="organization-role-lx" />
+    </mpa:organization>
+    <mpa:organization>
+      <mpa:organization-lx v="ID1J2BPQCLPFQ0SRV0" />
+      <mpa:organization-role-lx v="MAH" lexicon="organization-role-lx" />
+    </mpa:organization>
+  </npl:organizations>
+  <mpa:approvaldate>2023-04-19</mpa:approvaldate>
+  <mpa:productclass-lx v="MEP" lexicon="productclass-lx" />
+  <mpa:prescription-lx v="1" lexicon="prescription-lx" />
+  <npl:classifications>
+    <mpa:atc-code-lx v="B05AA" />
+    <mpa:controlled-medicinal-product-lx v="N" lexicon="yesno-lx" />
+    <mpa:narcotic-class-lx v="0" lexicon="narcotic-classification-lx" />
+  </npl:classifications>
+  <mpa:authorisation-procedure-lx v="4" lexicon="authorisation-procedure-lx" />
+  <npl:flags>
+    <mpa:salesstopped v="N" lexicon="yesno-lx" />
+    <mpa:biological-medprod-pharmaceutical-legislation v="Y" lexicon="yesno-lx" />
+    <mpa:antimicrobial v="N" lexicon="yesno-lx" />
+    <mpa:reserved-hum v="N" lexicon="yesno-lx" />
+  </npl:flags>
+  <npl:pharmaceutical-products>
+    <npl:pharmaceutical-product id="ID1000000000215739">
+      <mpa:description>
+        <mpa:v>Pulver</mpa:v>
+      </mpa:description>
+      <npl:composition>
+        <npl:ingredient id="ID1000000000215740" presentation-substance-name="Y">
+          <mpa:ingredient-role-lx v="ACTI" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="9" vmax="14" />
+          <mpa:quantity-unit-lx v="02" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="IDE4POHLUBRYWVERT1" />
+        </npl:ingredient>
+      </npl:composition>
+      <mpa:comp-ref-quantity-lx v="FGE" lexicon="comp-ref-quantity-lx" />
+    </npl:pharmaceutical-product>
+    <npl:pharmaceutical-product id="ID1000000000366634">
+      <mpa:description>
+        <mpa:v>Vätska</mpa:v>
+      </mpa:description>
+    </npl:pharmaceutical-product>
+  </npl:pharmaceutical-products>
+  <npl:packages>
+    <npl:package>
+      <mpa:nplpackid>20221216100320</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Injektionsflaska + påse, 1 st + 1 st (blodgrupp 0)</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="Y" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1000000000402266" pharmaceutical-product-id="ID1000000000215739">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="8" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1000000000402268" pharmaceutical-product-id="ID1000000000366634">
+          <mpa:shelf-life v="3">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="12" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20221219100372</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Injektionsflaska + påse, 1 st + 1 st (blodgrupp A)</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="Y" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1000000000402812" pharmaceutical-product-id="ID1000000000215739">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="8" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1000000000402814" pharmaceutical-product-id="ID1000000000366634">
+          <mpa:shelf-life v="3">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="12" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20221216100337</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Injektionsflaska + påse, 1 st + 1 st (blodgrupp AB)</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="Y" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1000000000402272" pharmaceutical-product-id="ID1000000000215739">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="8" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1000000000402274" pharmaceutical-product-id="ID1000000000366634">
+          <mpa:shelf-life v="3">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="12" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20221219100358</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Injektionsflaska + påse, 1 st + 1 st (blodgrupp B)</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="Y" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1000000000402803" pharmaceutical-product-id="ID1000000000215739">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="8" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1000000000402805" pharmaceutical-product-id="ID1000000000366634">
+          <mpa:shelf-life v="3">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="12" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+  </npl:packages>
+</npl:medprod>

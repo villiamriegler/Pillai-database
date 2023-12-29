@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<npl:medprod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mpa="urn:schemas-npl:mpa:12" xsi:schemaLocation="urn:schemas-npl:instance:12 ../schemas/npl-schema_12.0.xsd" xmlns:npl="urn:schemas-npl:instance:12">
+  <mpa:nplid>20110201000205</mpa:nplid>
+  <npl:approvalnumber>
+    <mpa:semano>458400</mpa:semano>
+    <mpa:nat-ma-no>45840</mpa:nat-ma-no>
+  </npl:approvalnumber>
+  <npl:names>
+    <mpa:medprodname v="Vagifem" />
+    <mpa:medprodnamelegal v="Vagifem" />
+  </npl:names>
+  <mpa:strength-text>
+    <mpa:v>10 mikrogram</mpa:v>
+  </mpa:strength-text>
+  <mpa:pharmaceutical-form-lx v="VAGTAB" lexicon="pharmaceutical-form-lx" />
+  <npl:organizations>
+    <mpa:organization>
+      <mpa:organization-lx v="ID1YRFP2VPP6NECSRV" />
+      <mpa:organization-role-lx v="MAH" lexicon="organization-role-lx" />
+    </mpa:organization>
+  </npl:organizations>
+  <npl:parallel-import>
+    <mpa:parimporiginalid>20081112000038</mpa:parimporiginalid>
+    <mpa:exported-from-lx v="GBR" lexicon="country-lx" />
+    <mpa:parallel-import-deviation v="Inga avvikelser." />
+  </npl:parallel-import>
+  <mpa:approvaldate>2011-07-21</mpa:approvaldate>
+  <mpa:withdrawaldate>2013-09-30</mpa:withdrawaldate>
+  <mpa:productclass-lx v="MEP" lexicon="productclass-lx" />
+  <mpa:prescription-lx v="1" lexicon="prescription-lx" />
+  <npl:classifications>
+    <mpa:atc-code-lx v="G03CA03" />
+    <mpa:controlled-medicinal-product-lx v="N" lexicon="yesno-lx" />
+    <mpa:narcotic-class-lx v="0" lexicon="narcotic-classification-lx" />
+  </npl:classifications>
+  <mpa:authorisation-procedure-lx v="1" lexicon="authorisation-procedure-lx" />
+  <npl:flags>
+    <mpa:salesstopped v="N" lexicon="yesno-lx" />
+    <mpa:biological-medprod-pharmaceutical-legislation v="N" lexicon="yesno-lx" />
+    <mpa:antimicrobial v="N" lexicon="yesno-lx" />
+  </npl:flags>
+  <npl:pharmaceutical-products>
+    <npl:pharmaceutical-product id="IDI3I9G0GDRUCRSRV0">
+      <npl:composition>
+        <npl:ingredient id="IDI3I9G0GDRUUJSRV0">
+          <mpa:ingredient-role-lx v="MISC" lexicon="ingredient-role-lx" />
+          <mpa:substance-lx v="IDE4POI8UC9O7VERT1" />
+        </npl:ingredient>
+        <npl:ingredient id="IDI3I9G0GDRUWPSRV0">
+          <mpa:ingredient-role-lx v="ACTI" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="10.3" />
+          <mpa:quantity-unit-lx v="04" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="IDE4POICUCC8KVERT1" />
+        </npl:ingredient>
+        <npl:ingredient id="IDI3I9G0GDRUYGSRV0" related-to-id="IDI3I9G0GDRUWPSRV0">
+          <mpa:ingredient-role-lx v="ARES" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="10" />
+          <mpa:quantity-unit-lx v="04" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="IDE4POBSU8ZVYVERT1" />
+        </npl:ingredient>
+      </npl:composition>
+      <mpa:comp-ref-quantity-lx v="FGE" lexicon="comp-ref-quantity-lx" />
+    </npl:pharmaceutical-product>
+  </npl:pharmaceutical-products>
+  <npl:packages>
+    <npl:package>
+      <mpa:nplpackid>20110708100392</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Blister, 24 vaginaltabletter i applikatorer</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2013-09-30</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:prescribers>
+        <mpa:prescriber-lx v="6" lexicon="prescriber-lx" />
+      </npl:prescribers>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDRN15JFULOW0LSRV0" pharmaceutical-product-id="IDI3I9G0GDRUCRSRV0">
+          <mpa:shelf-life v="3">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="13" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+  </npl:packages>
+</npl:medprod>

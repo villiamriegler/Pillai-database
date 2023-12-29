@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<npl:medprod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mpa="urn:schemas-npl:mpa:12" xsi:schemaLocation="urn:schemas-npl:instance:12 ../schemas/npl-schema_12.0.xsd" xmlns:npl="urn:schemas-npl:instance:12">
+  <mpa:nplid>19761001000021</mpa:nplid>
+  <npl:approvalnumber>
+    <mpa:semano>092050</mpa:semano>
+    <mpa:nat-ma-no>9205</mpa:nat-ma-no>
+  </npl:approvalnumber>
+  <npl:names>
+    <mpa:medprodname v="Mannitol Fresenius Kabi" />
+    <mpa:medprodnamelegal v="Mannitol Fresenius Kabi" />
+    <mpa:historicalmedprodname v="MANNITOL PHARMACIA &amp; UPJOHN" vtodate="1999-01-10" />
+    <mpa:historicalmedprodname v="MANNITOL PHARMACIA" vtodate="1997-05-13" />
+    <mpa:historicalmedprodname v="MANNITOL" vtodate="1994-09-06" />
+    <mpa:historicalmedprodnamelegal v="MANNITOL PHARMACIA &amp; UPJOHN" vtodate="1999-01-10" />
+    <mpa:historicalmedprodnamelegal v="MANNITOL PHARMACIA" vtodate="1997-05-13" />
+    <mpa:historicalmedprodnamelegal v="MANNITOL" vtodate="1994-09-06" />
+  </npl:names>
+  <mpa:strength-text>
+    <mpa:v>150 mg/ml</mpa:v>
+  </mpa:strength-text>
+  <mpa:pharmaceutical-form-lx v="SOLINF" lexicon="pharmaceutical-form-lx" />
+  <npl:route-of-administrations>
+    <mpa:route-of-administration-lx v="INVE" lexicon="route-of-administration-lx" />
+  </npl:route-of-administrations>
+  <npl:organizations>
+    <mpa:organization>
+      <mpa:organization-lx v="IDX0000001434" />
+      <mpa:organization-role-lx v="MAH" lexicon="organization-role-lx" />
+    </mpa:organization>
+  </npl:organizations>
+  <mpa:approvaldate>1976-10-01</mpa:approvaldate>
+  <mpa:productclass-lx v="MEP" lexicon="productclass-lx" />
+  <mpa:prescription-lx v="1" lexicon="prescription-lx" />
+  <npl:classifications>
+    <mpa:atc-code-lx v="B05BC01" />
+    <mpa:controlled-medicinal-product-lx v="N" lexicon="yesno-lx" />
+    <mpa:narcotic-class-lx v="0" lexicon="narcotic-classification-lx" />
+  </npl:classifications>
+  <mpa:authorisation-procedure-lx v="1" lexicon="authorisation-procedure-lx" />
+  <npl:flags>
+    <mpa:salesstopped v="N" lexicon="yesno-lx" />
+    <mpa:biological-medprod-pharmaceutical-legislation v="N" lexicon="yesno-lx" />
+    <mpa:antimicrobial v="N" lexicon="yesno-lx" />
+    <mpa:reserved-hum v="N" lexicon="yesno-lx" />
+  </npl:flags>
+  <npl:pharmaceutical-products>
+    <npl:pharmaceutical-product id="IDE4POMUUE3WRVERT1">
+      <npl:composition>
+        <npl:ingredient id="IDE4QO4Z13OQN9VERT" presentation-substance-name="Y" substance-for-reference-strength="Y">
+          <mpa:ingredient-role-lx v="ACTI" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="150" />
+          <mpa:quantity-unit-lx v="03" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="IDE4POBXU93N5VERT1" />
+        </npl:ingredient>
+      </npl:composition>
+      <mpa:comp-ref-quantity-lx v="ML" lexicon="comp-ref-quantity-lx" />
+    </npl:pharmaceutical-product>
+  </npl:pharmaceutical-products>
+  <npl:packages>
+    <npl:package>
+      <mpa:nplpackid>19990407100015</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Plastbehållare (Excel), 12 x 500 ml</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="N" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDE5DVQ61J5F2FVERT" pharmaceutical-product-id="IDE4POMUUE3WRVERT1">
+          <mpa:shelf-life v="3">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="13" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20060919100349</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Plastbehållare (Freeflex), 15 x 500 ml</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="N" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1KL9BC1XERD20MSR" pharmaceutical-product-id="IDE4POMUUE3WRVERT1">
+          <mpa:shelf-life v="3">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="13" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20060919100356</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Plastbehållare (Freeflex), 20 x 500 ml</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="N" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1KL9BDEXESF79MSR" pharmaceutical-product-id="IDE4POMUUE3WRVERT1">
+          <mpa:shelf-life v="3">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="13" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+  </npl:packages>
+</npl:medprod>

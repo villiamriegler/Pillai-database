@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<npl:medprod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mpa="urn:schemas-npl:mpa:12" xsi:schemaLocation="urn:schemas-npl:instance:12 ../schemas/npl-schema_12.0.xsd" xmlns:npl="urn:schemas-npl:instance:12">
+  <mpa:nplid>20151205000143</mpa:nplid>
+  <npl:approvalnumber>
+    <mpa:semano>538400</mpa:semano>
+    <mpa:eumano>EU/1/16/1163</mpa:eumano>
+  </npl:approvalnumber>
+  <npl:names>
+    <mpa:medprodname v="SOLYMBIC" />
+    <mpa:medprodnamelegal v="SOLYMBIC" />
+  </npl:names>
+  <mpa:strength-text>
+    <mpa:v>40 mg</mpa:v>
+  </mpa:strength-text>
+  <mpa:pharmaceutical-form-lx v="SOINPP" lexicon="pharmaceutical-form-lx" />
+  <npl:organizations>
+    <mpa:organization>
+      <mpa:organization-lx v="IDPNTI30ZXJFAOSRV0" />
+      <mpa:organization-role-lx v="AGENT" lexicon="organization-role-lx" />
+    </mpa:organization>
+    <mpa:organization>
+      <mpa:organization-lx v="IDX0000001347" />
+      <mpa:organization-role-lx v="MAH" lexicon="organization-role-lx" />
+    </mpa:organization>
+  </npl:organizations>
+  <mpa:approvaldate>2017-03-22</mpa:approvaldate>
+  <mpa:withdrawaldate>2018-06-15</mpa:withdrawaldate>
+  <mpa:productclass-lx v="MEP" lexicon="productclass-lx" />
+  <mpa:prescription-lx v="1" lexicon="prescription-lx" />
+  <npl:classifications>
+    <mpa:atc-code-lx v="L04AB04" />
+    <mpa:controlled-medicinal-product-lx v="N" lexicon="yesno-lx" />
+    <mpa:narcotic-class-lx v="0" lexicon="narcotic-classification-lx" />
+  </npl:classifications>
+  <mpa:authorisation-procedure-lx v="2" lexicon="authorisation-procedure-lx" />
+  <npl:flags>
+    <mpa:salesstopped v="N" lexicon="yesno-lx" />
+    <mpa:additional-monitoring v="Y" lexicon="yesno-lx" />
+    <mpa:biological-medprod-pharmaceutical-legislation v="Y" lexicon="yesno-lx" />
+    <mpa:antimicrobial v="N" lexicon="yesno-lx" />
+  </npl:flags>
+  <npl:pharmaceutical-products>
+    <npl:pharmaceutical-product id="ID1M51QSP7L9987SRV">
+      <npl:composition>
+        <npl:ingredient id="ID1M51QT07L9HOESRV" presentation-substance-name="Y" substance-for-reference-strength="Y">
+          <mpa:ingredient-role-lx v="ACTI" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="40" />
+          <mpa:quantity-unit-lx v="03" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="IDFYTF6R1MQQBTYCSR" />
+        </npl:ingredient>
+        <npl:ingredient id="ID1UN5HOQR3L4SSRV0">
+          <mpa:ingredient-role-lx v="MISC" lexicon="ingredient-role-lx" />
+          <mpa:substance-lx v="IDE4POBUU91KBVERT1" />
+        </npl:ingredient>
+      </npl:composition>
+      <mpa:comp-ref-quantity-lx v="FGE" lexicon="comp-ref-quantity-lx" />
+    </npl:pharmaceutical-product>
+  </npl:pharmaceutical-products>
+  <npl:packages>
+    <npl:package>
+      <mpa:nplpackid>20160311100180</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/16/1163/006</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Förfylld injektionspenna, 1 x 40 mg</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2018-06-15</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1UN5I5LRBG8VSRV0" pharmaceutical-product-id="ID1M51QSP7L9987SRV">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20160311100197</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/16/1163/007</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Förfylld injektionspenna, 2 x 40 mg</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2018-06-15</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1UN5I6BRC025SRV0" pharmaceutical-product-id="ID1M51QSP7L9987SRV">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20160311100203</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/16/1163/008</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Förfylld injektionspenna, 4 x 40 mg</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2018-06-15</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1UN5I8VRD4TESRV0" pharmaceutical-product-id="ID1M51QSP7L9987SRV">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20160311100210</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/16/1163/009</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Förfylld injektionspenna, 6 x 40 mg</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2018-06-15</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1UN5IASRDQVPSRV0" pharmaceutical-product-id="ID1M51QSP7L9987SRV">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+  </npl:packages>
+</npl:medprod>

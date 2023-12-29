@@ -1,0 +1,143 @@
+<?xml version="1.0"?>
+<npl:medprod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mpa="urn:schemas-npl:mpa:12" xsi:schemaLocation="urn:schemas-npl:instance:12 ../schemas/npl-schema_12.0.xsd" xmlns:npl="urn:schemas-npl:instance:12">
+  <mpa:nplid>20060621000234</mpa:nplid>
+  <npl:approvalnumber>
+    <mpa:semano>239530</mpa:semano>
+    <mpa:nat-ma-no>23953</mpa:nat-ma-no>
+  </npl:approvalnumber>
+  <npl:names>
+    <mpa:medprodname v="Domodin vet." />
+    <mpa:medprodnamelegal v="Domodin vet." />
+  </npl:names>
+  <mpa:strength-text>
+    <mpa:v>10 mg/ml</mpa:v>
+  </mpa:strength-text>
+  <mpa:pharmaceutical-form-lx v="SOLINJ" lexicon="pharmaceutical-form-lx" />
+  <npl:route-of-administrations>
+    <mpa:route-of-administration-lx v="INMU" lexicon="route-of-administration-lx" />
+    <mpa:route-of-administration-lx v="INVE" lexicon="route-of-administration-lx" />
+  </npl:route-of-administrations>
+  <npl:organizations>
+    <mpa:organization>
+      <mpa:organization-lx v="ID11XOFZLHGMUW0MSR" />
+      <mpa:organization-role-lx v="MAH" lexicon="organization-role-lx" />
+    </mpa:organization>
+    <mpa:organization>
+      <mpa:organization-lx v="ID1XKYD4XHI0A80SRV" />
+      <mpa:organization-role-lx v="AGENT" lexicon="organization-role-lx" />
+    </mpa:organization>
+  </npl:organizations>
+  <mpa:approvaldate>2007-03-23</mpa:approvaldate>
+  <mpa:productclass-lx v="MEP" lexicon="productclass-lx" />
+  <mpa:prescription-lx v="1" lexicon="prescription-lx" />
+  <npl:classifications>
+    <mpa:atc-code-lx v="QN05CM90" />
+    <mpa:controlled-medicinal-product-lx v="N" lexicon="yesno-lx" />
+    <mpa:narcotic-class-lx v="0" lexicon="narcotic-classification-lx" />
+  </npl:classifications>
+  <mpa:authorisation-procedure-lx v="3" lexicon="authorisation-procedure-lx" />
+  <npl:flags>
+    <mpa:salesstopped v="N" lexicon="yesno-lx" />
+    <mpa:biological-medprod-pharmaceutical-legislation v="N" lexicon="yesno-lx" />
+    <mpa:antimicrobial v="N" lexicon="yesno-lx" />
+    <mpa:reserved-hum v="N" lexicon="yesno-lx" />
+  </npl:flags>
+  <npl:pharmaceutical-products>
+    <npl:pharmaceutical-product id="ID1FNV0SF1B4AB3RMS">
+      <npl:composition>
+        <npl:ingredient id="ID1FNV0T81B4AX2KMS" substance-for-reference-strength="Y">
+          <mpa:ingredient-role-lx v="ACTI" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="10" />
+          <mpa:quantity-unit-lx v="03" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="IDE4POH2UBD21VERT1" />
+        </npl:ingredient>
+        <npl:ingredient id="ID1H6N9K67M33XWMSR">
+          <mpa:ingredient-role-lx v="MISC" lexicon="ingredient-role-lx" />
+          <mpa:substance-lx v="IDE4POC1U9741VERT1" />
+        </npl:ingredient>
+        <npl:ingredient id="ID1IVD12P1IN02A1MS" related-to-id="ID1FNV0T81B4AX2KMS" presentation-substance-name="Y">
+          <mpa:ingredient-role-lx v="ARES" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="8.36" />
+          <mpa:quantity-unit-lx v="03" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="IDE4POFFUAYBJVERT1" />
+        </npl:ingredient>
+      </npl:composition>
+      <mpa:comp-ref-quantity-lx v="ML" lexicon="comp-ref-quantity-lx" />
+    </npl:pharmaceutical-product>
+  </npl:pharmaceutical-products>
+  <npl:withdrawal-periods>
+    <npl:withdrawal-period>
+      <mpa:withdrawal-tissue-lx v="1" lexicon="withdrawal-tissue-lx" />
+      <mpa:withdrawal-period v="2" />
+      <mpa:withdrawal-period-unit-lx v="DAYS" lexicon="withdrawal-period-unit-lx" />
+      <npl:species-of-animals>
+        <mpa:species-of-animal-lx v="9" lexicon="species-of-animal-lx" />
+        <mpa:species-of-animal-lx v="001" lexicon="species-of-animal-lx" />
+      </npl:species-of-animals>
+    </npl:withdrawal-period>
+    <npl:withdrawal-period>
+      <mpa:withdrawal-tissue-lx v="2" lexicon="withdrawal-tissue-lx" />
+      <mpa:withdrawal-period v="12" />
+      <mpa:withdrawal-period-unit-lx v="HOURS" lexicon="withdrawal-period-unit-lx" />
+      <npl:species-of-animals>
+        <mpa:species-of-animal-lx v="9" lexicon="species-of-animal-lx" />
+        <mpa:species-of-animal-lx v="001" lexicon="species-of-animal-lx" />
+      </npl:species-of-animals>
+    </npl:withdrawal-period>
+  </npl:withdrawal-periods>
+  <npl:packages>
+    <npl:package>
+      <mpa:nplpackid>20060714100704</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Injektionsflaska, 10 ml</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1IUQTGO1H0B7DAMS" pharmaceutical-product-id="ID1FNV0SF1B4AB3RMS">
+          <mpa:shelf-life v="3">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="1" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20060714100698</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Injektionsflaska, 20 ml</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1IUQTFO1H0AFFNMS" pharmaceutical-product-id="ID1FNV0SF1B4AB3RMS">
+          <mpa:shelf-life v="3">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="1" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20060714100681</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Injektionsflaska, 5 ml</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1IUQTAT1H08EAEMS" pharmaceutical-product-id="ID1FNV0SF1B4AB3RMS">
+          <mpa:shelf-life v="3">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="1" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+  </npl:packages>
+</npl:medprod>

@@ -1,0 +1,309 @@
+<?xml version="1.0"?>
+<npl:medprod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mpa="urn:schemas-npl:mpa:12" xsi:schemaLocation="urn:schemas-npl:instance:12 ../schemas/npl-schema_12.0.xsd" xmlns:npl="urn:schemas-npl:instance:12">
+  <mpa:nplid>20000309000033</mpa:nplid>
+  <npl:approvalnumber>
+    <mpa:semano>152760</mpa:semano>
+    <mpa:eumano>EU/1/00/129</mpa:eumano>
+  </npl:approvalnumber>
+  <npl:names>
+    <mpa:medprodname v="AZOPT" />
+    <mpa:medprodnamelegal v="AZOPT" />
+    <mpa:historicalmedprodname v="Azopt" vtodate="2010-01-28" />
+    <mpa:historicalmedprodnamelegal v="Azopt" vtodate="2010-01-28" />
+  </npl:names>
+  <mpa:strength-text>
+    <mpa:v>10 mg/ml</mpa:v>
+  </mpa:strength-text>
+  <mpa:pharmaceutical-form-lx v="EYDRSU" lexicon="pharmaceutical-form-lx" />
+  <npl:route-of-administrations>
+    <mpa:route-of-administration-lx v="OCUL" lexicon="route-of-administration-lx" />
+  </npl:route-of-administrations>
+  <npl:organizations>
+    <mpa:organization>
+      <mpa:organization-lx v="ID1QG1N7JGA3ZXOSRV" />
+      <mpa:organization-role-lx v="AGENT" lexicon="organization-role-lx" />
+    </mpa:organization>
+    <mpa:organization>
+      <mpa:organization-lx v="ID1TQIW2J9W39QJSRV" />
+      <mpa:organization-role-lx v="MAH" lexicon="organization-role-lx" />
+    </mpa:organization>
+  </npl:organizations>
+  <mpa:approvaldate>2000-03-09</mpa:approvaldate>
+  <mpa:productclass-lx v="MEP" lexicon="productclass-lx" />
+  <mpa:prescription-lx v="1" lexicon="prescription-lx" />
+  <npl:classifications>
+    <mpa:atc-code-lx v="S01EC04" />
+    <mpa:controlled-medicinal-product-lx v="N" lexicon="yesno-lx" />
+    <mpa:narcotic-class-lx v="0" lexicon="narcotic-classification-lx" />
+  </npl:classifications>
+  <mpa:authorisation-procedure-lx v="2" lexicon="authorisation-procedure-lx" />
+  <npl:flags>
+    <mpa:salesstopped v="N" lexicon="yesno-lx" />
+    <mpa:biological-medprod-pharmaceutical-legislation v="N" lexicon="yesno-lx" />
+    <mpa:antimicrobial v="N" lexicon="yesno-lx" />
+    <mpa:reserved-hum v="N" lexicon="yesno-lx" />
+  </npl:flags>
+  <npl:pharmaceutical-products>
+    <npl:pharmaceutical-product id="IDE4POQ9UFVW2VERT1">
+      <npl:composition>
+        <npl:ingredient id="IDE4QPUM14HFRMVERT">
+          <mpa:ingredient-role-lx v="MISC" lexicon="ingredient-role-lx" />
+          <mpa:substance-lx v="IDE4POBXU93N5VERT1" />
+        </npl:ingredient>
+        <npl:ingredient id="IDE4QPUM14HFUEVERT">
+          <mpa:ingredient-role-lx v="MISC" lexicon="ingredient-role-lx" />
+          <mpa:substance-lx v="IDE4POE9UA21BVERT1" />
+        </npl:ingredient>
+        <npl:ingredient id="IDE4QPUM14HFW2VERT" presentation-substance-name="Y" substance-for-reference-strength="Y">
+          <mpa:ingredient-role-lx v="ACTI" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="10" />
+          <mpa:quantity-unit-lx v="03" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="IDE4POJLUCGNYVERT1" />
+        </npl:ingredient>
+      </npl:composition>
+      <mpa:comp-ref-quantity-lx v="ML" lexicon="comp-ref-quantity-lx" />
+    </npl:pharmaceutical-product>
+  </npl:pharmaceutical-products>
+  <npl:interchangeability>
+    <mpa:interchange-strength-group id="2735" start-date="1901-01-01" lexicon="interchange-strength-group" />
+  </npl:interchangeability>
+  <npl:packages>
+    <npl:package>
+      <mpa:nplpackid>20000309100382</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/00/129/002</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Plastflaska, 10 ml</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="Y" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1XAF3SUFYTSHCSRV" pharmaceutical-product-id="IDE4POQ9UFVW2VERT1">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="1" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20000309100375</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/00/129/003</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Plastflaska, 3 x 5 ml</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="Y" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDE5DVGQ1J0P7SVERT" pharmaceutical-product-id="IDE4POQ9UFVW2VERT1">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="1" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20140328100885</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/00/129/003</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Plastflaska, 3 x 5 ml (PD: 2 Care 4)</mpa:v>
+      </mpa:pack-text>
+      <npl:para-dist-organization>
+        <mpa:organization-lx v="IDT39ZYC1PI9FIDMSR" />
+      </npl:para-dist-organization>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="Y" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDLNM3ZC36NDOHSRV0" pharmaceutical-product-id="IDE4POQ9UFVW2VERT1">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="1" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20070515100766</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/00/129/003</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Plastflaska, 3 x 5 ml (PD: Cross Pharma AB)</mpa:v>
+      </mpa:pack-text>
+      <npl:para-dist-organization>
+        <mpa:organization-lx v="IDX5LOVF1IOW5X6MSR" />
+      </npl:para-dist-organization>
+      <mpa:pack-withdrawaldate>2020-06-23</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="Y" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID3OQC0846T9BVMSRV" pharmaceutical-product-id="IDE4POQ9UFVW2VERT1">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="1" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20110413100137</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/00/129/003</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Plastflaska, 3 x 5 ml (PD: Medartuum AB)</mpa:v>
+      </mpa:pack-text>
+      <npl:para-dist-organization>
+        <mpa:organization-lx v="IDX0000000464" />
+      </npl:para-dist-organization>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="Y" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDMZQF1FHRZW11SRV0" pharmaceutical-product-id="IDE4POQ9UFVW2VERT1">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="1" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20061013100075</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/00/129/003</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Plastflaska, 3 x 5 ml (PD: Orifarm AB)</mpa:v>
+      </mpa:pack-text>
+      <npl:para-dist-organization>
+        <mpa:organization-lx v="IDX0000000947" />
+      </npl:para-dist-organization>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="Y" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1NUKONK19KI064MS" pharmaceutical-product-id="IDE4POQ9UFVW2VERT1">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="1" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20090427100487</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/00/129/003</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Plastflaska, 3 x 5 ml (PD: Paranova Läkemedel AB)</mpa:v>
+      </mpa:pack-text>
+      <npl:para-dist-organization>
+        <mpa:organization-lx v="IDX0000000618" />
+      </npl:para-dist-organization>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="Y" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1CPFAAZNB3WQISRV" pharmaceutical-product-id="IDE4POQ9UFVW2VERT1">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="1" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20080421100712</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/00/129/003</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Plastflaska, 3 x 5 ml (PD: Pharmachim AB)</mpa:v>
+      </mpa:pack-text>
+      <npl:para-dist-organization>
+        <mpa:organization-lx v="IDX0000001792" />
+      </npl:para-dist-organization>
+      <mpa:pack-withdrawaldate>2022-01-31</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="Y" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDO419E4QBQP0MSRV1" pharmaceutical-product-id="IDE4POQ9UFVW2VERT1">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="1" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20070410100113</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/00/129/003</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Plastflaska, 3 x 5 ml (PD: Qdoxx Pharma AB)</mpa:v>
+      </mpa:pack-text>
+      <npl:para-dist-organization>
+        <mpa:organization-lx v="IDQQLJSV1JY4YYQMSR" />
+      </npl:para-dist-organization>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="Y" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDKSN0D1HDVXG1MSRV" pharmaceutical-product-id="IDE4POQ9UFVW2VERT1">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="1" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20000309100399</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/00/129/001</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Plastflaska, 5 ml</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="Y" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDE5DVGQ1J0P9QVERT" pharmaceutical-product-id="IDE4POQ9UFVW2VERT1">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="1" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20121012101098</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/00/129/001</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Plastflaska, 5 ml (PD: Pharmachim AB)</mpa:v>
+      </mpa:pack-text>
+      <npl:para-dist-organization>
+        <mpa:organization-lx v="IDX0000001792" />
+      </npl:para-dist-organization>
+      <mpa:pack-withdrawaldate>2022-01-31</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="Y" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1K1B9OL4QZKQASRV" pharmaceutical-product-id="IDE4POQ9UFVW2VERT1">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="1" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+  </npl:packages>
+</npl:medprod>

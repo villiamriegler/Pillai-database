@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<npl:medprod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mpa="urn:schemas-npl:mpa:12" xsi:schemaLocation="urn:schemas-npl:instance:12 ../schemas/npl-schema_12.0.xsd" xmlns:npl="urn:schemas-npl:instance:12">
+  <mpa:nplid>20200909000062</mpa:nplid>
+  <npl:approvalnumber>
+    <mpa:semano>611410</mpa:semano>
+    <mpa:eumano>EU/1/21/1607</mpa:eumano>
+  </npl:approvalnumber>
+  <npl:names>
+    <mpa:medprodname v="Skytrofa" />
+    <mpa:medprodnamelegal v="Skytrofa" />
+    <mpa:historicalmedprodname v="Lonapegsomatropin Ascendis Pharma" vtodate="2022-08-23" />
+    <mpa:historicalmedprodnamelegal v="Lonapegsomatropin Ascendis Pharma" vtodate="2022-08-23" />
+  </npl:names>
+  <mpa:strength-text>
+    <mpa:v>6,3 mg</mpa:v>
+  </mpa:strength-text>
+  <mpa:pharmaceutical-form-lx v="PSSIJC" lexicon="pharmaceutical-form-lx" />
+  <npl:organizations>
+    <mpa:organization>
+      <mpa:organization-lx v="IDRQZ968KHNUY3SRV0" />
+      <mpa:organization-role-lx v="MAH" lexicon="organization-role-lx" />
+    </mpa:organization>
+  </npl:organizations>
+  <mpa:approvaldate>2022-01-11</mpa:approvaldate>
+  <mpa:productclass-lx v="MEP" lexicon="productclass-lx" />
+  <mpa:prescription-lx v="1" lexicon="prescription-lx" />
+  <npl:classifications>
+    <mpa:atc-code-lx v="H01AC09" />
+    <mpa:controlled-medicinal-product-lx v="Y" lexicon="yesno-lx" />
+    <mpa:repeat-prescription-lx v="004" lexicon="repeat-prescription-lx" />
+    <mpa:narcotic-class-lx v="0" lexicon="narcotic-classification-lx" />
+  </npl:classifications>
+  <mpa:authorisation-procedure-lx v="2" lexicon="authorisation-procedure-lx" />
+  <npl:flags>
+    <mpa:salesstopped v="N" lexicon="yesno-lx" />
+    <mpa:additional-monitoring v="Y" lexicon="yesno-lx" />
+    <mpa:biological-medprod-pharmaceutical-legislation v="Y" lexicon="yesno-lx" />
+    <mpa:antimicrobial v="N" lexicon="yesno-lx" />
+    <mpa:reserved-hum v="N" lexicon="yesno-lx" />
+  </npl:flags>
+  <npl:pharmaceutical-products>
+    <npl:pharmaceutical-product id="ID173JSI71D8R4BVSR">
+      <mpa:description>
+        <mpa:v>Pulver</mpa:v>
+      </mpa:description>
+      <npl:composition>
+        <npl:ingredient id="ID173JSI91D8R612SR">
+          <mpa:ingredient-role-lx v="ACTI" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="18" />
+          <mpa:quantity-unit-lx v="03" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="IDH636680431115289" />
+        </npl:ingredient>
+        <npl:ingredient id="ID173JSIA1D8R6FDSR" related-to-id="ID173JSI91D8R612SR" presentation-substance-name="Y" substance-for-reference-strength="Y">
+          <mpa:ingredient-role-lx v="ARES" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="6.3" />
+          <mpa:quantity-unit-lx v="03" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="IDE4POEGUA789VERT1" />
+        </npl:ingredient>
+      </npl:composition>
+      <mpa:comp-ref-quantity-lx v="FGE" lexicon="comp-ref-quantity-lx" />
+    </npl:pharmaceutical-product>
+    <npl:pharmaceutical-product id="ID173JSIB1D8R6WQSR">
+      <mpa:description>
+        <mpa:v>Vätska</mpa:v>
+      </mpa:description>
+    </npl:pharmaceutical-product>
+  </npl:pharmaceutical-products>
+  <npl:packages>
+    <npl:package>
+      <mpa:nplpackid>20210427100359</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/21/1607/005</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Tvåkammarcylinder, 4 st (injektionsnålar, 6 st)</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="Y" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID173K6XN1DCKP9USR" pharmaceutical-product-id="ID173JSI71D8R4BVSR">
+          <mpa:shelf-life v="3">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID173K6Z01DCLRDDSR" pharmaceutical-product-id="ID173JSIB1D8R6WQSR">
+          <mpa:shelf-life v="3">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+  </npl:packages>
+</npl:medprod>

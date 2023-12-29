@@ -1,0 +1,306 @@
+<?xml version="1.0"?>
+<npl:medprod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mpa="urn:schemas-npl:mpa:12" xsi:schemaLocation="urn:schemas-npl:instance:12 ../schemas/npl-schema_12.0.xsd" xmlns:npl="urn:schemas-npl:instance:12">
+  <mpa:nplid>20080112000093</mpa:nplid>
+  <npl:approvalnumber>
+    <mpa:semano>265160</mpa:semano>
+    <mpa:eumano>EU/1/97/030</mpa:eumano>
+  </npl:approvalnumber>
+  <npl:names>
+    <mpa:medprodname v="Insuman Comb 30" />
+    <mpa:medprodnamelegal v="Insuman Comb 30" />
+  </npl:names>
+  <mpa:strength-text>
+    <mpa:v>100 IE/ml</mpa:v>
+  </mpa:strength-text>
+  <mpa:pharmaceutical-form-lx v="SUINCA" lexicon="pharmaceutical-form-lx" />
+  <npl:route-of-administrations>
+    <mpa:route-of-administration-lx v="SUCU" lexicon="route-of-administration-lx" />
+  </npl:route-of-administrations>
+  <npl:organizations>
+    <mpa:organization>
+      <mpa:organization-lx v="ID17B7UOEC6I6PLMSR" />
+      <mpa:organization-role-lx v="MAH" lexicon="organization-role-lx" />
+    </mpa:organization>
+    <mpa:organization>
+      <mpa:organization-lx v="IDLHOLYP8BODKXSRV0" />
+      <mpa:organization-role-lx v="AGENT" lexicon="organization-role-lx" />
+    </mpa:organization>
+  </npl:organizations>
+  <mpa:approvaldate>2009-02-19</mpa:approvaldate>
+  <mpa:productclass-lx v="MEP" lexicon="productclass-lx" />
+  <mpa:prescription-lx v="1" lexicon="prescription-lx" />
+  <npl:classifications>
+    <mpa:atc-code-lx v="A10AD01" />
+    <mpa:controlled-medicinal-product-lx v="N" lexicon="yesno-lx" />
+    <mpa:narcotic-class-lx v="0" lexicon="narcotic-classification-lx" />
+  </npl:classifications>
+  <mpa:authorisation-procedure-lx v="2" lexicon="authorisation-procedure-lx" />
+  <npl:flags>
+    <mpa:salesstopped v="N" lexicon="yesno-lx" />
+    <mpa:biological-medprod-pharmaceutical-legislation v="Y" lexicon="yesno-lx" />
+    <mpa:antimicrobial v="N" lexicon="yesno-lx" />
+    <mpa:reserved-hum v="N" lexicon="yesno-lx" />
+  </npl:flags>
+  <npl:pharmaceutical-products>
+    <npl:pharmaceutical-product id="ID1111KNCBS8FF9MSR">
+      <npl:composition>
+        <npl:ingredient id="ID1111KNDBS8G4VMSR">
+          <mpa:ingredient-role-lx v="MISC" lexicon="ingredient-role-lx" />
+          <mpa:substance-lx v="IDE4POHSUBWXIVERT1" />
+        </npl:ingredient>
+        <npl:ingredient id="ID1111KNDBS8G7HMSR">
+          <mpa:ingredient-role-lx v="ACTI" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="30" />
+          <mpa:quantity-unit-lx v="11" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="ID1LS0PS84CBFEPCSR" />
+        </npl:ingredient>
+        <npl:ingredient id="ID1111KNDBS8GA3MSR">
+          <mpa:ingredient-role-lx v="ACTI" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="70" />
+          <mpa:quantity-unit-lx v="11" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="ID1LS0SYJ4CD19PCSR" />
+        </npl:ingredient>
+        <npl:ingredient id="ID1111KNEBS8GFQMSR" presentation-substance-name="Y" substance-for-reference-strength="Y">
+          <mpa:ingredient-role-lx v="ARES" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="100" />
+          <mpa:quantity-unit-lx v="11" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="IDE4POJMUCGSFVERT1" />
+        </npl:ingredient>
+      </npl:composition>
+      <mpa:comp-ref-quantity-lx v="ML" lexicon="comp-ref-quantity-lx" />
+    </npl:pharmaceutical-product>
+  </npl:pharmaceutical-products>
+  <npl:packages>
+    <npl:package>
+      <mpa:nplpackid>20081211100462</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/97/030/177</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Cylinderampull, 10 x 3 ml</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="Y" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID163VLKETTN9Q0MSR" pharmaceutical-product-id="ID1111KNCBS8FF9MSR">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20081211100479</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/97/030/189</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Cylinderampull, 10 x 3 ml (OptiClik)</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2017-09-15</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID163W4KSTY64Q5MSR" pharmaceutical-product-id="ID1111KNCBS8FF9MSR">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20081211100042</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/97/030/172</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Cylinderampull, 3 x 3 ml</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="Y" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1111ST8BUKVN6MSR" pharmaceutical-product-id="ID1111KNCBS8FF9MSR">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20081211100523</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/97/030/184</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Cylinderampull, 3 x 3 ml (OptiClik)</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2017-09-15</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID163W4MKTY6MZ9MSR" pharmaceutical-product-id="ID1111KNCBS8FF9MSR">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20081211100424</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/97/030/173</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Cylinderampull, 4 x 3 ml</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="Y" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID163VLI1TTMAXUMSR" pharmaceutical-product-id="ID1111KNCBS8FF9MSR">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20081211100516</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/97/030/185</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Cylinderampull, 4 x 3 ml (OptiClik)</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2017-09-15</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID163W4MHTY6KVBMSR" pharmaceutical-product-id="ID1111KNCBS8FF9MSR">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20081211100431</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/97/030/174</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Cylinderampull, 5 x 3 ml</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="Y" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID163VLI1TTMBJ3MSR" pharmaceutical-product-id="ID1111KNCBS8FF9MSR">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20081211100509</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/97/030/186</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Cylinderampull, 5 x 3 ml (OptiClik)</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2017-09-15</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID163W4MCTY6HEBMSR" pharmaceutical-product-id="ID1111KNCBS8FF9MSR">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20081211100448</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/97/030/175</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Cylinderampull, 6 x 3 ml</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="Y" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID163VLI2TTMC4DMSR" pharmaceutical-product-id="ID1111KNCBS8FF9MSR">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20081211100493</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/97/030/187</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Cylinderampull, 6 x 3 ml (OptiClik)</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2017-09-15</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID163W4M6TY6CO6MSR" pharmaceutical-product-id="ID1111KNCBS8FF9MSR">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20081211100455</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/97/030/176</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Cylinderampull, 9 x 3 ml</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="Y" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID163VLI3TTMCRTMSR" pharmaceutical-product-id="ID1111KNCBS8FF9MSR">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20081211100486</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/97/030/188</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Cylinderampull, 9 x 3 ml (OptiClik)</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2017-09-15</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID163W4M3TY6A14MSR" pharmaceutical-product-id="ID1111KNCBS8FF9MSR">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+  </npl:packages>
+</npl:medprod>

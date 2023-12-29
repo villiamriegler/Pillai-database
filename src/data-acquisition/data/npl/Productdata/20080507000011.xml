@@ -1,0 +1,347 @@
+<?xml version="1.0"?>
+<npl:medprod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mpa="urn:schemas-npl:mpa:12" xsi:schemaLocation="urn:schemas-npl:instance:12 ../schemas/npl-schema_12.0.xsd" xmlns:npl="urn:schemas-npl:instance:12">
+  <mpa:nplid>20080507000011</mpa:nplid>
+  <npl:approvalnumber>
+    <mpa:semano>270340</mpa:semano>
+    <mpa:eumano>EU/2/10/106</mpa:eumano>
+  </npl:approvalnumber>
+  <npl:names>
+    <mpa:medprodname v="Bovilis BTV8" />
+    <mpa:medprodnamelegal v="Bovilis BTV8" />
+  </npl:names>
+  <mpa:pharmaceutical-form-lx v="SUSINJ" lexicon="pharmaceutical-form-lx" />
+  <npl:organizations>
+    <mpa:organization>
+      <mpa:organization-lx v="ID1PH1WVQ3LVV08SRV" />
+      <mpa:organization-role-lx v="AGENT" lexicon="organization-role-lx" />
+    </mpa:organization>
+    <mpa:organization>
+      <mpa:organization-lx v="IDX0000001029" />
+      <mpa:organization-role-lx v="MAH" lexicon="organization-role-lx" />
+    </mpa:organization>
+  </npl:organizations>
+  <mpa:approvaldate>2010-09-06</mpa:approvaldate>
+  <mpa:withdrawaldate>2022-07-22</mpa:withdrawaldate>
+  <mpa:productclass-lx v="MEP" lexicon="productclass-lx" />
+  <mpa:prescription-lx v="1" lexicon="prescription-lx" />
+  <npl:classifications>
+    <mpa:atc-code-lx v="QI02AA08" />
+    <mpa:controlled-medicinal-product-lx v="N" lexicon="yesno-lx" />
+    <mpa:narcotic-class-lx v="0" lexicon="narcotic-classification-lx" />
+  </npl:classifications>
+  <mpa:authorisation-procedure-lx v="2" lexicon="authorisation-procedure-lx" />
+  <npl:flags>
+    <mpa:salesstopped v="N" lexicon="yesno-lx" />
+    <mpa:biological-medprod-pharmaceutical-legislation v="Y" lexicon="yesno-lx" />
+    <mpa:antimicrobial v="N" lexicon="yesno-lx" />
+  </npl:flags>
+  <npl:pharmaceutical-products>
+    <npl:pharmaceutical-product id="IDPDBASC9M2NLJMSRV">
+      <npl:composition>
+        <npl:ingredient id="ID5ZNC414W5MNASRV0">
+          <mpa:ingredient-role-lx v="ADJV" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="16.7" />
+          <mpa:quantity-unit-lx v="03" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="IDE4POEOUADMBVERT1" />
+        </npl:ingredient>
+        <npl:ingredient id="IDPP7BME120F342MSR" presentation-substance-name="Y">
+          <mpa:ingredient-role-lx v="ACTI" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="500" />
+          <mpa:quantity-unit-lx v="C6" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="IDPNEXBZXOHJE3MSRV" />
+        </npl:ingredient>
+      </npl:composition>
+      <mpa:comp-ref-quantity-lx v="ML" lexicon="comp-ref-quantity-lx" />
+    </npl:pharmaceutical-product>
+  </npl:pharmaceutical-products>
+  <npl:withdrawal-periods>
+    <npl:withdrawal-period>
+      <mpa:withdrawal-tissue-lx v="1" lexicon="withdrawal-tissue-lx" />
+      <mpa:withdrawal-period v="0" />
+      <mpa:withdrawal-period-unit-lx v="DAYS" lexicon="withdrawal-period-unit-lx" />
+      <npl:species-of-animals>
+        <mpa:species-of-animal-lx v="001" lexicon="species-of-animal-lx" />
+        <mpa:species-of-animal-lx v="004" lexicon="species-of-animal-lx" />
+      </npl:species-of-animals>
+    </npl:withdrawal-period>
+    <npl:withdrawal-period>
+      <mpa:withdrawal-tissue-lx v="2" lexicon="withdrawal-tissue-lx" />
+      <mpa:withdrawal-period v="0" />
+      <mpa:withdrawal-period-unit-lx v="DAYS" lexicon="withdrawal-period-unit-lx" />
+      <npl:species-of-animals>
+        <mpa:species-of-animal-lx v="004" lexicon="species-of-animal-lx" />
+        <mpa:species-of-animal-lx v="001" lexicon="species-of-animal-lx" />
+      </npl:species-of-animals>
+    </npl:withdrawal-period>
+  </npl:withdrawal-periods>
+  <npl:packages>
+    <npl:package>
+      <mpa:nplpackid>20100809100070</mpa:nplpackid>
+      <mpa:pack-eumano>EU/2/10/106/001</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Injektionsflaska, 10 ml</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2022-07-22</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID5ZNEFF4X88DOSRV0" pharmaceutical-product-id="IDPDBASC9M2NLJMSRV">
+          <mpa:shelf-life v="12">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20100809100117</mpa:nplpackid>
+      <mpa:pack-eumano>EU/2/10/106/004</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Injektionsflaska, 100 ml</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2022-07-22</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID608L3269YEADSRV0" pharmaceutical-product-id="IDPDBASC9M2NLJMSRV">
+          <mpa:shelf-life v="12">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20100809100124</mpa:nplpackid>
+      <mpa:pack-eumano>EU/2/10/106/002</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Injektionsflaska, 20 ml</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2022-07-22</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID608L3169YDASSRV0" pharmaceutical-product-id="IDPDBASC9M2NLJMSRV">
+          <mpa:shelf-life v="12">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20100809100179</mpa:nplpackid>
+      <mpa:pack-eumano>EU/2/10/106/005</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Injektionsflaska, 200 ml</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2022-07-22</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID608L3L69YSKPSRV0" pharmaceutical-product-id="IDPDBASC9M2NLJMSRV">
+          <mpa:shelf-life v="12">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20100809100155</mpa:nplpackid>
+      <mpa:pack-eumano>EU/2/10/106/006</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Injektionsflaska, 250 ml</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2022-07-22</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID608LEL6A3V2LSRV0" pharmaceutical-product-id="IDPDBASC9M2NLJMSRV">
+          <mpa:shelf-life v="12">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20100809100209</mpa:nplpackid>
+      <mpa:pack-eumano>EU/2/10/106/003</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Injektionsflaska, 50 ml</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2022-07-22</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID608L3J69YRB4SRV0" pharmaceutical-product-id="IDPDBASC9M2NLJMSRV">
+          <mpa:shelf-life v="12">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20100809100148</mpa:nplpackid>
+      <mpa:pack-eumano>EU/2/10/106/007</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Injektionsflaska, 500 ml</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2022-07-22</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID608LH96A525SSRV0" pharmaceutical-product-id="IDPDBASC9M2NLJMSRV">
+          <mpa:shelf-life v="12">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20100809100193</mpa:nplpackid>
+      <mpa:pack-eumano>EU/2/10/106/008</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Injektionsflaskor, 10 x 10 ml</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2022-07-22</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID608KVL69V71ISRV0" pharmaceutical-product-id="IDPDBASC9M2NLJMSRV">
+          <mpa:shelf-life v="12">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20100809100162</mpa:nplpackid>
+      <mpa:pack-eumano>EU/2/10/106/011</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Injektionsflaskor, 10 x 100 ml</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2022-07-22</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID608LN46A7VIOSRV0" pharmaceutical-product-id="IDPDBASC9M2NLJMSRV">
+          <mpa:shelf-life v="12">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20100809100186</mpa:nplpackid>
+      <mpa:pack-eumano>EU/2/10/106/009</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Injektionsflaskor, 10 x 20 ml</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2022-07-22</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID608LM96A774MSRV0" pharmaceutical-product-id="IDPDBASC9M2NLJMSRV">
+          <mpa:shelf-life v="12">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20100809100094</mpa:nplpackid>
+      <mpa:pack-eumano>EU/2/10/106/012</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Injektionsflaskor, 10 x 200 ml</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2022-07-22</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID608LNP6A8BB9SRV0" pharmaceutical-product-id="IDPDBASC9M2NLJMSRV">
+          <mpa:shelf-life v="12">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20100809100100</mpa:nplpackid>
+      <mpa:pack-eumano>EU/2/10/106/013</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Injektionsflaskor, 10 x 250 ml</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2022-07-22</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID608LP96A8NE5SRV0" pharmaceutical-product-id="IDPDBASC9M2NLJMSRV">
+          <mpa:shelf-life v="12">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20100809100131</mpa:nplpackid>
+      <mpa:pack-eumano>EU/2/10/106/010</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Injektionsflaskor, 10 x 50 ml</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2022-07-22</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID608LMP6A7JE1SRV0" pharmaceutical-product-id="IDPDBASC9M2NLJMSRV">
+          <mpa:shelf-life v="12">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20100809100087</mpa:nplpackid>
+      <mpa:pack-eumano>EU/2/10/106/014</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Injektionsflaskor, 10 x 500 ml</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2022-07-22</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID608LPP6A8ZXYSRV0" pharmaceutical-product-id="IDPDBASC9M2NLJMSRV">
+          <mpa:shelf-life v="12">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+  </npl:packages>
+</npl:medprod>

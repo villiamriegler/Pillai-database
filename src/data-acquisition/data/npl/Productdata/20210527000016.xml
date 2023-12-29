@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<npl:medprod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mpa="urn:schemas-npl:mpa:12" xsi:schemaLocation="urn:schemas-npl:instance:12 ../schemas/npl-schema_12.0.xsd" xmlns:npl="urn:schemas-npl:instance:12">
+  <mpa:nplid>20210527000016</mpa:nplid>
+  <npl:names>
+    <mpa:medprodname v="Cydectin" />
+    <mpa:medprodnamelegal v="Cydectin" />
+  </npl:names>
+  <mpa:strength-text>
+    <mpa:v>1%</mpa:v>
+  </mpa:strength-text>
+  <mpa:pharmaceutical-form-lx v="SOLINJ" lexicon="pharmaceutical-form-lx" />
+  <npl:organizations>
+    <mpa:organization>
+      <mpa:organization-lx v="IDYVBGKTG2PPTSRV02" />
+      <mpa:organization-role-lx v="MAH" lexicon="organization-role-lx" />
+    </mpa:organization>
+  </npl:organizations>
+  <npl:special-permission-info>
+    <mpa:special-permission-nca-approval-country v="DEU" lexicon="country-lx" />
+    <mpa:special-permission-idnumber v="31408.00.00" />
+  </npl:special-permission-info>
+  <mpa:productclass-lx v="LIC" lexicon="productclass-lx" />
+  <mpa:prescription-lx v="1" lexicon="prescription-lx" />
+  <npl:classifications>
+    <mpa:atc-code-lx v="QP54AB02" />
+    <mpa:controlled-medicinal-product-lx v="N" lexicon="yesno-lx" />
+    <mpa:narcotic-class-lx v="0" lexicon="narcotic-classification-lx" />
+  </npl:classifications>
+  <npl:flags>
+    <mpa:salesstopped v="N" lexicon="yesno-lx" />
+    <mpa:biological-medprod-pharmaceutical-legislation v="N" lexicon="yesno-lx" />
+    <mpa:antimicrobial v="N" lexicon="yesno-lx" />
+    <mpa:reserved-hum v="N" lexicon="yesno-lx" />
+  </npl:flags>
+  <npl:pharmaceutical-products>
+    <npl:pharmaceutical-product id="ID18R2E6D1XSACHSRV">
+      <npl:composition>
+        <npl:ingredient id="ID1000000000160627" presentation-substance-name="Y">
+          <mpa:ingredient-role-lx v="ACTI" lexicon="ingredient-role-lx" />
+          <mpa:quantity-unit-alt-lx v="QS" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="IDE4POGTUB62AVERT1" />
+        </npl:ingredient>
+      </npl:composition>
+      <mpa:comp-ref-quantity-lx v="FGE" lexicon="comp-ref-quantity-lx" />
+    </npl:pharmaceutical-product>
+  </npl:pharmaceutical-products>
+  <npl:withdrawal-periods comment="Vid dubbel dos bör karenstiden förlängas till 196 dagar för kamel.">
+    <npl:withdrawal-period comment="Karensen  gäller för kamel.&#xD;&#xA;Gäller vid dosering: 0.2 mg/kg (1 ml/50 kg) via subkutan injektion. &#xD;&#xA;&#xD;&#xA;Får ej användas till djur som producerar mjölk för humankonsumtion.">
+      <mpa:withdrawal-tissue-lx v="1" lexicon="withdrawal-tissue-lx" />
+      <mpa:withdrawal-period v="98" />
+      <mpa:withdrawal-period-unit-lx v="DAYS" lexicon="withdrawal-period-unit-lx" />
+      <npl:species-of-animals>
+        <mpa:species-of-animal-lx v="090" lexicon="species-of-animal-lx" />
+      </npl:species-of-animals>
+    </npl:withdrawal-period>
+  </npl:withdrawal-periods>
+  <npl:packages>
+    <npl:package>
+      <mpa:nplpackid>20210527100037</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Licensförpackning</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+    </npl:package>
+  </npl:packages>
+</npl:medprod>

@@ -1,0 +1,144 @@
+<?xml version="1.0"?>
+<npl:medprod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mpa="urn:schemas-npl:mpa:12" xsi:schemaLocation="urn:schemas-npl:instance:12 ../schemas/npl-schema_12.0.xsd" xmlns:npl="urn:schemas-npl:instance:12">
+  <mpa:nplid>20040607007143</mpa:nplid>
+  <npl:approvalnumber>
+    <mpa:semano>205210</mpa:semano>
+    <mpa:nat-ma-no>20521</mpa:nat-ma-no>
+  </npl:approvalnumber>
+  <npl:names>
+    <mpa:medprodname v="Depo-Medrol" />
+    <mpa:medprodnamelegal v="Depo-Medrol" />
+  </npl:names>
+  <mpa:strength-text>
+    <mpa:v>40 mg/ml</mpa:v>
+  </mpa:strength-text>
+  <mpa:pharmaceutical-form-lx v="SUSINJ" lexicon="pharmaceutical-form-lx" />
+  <npl:organizations>
+    <mpa:organization>
+      <mpa:organization-lx v="ID1MDK5G4GORHGZMSR" />
+      <mpa:organization-role-lx v="MAH" lexicon="organization-role-lx" />
+    </mpa:organization>
+  </npl:organizations>
+  <npl:parallel-import>
+    <mpa:parimporiginalid>19631127000017</mpa:parimporiginalid>
+    <mpa:exported-from-lx v="PRT" lexicon="country-lx" />
+    <mpa:parallel-import-deviation v="Inga avvikelser." />
+  </npl:parallel-import>
+  <mpa:approvaldate>2004-06-09</mpa:approvaldate>
+  <mpa:withdrawaldate>2018-01-31</mpa:withdrawaldate>
+  <mpa:productclass-lx v="MEP" lexicon="productclass-lx" />
+  <mpa:prescription-lx v="1" lexicon="prescription-lx" />
+  <npl:classifications>
+    <mpa:atc-code-lx v="H02AB04" />
+    <mpa:controlled-medicinal-product-lx v="N" lexicon="yesno-lx" />
+    <mpa:narcotic-class-lx v="0" lexicon="narcotic-classification-lx" />
+  </npl:classifications>
+  <mpa:authorisation-procedure-lx v="1" lexicon="authorisation-procedure-lx" />
+  <npl:flags>
+    <mpa:salesstopped v="N" lexicon="yesno-lx" />
+    <mpa:biological-medprod-pharmaceutical-legislation v="N" lexicon="yesno-lx" />
+    <mpa:antimicrobial v="N" lexicon="yesno-lx" />
+  </npl:flags>
+  <npl:pharmaceutical-products>
+    <npl:pharmaceutical-product id="ID1X52UWW221EW0CSR">
+      <npl:composition>
+        <npl:ingredient id="ID1H2GYGD1WJZ1YZMS" related-to-id="ID1X52UWX221F75CSR">
+          <mpa:ingredient-role-lx v="ARES" lexicon="ingredient-role-lx" />
+          <mpa:quantity-unit-alt-lx v="QS" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="IDE4POBZU95E0VERT1" />
+        </npl:ingredient>
+        <npl:ingredient id="ID1X52UWX221F75CSR">
+          <mpa:ingredient-role-lx v="ACTI" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="40" />
+          <mpa:quantity-unit-lx v="03" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="IDE4POBTU90PZVERT1" />
+        </npl:ingredient>
+      </npl:composition>
+      <mpa:comp-ref-quantity-lx v="ML" lexicon="comp-ref-quantity-lx" />
+    </npl:pharmaceutical-product>
+  </npl:pharmaceutical-products>
+  <npl:packages>
+    <npl:package>
+      <mpa:nplpackid>20040608100126</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Injektionsflaska, 1 ml</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2009-06-23</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID4T2P06RHEF2YMSRV" pharmaceutical-product-id="ID1X52UWW221EW0CSR">
+          <mpa:shelf-life v="5">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="1" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20040608100119</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Injektionsflaska, 10 x 1 ml</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2018-01-31</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:prescribers>
+        <mpa:prescriber-lx v="2" lexicon="prescriber-lx" />
+      </npl:prescribers>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID4T2P3VRHGEIZMSRV" pharmaceutical-product-id="ID1X52UWW221EW0CSR">
+          <mpa:shelf-life v="5">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="1" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20150601100532</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Injektionsflaska, 5 x 1 ml</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2018-01-31</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:prescribers>
+        <mpa:prescriber-lx v="2" lexicon="prescriber-lx" />
+      </npl:prescribers>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1C49FYEGVV8E7SRV" pharmaceutical-product-id="ID1X52UWW221EW0CSR">
+          <mpa:shelf-life v="5">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="1" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20040608100102</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Injektionsflaska, 50 x 1 ml</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2018-01-31</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:prescribers>
+        <mpa:prescriber-lx v="2" lexicon="prescriber-lx" />
+      </npl:prescribers>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID4T2P68RHHD4NMSRV" pharmaceutical-product-id="ID1X52UWW221EW0CSR">
+          <mpa:shelf-life v="5">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="1" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+  </npl:packages>
+</npl:medprod>

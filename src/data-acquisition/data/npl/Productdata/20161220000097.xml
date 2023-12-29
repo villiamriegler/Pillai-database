@@ -1,0 +1,216 @@
+<?xml version="1.0"?>
+<npl:medprod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mpa="urn:schemas-npl:mpa:12" xsi:schemaLocation="urn:schemas-npl:instance:12 ../schemas/npl-schema_12.0.xsd" xmlns:npl="urn:schemas-npl:instance:12">
+  <mpa:nplid>20161220000097</mpa:nplid>
+  <npl:approvalnumber>
+    <mpa:semano>558840</mpa:semano>
+    <mpa:eumano>EU/2/17/208</mpa:eumano>
+  </npl:approvalnumber>
+  <npl:names>
+    <mpa:medprodname v="Ingelvac PCV FLEX" />
+    <mpa:medprodnamelegal v="Ingelvac PCV FLEX" />
+  </npl:names>
+  <mpa:pharmaceutical-form-lx v="SUSINJ" lexicon="pharmaceutical-form-lx" />
+  <npl:organizations>
+    <mpa:organization>
+      <mpa:organization-lx v="ID14NA2YF11GAID1SR" />
+      <mpa:organization-role-lx v="AGENT" lexicon="organization-role-lx" />
+    </mpa:organization>
+    <mpa:organization>
+      <mpa:organization-lx v="IDX0000001294" />
+      <mpa:organization-role-lx v="MAH" lexicon="organization-role-lx" />
+    </mpa:organization>
+  </npl:organizations>
+  <mpa:approvaldate>2017-05-24</mpa:approvaldate>
+  <mpa:withdrawaldate>2019-06-18</mpa:withdrawaldate>
+  <mpa:productclass-lx v="MEP" lexicon="productclass-lx" />
+  <mpa:prescription-lx v="1" lexicon="prescription-lx" />
+  <npl:classifications>
+    <mpa:atc-code-lx v="QI09AA07" />
+    <mpa:controlled-medicinal-product-lx v="N" lexicon="yesno-lx" />
+    <mpa:narcotic-class-lx v="0" lexicon="narcotic-classification-lx" />
+  </npl:classifications>
+  <mpa:authorisation-procedure-lx v="2" lexicon="authorisation-procedure-lx" />
+  <npl:flags>
+    <mpa:salesstopped v="N" lexicon="yesno-lx" />
+    <mpa:biological-medprod-pharmaceutical-legislation v="Y" lexicon="yesno-lx" />
+    <mpa:antimicrobial v="N" lexicon="yesno-lx" />
+  </npl:flags>
+  <npl:pharmaceutical-products>
+    <npl:pharmaceutical-product id="IDM6T2PQOMZVM9SRV0">
+      <npl:composition>
+        <npl:ingredient id="IDM6T2PQOMZVPQSRV0" presentation-substance-name="Y">
+          <mpa:ingredient-role-lx v="ACTI" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="1" vmax="3.75" />
+          <mpa:quantity-unit-lx v="42" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="ID1XZKU92C6EK90MSR" />
+        </npl:ingredient>
+      </npl:composition>
+      <mpa:comp-ref-quantity-lx v="DOS" lexicon="comp-ref-quantity-lx" />
+    </npl:pharmaceutical-product>
+  </npl:pharmaceutical-products>
+  <npl:withdrawal-periods>
+    <npl:withdrawal-period>
+      <mpa:withdrawal-tissue-lx v="1" lexicon="withdrawal-tissue-lx" />
+      <mpa:withdrawal-period v="0" />
+      <mpa:withdrawal-period-unit-lx v="DAYS" lexicon="withdrawal-period-unit-lx" />
+      <npl:species-of-animals>
+        <mpa:species-of-animal-lx v="005" lexicon="species-of-animal-lx" />
+      </npl:species-of-animals>
+    </npl:withdrawal-period>
+  </npl:withdrawal-periods>
+  <npl:packages>
+    <npl:package>
+      <mpa:nplpackid>20170508100022</mpa:nplpackid>
+      <mpa:pack-eumano>EU/2/17/208/001</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>HDPE flaska 10 ml (10 doser)</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2019-06-17</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDM6T3EGONB8W4SRV0" pharmaceutical-product-id="IDM6T2PQOMZVM9SRV0">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20170508100046</mpa:nplpackid>
+      <mpa:pack-eumano>EU/2/17/208/005</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>HDPE flaska 100 ml (100 doser)</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2019-06-17</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDM6T3PIONGBZLSRV0" pharmaceutical-product-id="IDM6T2PQOMZVM9SRV0">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20170508100060</mpa:nplpackid>
+      <mpa:pack-eumano>EU/2/17/208/002</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>HDPE flaska 12 x 10 ml (12 x 10 doser)</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2019-06-17</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDM6T3PLONGE4ASRV0" pharmaceutical-product-id="IDM6T2PQOMZVM9SRV0">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20170508100084</mpa:nplpackid>
+      <mpa:pack-eumano>EU/2/17/208/006</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>HDPE flaska 12 x 100 ml (12 x 100 doser)</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2019-06-17</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDM6T3PLONGETFSRV0" pharmaceutical-product-id="IDM6T2PQOMZVM9SRV0">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20170508100091</mpa:nplpackid>
+      <mpa:pack-eumano>EU/2/17/208/008</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>HDPE flaska 12 x 250 ml (12 x 250 doser)</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2019-06-17</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDM6T3PMONGF7QSRV0" pharmaceutical-product-id="IDM6T2PQOMZVM9SRV0">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20170508100077</mpa:nplpackid>
+      <mpa:pack-eumano>EU/2/17/208/004</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>HDPE flaska 12 x 50 ml (12 x 50 doser)</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2019-06-17</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDM6T3PLONGEHASRV0" pharmaceutical-product-id="IDM6T2PQOMZVM9SRV0">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20170508100053</mpa:nplpackid>
+      <mpa:pack-eumano>EU/2/17/208/007</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>HDPE flaska 250 ml (250 doser)</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2019-06-17</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDM6T3PJONGCQGSRV0" pharmaceutical-product-id="IDM6T2PQOMZVM9SRV0">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20170508100039</mpa:nplpackid>
+      <mpa:pack-eumano>EU/2/17/208/003</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>HDPE flaska 50 ml (50 doser)</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2019-06-17</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDM6T3PHONGBESSRV0" pharmaceutical-product-id="IDM6T2PQOMZVM9SRV0">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+  </npl:packages>
+</npl:medprod>

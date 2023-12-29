@@ -1,0 +1,191 @@
+<?xml version="1.0"?>
+<npl:medprod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mpa="urn:schemas-npl:mpa:12" xsi:schemaLocation="urn:schemas-npl:instance:12 ../schemas/npl-schema_12.0.xsd" xmlns:npl="urn:schemas-npl:instance:12">
+  <mpa:nplid>20130829000050</mpa:nplid>
+  <npl:approvalnumber>
+    <mpa:semano>499720</mpa:semano>
+    <mpa:nat-ma-no>49972</mpa:nat-ma-no>
+  </npl:approvalnumber>
+  <npl:names>
+    <mpa:medprodname v="GRANUFINK MAN" />
+    <mpa:medprodnamelegal v="GRANUFINK MAN" />
+  </npl:names>
+  <mpa:pharmaceutical-form-lx v="CAPHAR" lexicon="pharmaceutical-form-lx" />
+  <npl:organizations>
+    <mpa:organization>
+      <mpa:organization-lx v="ID194H7U17H6GQQSRV" />
+      <mpa:organization-role-lx v="RI" lexicon="organization-role-lx" />
+    </mpa:organization>
+    <mpa:organization>
+      <mpa:organization-lx v="ID2CIOYFZF09SOMSRV" />
+      <mpa:organization-role-lx v="AGENT" lexicon="organization-role-lx" />
+    </mpa:organization>
+  </npl:organizations>
+  <mpa:approvaldate>2016-02-09</mpa:approvaldate>
+  <mpa:withdrawaldate>2018-11-08</mpa:withdrawaldate>
+  <mpa:productclass-lx v="TVB" lexicon="productclass-lx" />
+  <mpa:prescription-lx v="0" lexicon="prescription-lx" />
+  <npl:classifications>
+    <mpa:atc-code-lx v="G04BX" />
+    <mpa:controlled-medicinal-product-lx v="N" lexicon="yesno-lx" />
+    <mpa:narcotic-class-lx v="0" lexicon="narcotic-classification-lx" />
+  </npl:classifications>
+  <mpa:authorisation-procedure-lx v="1" lexicon="authorisation-procedure-lx" />
+  <npl:flags>
+    <mpa:salesstopped v="N" lexicon="yesno-lx" />
+    <mpa:biological-medprod-pharmaceutical-legislation v="N" lexicon="yesno-lx" />
+    <mpa:antimicrobial v="N" lexicon="yesno-lx" />
+  </npl:flags>
+  <npl:pharmaceutical-products>
+    <npl:pharmaceutical-product id="IDBJTR0W135MED3SRV">
+      <npl:composition>
+        <npl:ingredient id="ID612KBSRV24284850">
+          <mpa:ingredient-role-lx v="MISC" lexicon="ingredient-role-lx" />
+          <mpa:substance-lx v="IDE4POI8UC9O7VERT1" />
+        </npl:ingredient>
+        <npl:ingredient id="IDBJTRE5135SCBNSRV">
+          <mpa:ingredient-role-lx v="ACTI" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="400" />
+          <mpa:quantity-unit-lx v="03" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="ID6352227885567177" />
+        </npl:ingredient>
+        <npl:ingredient id="IDBJTRF7135T5TBSRV" related-to-id="IDBJTRE5135SCBNSRV">
+          <mpa:ingredient-role-lx v="ARES" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="400" />
+          <mpa:quantity-unit-lx v="03" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="ID6351873573683021" />
+        </npl:ingredient>
+        <npl:ingredient id="IDBJTRGT135TJJRSRV">
+          <mpa:ingredient-role-lx v="ACTI" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="340" />
+          <mpa:quantity-unit-lx v="03" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="ID6352227847763431" />
+        </npl:ingredient>
+        <npl:ingredient id="IDBJTRKV135VTICSRV">
+          <mpa:ingredient-role-lx v="ACTI" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="75" />
+          <mpa:quantity-unit-lx v="03" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="ID6352227928458281" />
+        </npl:ingredient>
+        <npl:ingredient id="IDBJTROY135X92BSRV" related-to-id="IDBJTRKV135VTICSRV">
+          <mpa:ingredient-role-lx v="ARES" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="525" vmax="975" />
+          <mpa:quantity-unit-lx v="03" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="IDXVBL000000007127" />
+        </npl:ingredient>
+      </npl:composition>
+      <mpa:comp-ref-quantity-lx v="FGE" lexicon="comp-ref-quantity-lx" />
+    </npl:pharmaceutical-product>
+  </npl:pharmaceutical-products>
+  <npl:packages>
+    <npl:package>
+      <mpa:nplpackid>20131210100113</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Blister, 120 kapslar</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2018-11-08</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="Y" lexicon="yesno-lx" />
+        <npl:restrictions>
+          <mpa:sales-restriction-lx v="4" lexicon="sales-restriction-lx" />
+        </npl:restrictions>
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDBJTYEU137LV15SRV" pharmaceutical-product-id="IDBJTR0W135MED3SRV">
+          <mpa:shelf-life v="3">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="1" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20131210100151</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Blister, 150 kapslar</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2018-11-08</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="Y" lexicon="yesno-lx" />
+        <npl:restrictions>
+          <mpa:sales-restriction-lx v="4" lexicon="sales-restriction-lx" />
+        </npl:restrictions>
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDBJTYFY137MPLUSRV" pharmaceutical-product-id="IDBJTR0W135MED3SRV">
+          <mpa:shelf-life v="3">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="1" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20131210100120</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Blister, 200 kapslar</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2018-11-08</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="Y" lexicon="yesno-lx" />
+        <npl:restrictions>
+          <mpa:sales-restriction-lx v="4" lexicon="sales-restriction-lx" />
+        </npl:restrictions>
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDBJTYI3137NI5PSRV" pharmaceutical-product-id="IDBJTR0W135MED3SRV">
+          <mpa:shelf-life v="3">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="1" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20131210100144</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Blister, 30 kapslar</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2018-11-08</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="Y" lexicon="yesno-lx" />
+        <npl:restrictions>
+          <mpa:sales-restriction-lx v="4" lexicon="sales-restriction-lx" />
+        </npl:restrictions>
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDBJTY9T137JPDPSRV" pharmaceutical-product-id="IDBJTR0W135MED3SRV">
+          <mpa:shelf-life v="3">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="1" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20131210100137</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Blister, 60 kapslar</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2018-11-08</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="Y" lexicon="yesno-lx" />
+        <npl:restrictions>
+          <mpa:sales-restriction-lx v="4" lexicon="sales-restriction-lx" />
+        </npl:restrictions>
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDBJTYCJ137KXNYSRV" pharmaceutical-product-id="IDBJTR0W135MED3SRV">
+          <mpa:shelf-life v="3">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="1" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+  </npl:packages>
+</npl:medprod>

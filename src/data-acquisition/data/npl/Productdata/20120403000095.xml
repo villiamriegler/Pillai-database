@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<npl:medprod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mpa="urn:schemas-npl:mpa:12" xsi:schemaLocation="urn:schemas-npl:instance:12 ../schemas/npl-schema_12.0.xsd" xmlns:npl="urn:schemas-npl:instance:12">
+  <mpa:nplid>20120403000095</mpa:nplid>
+  <npl:approvalnumber>
+    <mpa:semano>479150</mpa:semano>
+    <mpa:eumano>EU/1/13/868</mpa:eumano>
+  </npl:approvalnumber>
+  <npl:names>
+    <mpa:medprodname v="EVARREST" />
+    <mpa:medprodnamelegal v="EVARREST" />
+  </npl:names>
+  <mpa:pharmaceutical-form-lx v="SEAMAT" lexicon="pharmaceutical-form-lx" />
+  <npl:organizations>
+    <mpa:organization>
+      <mpa:organization-lx v="IDY5KNA9RG3UNSSRV0" />
+      <mpa:organization-role-lx v="MAH" lexicon="organization-role-lx" />
+    </mpa:organization>
+  </npl:organizations>
+  <mpa:approvaldate>2013-09-25</mpa:approvaldate>
+  <mpa:withdrawaldate>2017-11-15</mpa:withdrawaldate>
+  <mpa:productclass-lx v="MEP" lexicon="productclass-lx" />
+  <mpa:prescription-lx v="1" lexicon="prescription-lx" />
+  <npl:classifications>
+    <mpa:atc-code-lx v="B02BC30" />
+    <mpa:controlled-medicinal-product-lx v="N" lexicon="yesno-lx" />
+    <mpa:narcotic-class-lx v="0" lexicon="narcotic-classification-lx" />
+  </npl:classifications>
+  <mpa:authorisation-procedure-lx v="2" lexicon="authorisation-procedure-lx" />
+  <npl:flags>
+    <mpa:salesstopped v="N" lexicon="yesno-lx" />
+    <mpa:biological-medprod-pharmaceutical-legislation v="Y" lexicon="yesno-lx" />
+    <mpa:antimicrobial v="N" lexicon="yesno-lx" />
+  </npl:flags>
+  <npl:pharmaceutical-products>
+    <npl:pharmaceutical-product id="ID19WDAVMOVTUAPSRV">
+      <npl:composition>
+        <npl:ingredient id="ID19WDAYUOVVGUCSRV">
+          <mpa:ingredient-role-lx v="ACTI" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="8.1" />
+          <mpa:quantity-unit-lx v="03" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="IDE4POECUA3ZFVERT1" />
+        </npl:ingredient>
+        <npl:ingredient id="ID19WDCHPOWKNJUSRV">
+          <mpa:ingredient-role-lx v="ACTI" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="40" />
+          <mpa:quantity-unit-lx v="11" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="ID8APTH11NIRM50MSR" />
+        </npl:ingredient>
+        <npl:ingredient id="ID4V9IHQ12TWN3HSRV">
+          <mpa:ingredient-role-lx v="MISC" lexicon="ingredient-role-lx" />
+          <mpa:substance-lx v="IDE4POBXU93N5VERT1" />
+        </npl:ingredient>
+      </npl:composition>
+      <mpa:comp-ref-quantity-lx v="CM2" lexicon="comp-ref-quantity-lx" />
+    </npl:pharmaceutical-product>
+  </npl:pharmaceutical-products>
+  <npl:packages>
+    <npl:package>
+      <mpa:nplpackid>20130807100017</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/13/868/001</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Dospåse med tätningsmatris på bricka, 1 st (10,2 cm x 10,2 cm)</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2017-11-15</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID4V9A7Z12RI2YQSRV" pharmaceutical-product-id="ID19WDAVMOVTUAPSRV">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="8" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20150219100214</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/13/868/002</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Dospåse med tätningsmatris på bricka, 2 st (5,1 cm x 10,2 cm)</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2017-11-15</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID17ELKV27V3Q01SRV" pharmaceutical-product-id="ID19WDAVMOVTUAPSRV">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="8" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+  </npl:packages>
+</npl:medprod>

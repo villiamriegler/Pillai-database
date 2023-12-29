@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<npl:medprod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mpa="urn:schemas-npl:mpa:12" xsi:schemaLocation="urn:schemas-npl:instance:12 ../schemas/npl-schema_12.0.xsd" xmlns:npl="urn:schemas-npl:instance:12">
+  <mpa:nplid>20120425000066</mpa:nplid>
+  <npl:approvalnumber>
+    <mpa:semano>480100</mpa:semano>
+    <mpa:nat-ma-no>48010</mpa:nat-ma-no>
+  </npl:approvalnumber>
+  <npl:names>
+    <mpa:medprodname v="Avaxim" />
+    <mpa:medprodnamelegal v="Avaxim" />
+  </npl:names>
+  <mpa:pharmaceutical-form-lx v="SUINPS" lexicon="pharmaceutical-form-lx" />
+  <npl:organizations>
+    <mpa:organization>
+      <mpa:organization-lx v="IDX0000001792" />
+      <mpa:organization-role-lx v="MAH" lexicon="organization-role-lx" />
+    </mpa:organization>
+  </npl:organizations>
+  <npl:parallel-import>
+    <mpa:parimporiginalid>19970228000046</mpa:parimporiginalid>
+    <mpa:exported-from-lx v="GBR" lexicon="country-lx" />
+    <mpa:parallel-import-deviation v="Inga avvikelser." />
+  </npl:parallel-import>
+  <mpa:approvaldate>2013-04-10</mpa:approvaldate>
+  <mpa:withdrawaldate>2015-02-28</mpa:withdrawaldate>
+  <mpa:productclass-lx v="MEP" lexicon="productclass-lx" />
+  <mpa:prescription-lx v="1" lexicon="prescription-lx" />
+  <npl:classifications>
+    <mpa:atc-code-lx v="J07BC02" />
+    <mpa:controlled-medicinal-product-lx v="N" lexicon="yesno-lx" />
+    <mpa:narcotic-class-lx v="0" lexicon="narcotic-classification-lx" />
+  </npl:classifications>
+  <mpa:authorisation-procedure-lx v="1" lexicon="authorisation-procedure-lx" />
+  <npl:flags>
+    <mpa:salesstopped v="N" lexicon="yesno-lx" />
+    <mpa:biological-medprod-pharmaceutical-legislation v="Y" lexicon="yesno-lx" />
+    <mpa:antimicrobial v="N" lexicon="yesno-lx" />
+  </npl:flags>
+  <npl:pharmaceutical-products>
+    <npl:pharmaceutical-product id="ID1A9FMX8G1TZQDSRV">
+      <npl:composition>
+        <npl:ingredient id="ID1A9FMX8G1TZZXSRV">
+          <mpa:ingredient-role-lx v="ACTI" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="160" />
+          <mpa:quantity-unit-lx v="20" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="IDE4POI5UC7CHVERT1" />
+        </npl:ingredient>
+        <npl:ingredient id="ID1A9FMX8G1U018SRV">
+          <mpa:ingredient-role-lx v="ADJV" lexicon="ingredient-role-lx" />
+          <mpa:quantity-unit-alt-lx v="QS" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="IDE4POEOUADMBVERT1" />
+        </npl:ingredient>
+        <npl:ingredient id="ID1A9FMX8G1U02JSRV">
+          <mpa:ingredient-role-lx v="ADJR" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="0.3" />
+          <mpa:quantity-unit-lx v="03" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="IDE4POE6U9ZM8VERT1" />
+        </npl:ingredient>
+        <npl:ingredient id="ID1U83KL88YTT82SRV">
+          <mpa:ingredient-role-lx v="MISC" lexicon="ingredient-role-lx" />
+          <mpa:substance-lx v="IDSCYWBB8TD0GUMSRV" />
+        </npl:ingredient>
+      </npl:composition>
+      <mpa:comp-ref-quantity-lx v="DOS" lexicon="comp-ref-quantity-lx" />
+    </npl:pharmaceutical-product>
+  </npl:pharmaceutical-products>
+  <npl:packages>
+    <npl:package>
+      <mpa:nplpackid>20130327100030</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Endosspruta 0,5 ml utan injektionsnål</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2015-02-28</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1VZ6ZURHFJ5KPSRV" pharmaceutical-product-id="ID1A9FMX8G1TZQDSRV">
+          <mpa:shelf-life v="3">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+  </npl:packages>
+</npl:medprod>

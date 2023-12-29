@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<npl:medprod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mpa="urn:schemas-npl:mpa:12" xsi:schemaLocation="urn:schemas-npl:instance:12 ../schemas/npl-schema_12.0.xsd" xmlns:npl="urn:schemas-npl:instance:12">
+  <mpa:nplid>20150805000102</mpa:nplid>
+  <npl:approvalnumber>
+    <mpa:semano>533460</mpa:semano>
+    <mpa:nat-ma-no>53346</mpa:nat-ma-no>
+  </npl:approvalnumber>
+  <npl:names>
+    <mpa:medprodname v="Crinone" />
+    <mpa:medprodnamelegal v="Crinone" />
+  </npl:names>
+  <mpa:strength-text>
+    <mpa:v>8 %</mpa:v>
+  </mpa:strength-text>
+  <mpa:pharmaceutical-form-lx v="VAGGEL" lexicon="pharmaceutical-form-lx" />
+  <npl:organizations>
+    <mpa:organization>
+      <mpa:organization-lx v="IDX0000000618" />
+      <mpa:organization-role-lx v="MAH" lexicon="organization-role-lx" />
+    </mpa:organization>
+  </npl:organizations>
+  <npl:parallel-import>
+    <mpa:parimporiginalid>19991217000014</mpa:parimporiginalid>
+    <mpa:exported-from-lx v="GRC" lexicon="country-lx" />
+    <mpa:parallel-import-deviation v="Inga avvikelser." />
+  </npl:parallel-import>
+  <mpa:approvaldate>2016-06-09</mpa:approvaldate>
+  <mpa:withdrawaldate>2018-01-31</mpa:withdrawaldate>
+  <mpa:productclass-lx v="MEP" lexicon="productclass-lx" />
+  <mpa:prescription-lx v="1" lexicon="prescription-lx" />
+  <npl:classifications>
+    <mpa:atc-code-lx v="G03DA04" />
+    <mpa:controlled-medicinal-product-lx v="N" lexicon="yesno-lx" />
+    <mpa:narcotic-class-lx v="0" lexicon="narcotic-classification-lx" />
+  </npl:classifications>
+  <mpa:authorisation-procedure-lx v="1" lexicon="authorisation-procedure-lx" />
+  <npl:flags>
+    <mpa:salesstopped v="N" lexicon="yesno-lx" />
+    <mpa:biological-medprod-pharmaceutical-legislation v="N" lexicon="yesno-lx" />
+    <mpa:antimicrobial v="N" lexicon="yesno-lx" />
+  </npl:flags>
+  <npl:pharmaceutical-products>
+    <npl:pharmaceutical-product id="ID1FIAVFV1UOGMSSRV">
+      <npl:composition>
+        <npl:ingredient id="ID1FIAVFV1UOGSVSRV">
+          <mpa:ingredient-role-lx v="MISC" lexicon="ingredient-role-lx" />
+          <mpa:substance-lx v="IDE4POBUU91BFVERT1" />
+        </npl:ingredient>
+        <npl:ingredient id="ID1FIAVFV1UOGWCSRV">
+          <mpa:ingredient-role-lx v="ACTI" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="90" />
+          <mpa:quantity-unit-lx v="03" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="IDE4POBUU91NDVERT1" />
+        </npl:ingredient>
+        <npl:ingredient id="ID1FIAVFV1UOH08SRV">
+          <mpa:ingredient-role-lx v="MISC" lexicon="ingredient-role-lx" />
+          <mpa:substance-lx v="IDE4POC2U982JVERT1" />
+        </npl:ingredient>
+      </npl:composition>
+      <mpa:comp-ref-quantity-lx v="DOS" lexicon="comp-ref-quantity-lx" />
+    </npl:pharmaceutical-product>
+  </npl:pharmaceutical-products>
+  <npl:packages>
+    <npl:package>
+      <mpa:nplpackid>20160602100059</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Kartong med engångsapplikatorer i folie, 15 x 1 st</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2018-01-31</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDFA2VA9XF77ZSRV02" pharmaceutical-product-id="ID1FIAVFV1UOGMSSRV">
+          <mpa:shelf-life v="3">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="3" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+  </npl:packages>
+</npl:medprod>

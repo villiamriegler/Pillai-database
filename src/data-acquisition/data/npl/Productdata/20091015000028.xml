@@ -1,0 +1,249 @@
+<?xml version="1.0"?>
+<npl:medprod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mpa="urn:schemas-npl:mpa:12" xsi:schemaLocation="urn:schemas-npl:instance:12 ../schemas/npl-schema_12.0.xsd" xmlns:npl="urn:schemas-npl:instance:12">
+  <mpa:nplid>20091015000028</mpa:nplid>
+  <npl:approvalnumber>
+    <mpa:semano>432440</mpa:semano>
+    <mpa:nat-ma-no>43244</mpa:nat-ma-no>
+  </npl:approvalnumber>
+  <npl:names>
+    <mpa:medprodname v="Edoflo" />
+    <mpa:medprodnamelegal v="Edoflo" />
+  </npl:names>
+  <mpa:strength-text>
+    <mpa:v>80 mikrogram/4,5 mikrogram/inhalation</mpa:v>
+  </mpa:strength-text>
+  <mpa:pharmaceutical-form-lx v="INHPOW" lexicon="pharmaceutical-form-lx" />
+  <npl:organizations>
+    <mpa:organization>
+      <mpa:organization-lx v="IDX0000001669" />
+      <mpa:organization-role-lx v="MAH" lexicon="organization-role-lx" />
+    </mpa:organization>
+  </npl:organizations>
+  <mpa:approvaldate>2010-03-19</mpa:approvaldate>
+  <mpa:withdrawaldate>2013-11-30</mpa:withdrawaldate>
+  <mpa:productclass-lx v="MEP" lexicon="productclass-lx" />
+  <mpa:prescription-lx v="1" lexicon="prescription-lx" />
+  <npl:classifications>
+    <mpa:atc-code-lx v="R03AK07" />
+    <mpa:controlled-medicinal-product-lx v="N" lexicon="yesno-lx" />
+    <mpa:narcotic-class-lx v="0" lexicon="narcotic-classification-lx" />
+  </npl:classifications>
+  <mpa:authorisation-procedure-lx v="3" lexicon="authorisation-procedure-lx" />
+  <npl:flags>
+    <mpa:salesstopped v="N" lexicon="yesno-lx" />
+    <mpa:biological-medprod-pharmaceutical-legislation v="N" lexicon="yesno-lx" />
+    <mpa:antimicrobial v="N" lexicon="yesno-lx" />
+  </npl:flags>
+  <npl:pharmaceutical-products>
+    <npl:pharmaceutical-product id="ID1L3A88YPMR4NBSRV">
+      <npl:composition>
+        <npl:ingredient id="ID1L3A88YPMR4PXSRV">
+          <mpa:ingredient-role-lx v="MISC" lexicon="ingredient-role-lx" />
+          <mpa:substance-lx v="IDE4POI8UC9O7VERT1" />
+        </npl:ingredient>
+        <npl:ingredient id="ID1L3A88YPMR4S3SRV">
+          <mpa:ingredient-role-lx v="ACTI" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="4.5" />
+          <mpa:quantity-unit-lx v="04" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="IDE4POIEUCDTVVERT1" />
+        </npl:ingredient>
+        <npl:ingredient id="ID1L3A88YPMR4U9SRV" related-to-id="ID1L3A88YPMR4S3SRV">
+          <mpa:ingredient-role-lx v="ARES" lexicon="ingredient-role-lx" />
+          <mpa:quantity-unit-alt-lx v="QS" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="IDE4POFEUAXBNVERT1" />
+        </npl:ingredient>
+        <npl:ingredient id="ID1L3A88ZPMR4WVSRV">
+          <mpa:ingredient-role-lx v="ACTI" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="80" />
+          <mpa:quantity-unit-lx v="04" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="IDE4POF1UANGZVERT1" />
+        </npl:ingredient>
+      </npl:composition>
+      <mpa:comp-ref-quantity-lx v="DOS" lexicon="comp-ref-quantity-lx" />
+    </npl:pharmaceutical-product>
+  </npl:pharmaceutical-products>
+  <npl:packages>
+    <npl:package>
+      <mpa:nplpackid>20100202100295</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Inhalator, 10 x 120 doser</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2013-11-30</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1UZCWYL1XTA859SR" pharmaceutical-product-id="ID1L3A88YPMR4NBSRV">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="2" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20100202100363</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Inhalator, 10 x 60 doser</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2013-11-30</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1UZCWYL1XTA80HSR" pharmaceutical-product-id="ID1L3A88YPMR4NBSRV">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="2" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20100202100301</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Inhalator, 120 doser</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2013-11-30</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1UZCWYL1XTA895SR" pharmaceutical-product-id="ID1L3A88YPMR4NBSRV">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="2" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20100202100349</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Inhalator, 18 x 120 doser</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2013-11-30</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1UZCWYL1XTA8DHSR" pharmaceutical-product-id="ID1L3A88YPMR4NBSRV">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="2" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20100202100387</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Inhalator, 18 x 60 doser</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2013-11-30</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1UZCWYK1XTA7J4SR" pharmaceutical-product-id="ID1L3A88YPMR4NBSRV">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="2" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20100202100332</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Inhalator, 2 x 120 doser</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2013-11-30</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1UZCWYK1XTA7NGSR" pharmaceutical-product-id="ID1L3A88YPMR4NBSRV">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="2" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20100202100356</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Inhalator, 2 x 60 doser</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2013-11-30</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1UZCWYK1XTA7DWSR" pharmaceutical-product-id="ID1L3A88YPMR4NBSRV">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="2" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20100202100370</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Inhalator, 3 x 120 doser</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2013-11-30</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1UZCWYK1XTA7VPSR" pharmaceutical-product-id="ID1L3A88YPMR4NBSRV">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="2" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20100202100318</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Inhalator, 3 x 60 doser</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2013-11-30</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1UZCWY51XT9VMASR" pharmaceutical-product-id="ID1L3A88YPMR4NBSRV">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="2" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20100202100325</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Inhalator, 60 doser</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2013-11-30</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1UZCWYK1XTA7RSSR" pharmaceutical-product-id="ID1L3A88YPMR4NBSRV">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="2" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+  </npl:packages>
+</npl:medprod>

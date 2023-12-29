@@ -1,0 +1,271 @@
+<?xml version="1.0"?>
+<npl:medprod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mpa="urn:schemas-npl:mpa:12" xsi:schemaLocation="urn:schemas-npl:instance:12 ../schemas/npl-schema_12.0.xsd" xmlns:npl="urn:schemas-npl:instance:12">
+  <mpa:nplid>20041222000014</mpa:nplid>
+  <npl:approvalnumber>
+    <mpa:semano>219470</mpa:semano>
+    <mpa:nat-ma-no>21947</mpa:nat-ma-no>
+  </npl:approvalnumber>
+  <npl:names>
+    <mpa:medprodname v="Enterisol® Ileitis vet." />
+    <mpa:medprodnamelegal v="Enterisol Ileitis vet." />
+  </npl:names>
+  <mpa:pharmaceutical-form-lx v="LYSOSU" lexicon="pharmaceutical-form-lx" />
+  <npl:route-of-administrations>
+    <mpa:route-of-administration-lx v="DW" lexicon="route-of-administration-lx" />
+  </npl:route-of-administrations>
+  <npl:organizations>
+    <mpa:organization>
+      <mpa:organization-lx v="IDH3QFNF1G8SPKPSRV" />
+      <mpa:organization-role-lx v="AGENT" lexicon="organization-role-lx" />
+    </mpa:organization>
+    <mpa:organization>
+      <mpa:organization-lx v="IDX0000001294" />
+      <mpa:organization-role-lx v="MAH" lexicon="organization-role-lx" />
+    </mpa:organization>
+  </npl:organizations>
+  <mpa:approvaldate>2005-07-01</mpa:approvaldate>
+  <mpa:productclass-lx v="MEP" lexicon="productclass-lx" />
+  <mpa:prescription-lx v="1" lexicon="prescription-lx" />
+  <npl:classifications>
+    <mpa:atc-code-lx v="QI09AE04" />
+    <mpa:controlled-medicinal-product-lx v="N" lexicon="yesno-lx" />
+    <mpa:narcotic-class-lx v="0" lexicon="narcotic-classification-lx" />
+  </npl:classifications>
+  <mpa:authorisation-procedure-lx v="3" lexicon="authorisation-procedure-lx" />
+  <npl:flags>
+    <mpa:salesstopped v="N" lexicon="yesno-lx" />
+    <mpa:biological-medprod-pharmaceutical-legislation v="Y" lexicon="yesno-lx" />
+    <mpa:antimicrobial v="N" lexicon="yesno-lx" />
+    <mpa:reserved-hum v="N" lexicon="yesno-lx" />
+  </npl:flags>
+  <npl:pharmaceutical-products>
+    <npl:pharmaceutical-product id="IDSFXKG6FT57DJMSRV">
+      <mpa:description>
+        <mpa:v>Pulver</mpa:v>
+      </mpa:description>
+      <npl:composition>
+        <npl:ingredient id="ID7Y5ZMSRVTGJRMSRV">
+          <mpa:ingredient-role-lx v="MISC" lexicon="ingredient-role-lx" />
+          <mpa:substance-lx v="IDE4POBUU91KBVERT1" />
+        </npl:ingredient>
+        <npl:ingredient id="IDSFXKIRFT6CGPMSRV" presentation-substance-name="Y">
+          <mpa:ingredient-role-lx v="ACTI" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="4.9" vmax="6.1" />
+          <mpa:quantity-unit-lx v="32" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="IDEYNYUX14AJTUVMSR" />
+        </npl:ingredient>
+      </npl:composition>
+      <mpa:comp-ref-quantity-lx v="DOS" lexicon="comp-ref-quantity-lx" />
+    </npl:pharmaceutical-product>
+    <npl:pharmaceutical-product id="IDSFXLCIFTJV17MSRV">
+      <mpa:description>
+        <mpa:v>Vätska</mpa:v>
+      </mpa:description>
+    </npl:pharmaceutical-product>
+  </npl:pharmaceutical-products>
+  <npl:withdrawal-periods>
+    <npl:withdrawal-period>
+      <mpa:withdrawal-tissue-lx v="1" lexicon="withdrawal-tissue-lx" />
+      <mpa:withdrawal-period v="0" />
+      <mpa:withdrawal-period-unit-lx v="DAYS" lexicon="withdrawal-period-unit-lx" />
+      <npl:species-of-animals>
+        <mpa:species-of-animal-lx v="005" lexicon="species-of-animal-lx" />
+      </npl:species-of-animals>
+    </npl:withdrawal-period>
+  </npl:withdrawal-periods>
+  <npl:packages>
+    <npl:package>
+      <mpa:nplpackid>20050627100168</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Pulver i glasflaska och vätska i plastflaska  10 doser (20 ml)</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="N" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDSFXLTMFTRX3HMSRV" pharmaceutical-product-id="IDSFXKG6FT57DJMSRV">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDSFXM1GFTVEGXMSRV" pharmaceutical-product-id="IDSFXLCIFTJV17MSRV">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20050627100144</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Pulver i glasflaska och vätska i plastflaska  100 doser (200 ml)</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="N" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDSFXMDBFU14FVMSRV" pharmaceutical-product-id="IDSFXKG6FT57DJMSRV">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDSFXMDBFU14K7MSRV" pharmaceutical-product-id="IDSFXLCIFTJV17MSRV">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20050627100137</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Pulver i glasflaska och vätska i plastflaska  12 x 100 doser (200 ml)</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="N" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDSFXMDCFU157NMSRV" pharmaceutical-product-id="IDSFXKG6FT57DJMSRV">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDSFXMDCFU15BJMSRV" pharmaceutical-product-id="IDSFXLCIFTJV17MSRV">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20050627100151</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Pulver i glasflaska och vätska i plastflaska  50 doser (100 ml)</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="N" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDSFXMDFFU17PHMSRV" pharmaceutical-product-id="IDSFXKG6FT57DJMSRV">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDSFXMDGFU17TEMSRV" pharmaceutical-product-id="IDSFXLCIFTJV17MSRV">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20050627100175</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Pulver och vätska i glasflaska 10 doser (20 ml)</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2021-02-04</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDSFXLRJFTR6D8MSRV" pharmaceutical-product-id="IDSFXKG6FT57DJMSRV">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDSFXLZNFTUVB9MSRV" pharmaceutical-product-id="IDSFXLCIFTJV17MSRV">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20050627100120</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Pulver och vätska i glasflaska 100 doser (200 ml)</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2021-02-04</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDSFXLTKFTRW57MSRV" pharmaceutical-product-id="IDSFXKG6FT57DJMSRV">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDSFXLZ0FTUD62MSRV" pharmaceutical-product-id="IDSFXLCIFTJV17MSRV">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20050627100038</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Pulver och vätska i glasflaska 12 x 100 doser (200 ml)</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2021-02-04</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDSFXLTXFTS5K6MSRV" pharmaceutical-product-id="IDSFXKG6FT57DJMSRV">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDSFXM20FTVTV6MSRV" pharmaceutical-product-id="IDSFXLCIFTJV17MSRV">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20050627100113</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Pulver och vätska i glasflaska 50 doser (100 ml)</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2021-02-04</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDSFXLTJFTRUW2MSRV" pharmaceutical-product-id="IDSFXKG6FT57DJMSRV">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDSFXM4KFTWY1TMSRV" pharmaceutical-product-id="IDSFXLCIFTJV17MSRV">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+  </npl:packages>
+</npl:medprod>

@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<npl:medprod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mpa="urn:schemas-npl:mpa:12" xsi:schemaLocation="urn:schemas-npl:instance:12 ../schemas/npl-schema_12.0.xsd" xmlns:npl="urn:schemas-npl:instance:12">
+  <mpa:nplid>20110929000020</mpa:nplid>
+  <npl:approvalnumber>
+    <mpa:semano>469150</mpa:semano>
+    <mpa:nat-ma-no>46915</mpa:nat-ma-no>
+  </npl:approvalnumber>
+  <npl:names>
+    <mpa:medprodname v="Seretide Evohaler forte" />
+    <mpa:medprodnamelegal v="Seretide Evohaler forte" />
+  </npl:names>
+  <mpa:strength-text>
+    <mpa:v>25 mikrogram/250 mikrogram/dos</mpa:v>
+  </mpa:strength-text>
+  <mpa:pharmaceutical-form-lx v="PRINSU" lexicon="pharmaceutical-form-lx" />
+  <npl:organizations>
+    <mpa:organization>
+      <mpa:organization-lx v="IDX0000000618" />
+      <mpa:organization-role-lx v="MAH" lexicon="organization-role-lx" />
+    </mpa:organization>
+  </npl:organizations>
+  <npl:parallel-import>
+    <mpa:parimporiginalid>20030404000119</mpa:parimporiginalid>
+    <mpa:exported-from-lx v="ROM" lexicon="country-lx" />
+    <mpa:parallel-import-deviation v="Avvikelsetext saknas" />
+  </npl:parallel-import>
+  <mpa:approvaldate>2012-05-16</mpa:approvaldate>
+  <mpa:withdrawaldate>2015-12-31</mpa:withdrawaldate>
+  <mpa:productclass-lx v="MEP" lexicon="productclass-lx" />
+  <mpa:prescription-lx v="1" lexicon="prescription-lx" />
+  <npl:classifications>
+    <mpa:atc-code-lx v="R03AK06" />
+    <mpa:controlled-medicinal-product-lx v="N" lexicon="yesno-lx" />
+    <mpa:narcotic-class-lx v="0" lexicon="narcotic-classification-lx" />
+  </npl:classifications>
+  <mpa:authorisation-procedure-lx v="1" lexicon="authorisation-procedure-lx" />
+  <npl:flags>
+    <mpa:salesstopped v="N" lexicon="yesno-lx" />
+    <mpa:biological-medprod-pharmaceutical-legislation v="N" lexicon="yesno-lx" />
+    <mpa:antimicrobial v="N" lexicon="yesno-lx" />
+  </npl:flags>
+  <npl:pharmaceutical-products>
+    <npl:pharmaceutical-product id="IDVA03YBHN4SRYSRV0">
+      <npl:composition>
+        <npl:ingredient id="IDVA03YBHN4SZRSRV0">
+          <mpa:ingredient-role-lx v="ACTI" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="36.3" />
+          <mpa:quantity-unit-lx v="04" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="IDE4POHLUBRZQVERT1" />
+        </npl:ingredient>
+        <npl:ingredient id="IDVA03YBHN4T4JSRV0" related-to-id="IDVA03YBHN4SZRSRV0">
+          <mpa:ingredient-role-lx v="ARES" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="25" />
+          <mpa:quantity-unit-lx v="04" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="IDE4POFKUB2BDVERT1" />
+        </npl:ingredient>
+        <npl:ingredient id="IDVA03YBHN4T6PSRV0">
+          <mpa:ingredient-role-lx v="ACTI" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="250" />
+          <mpa:quantity-unit-lx v="04" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="IDE4POFHUAZLQVERT1" />
+        </npl:ingredient>
+      </npl:composition>
+      <mpa:comp-ref-quantity-lx v="DOS" lexicon="comp-ref-quantity-lx" />
+    </npl:pharmaceutical-product>
+  </npl:pharmaceutical-products>
+  <npl:packages>
+    <npl:package>
+      <mpa:nplpackid>20120410100023</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Spraybehållare, 120 doser</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2015-12-31</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1A14O1A10B2RYVSR" pharmaceutical-product-id="IDVA03YBHN4SRYSRV0">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="3" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+  </npl:packages>
+</npl:medprod>

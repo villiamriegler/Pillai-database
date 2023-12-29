@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<npl:medprod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mpa="urn:schemas-npl:mpa:12" xsi:schemaLocation="urn:schemas-npl:instance:12 ../schemas/npl-schema_12.0.xsd" xmlns:npl="urn:schemas-npl:instance:12">
+  <mpa:nplid>20000321000035</mpa:nplid>
+  <npl:approvalnumber>
+    <mpa:semano>158030</mpa:semano>
+    <mpa:nat-ma-no>15803</mpa:nat-ma-no>
+  </npl:approvalnumber>
+  <npl:names>
+    <mpa:medprodname v="Verruxin" />
+    <mpa:medprodnamelegal v="Verruxin" />
+    <mpa:historicalmedprodname v="Vårtmedel DnE" vtodate="2017-01-12" />
+    <mpa:historicalmedprodname v="Verruxin, 50 mg/100 mg" vtodate="2017-01-12" />
+    <mpa:historicalmedprodname v="Vårtmedel Aco" vtodate="2009-01-08" />
+    <mpa:historicalmedprodnamelegal v="Vårtmedel DnE" vtodate="2017-01-12" />
+    <mpa:historicalmedprodnamelegal v="Verruxin, 50 mg/100 mg" vtodate="2017-01-12" />
+    <mpa:historicalmedprodnamelegal v="Vårtmedel Aco" vtodate="2009-01-08" />
+  </npl:names>
+  <mpa:strength-text>
+    <mpa:v>50 mg/100 mg</mpa:v>
+  </mpa:strength-text>
+  <mpa:pharmaceutical-form-lx v="CUTSOL" lexicon="pharmaceutical-form-lx" />
+  <npl:route-of-administrations>
+    <mpa:route-of-administration-lx v="CUTN" lexicon="route-of-administration-lx" />
+  </npl:route-of-administrations>
+  <npl:organizations>
+    <mpa:organization>
+      <mpa:organization-lx v="ID1I532U0PVTRERSRV" />
+      <mpa:organization-role-lx v="MAH" lexicon="organization-role-lx" />
+    </mpa:organization>
+    <mpa:organization>
+      <mpa:organization-lx v="ID1RU1V6YIF8H6LSRV" />
+      <mpa:organization-role-lx v="AGENT" lexicon="organization-role-lx" />
+    </mpa:organization>
+  </npl:organizations>
+  <mpa:approvaldate>2000-03-21</mpa:approvaldate>
+  <mpa:withdrawaldate>2019-11-06</mpa:withdrawaldate>
+  <mpa:productclass-lx v="VUM" lexicon="productclass-lx" />
+  <mpa:prescription-lx v="0" lexicon="prescription-lx" />
+  <npl:classifications>
+    <mpa:atc-code-lx v="D11AF" />
+    <mpa:controlled-medicinal-product-lx v="N" lexicon="yesno-lx" />
+    <mpa:narcotic-class-lx v="0" lexicon="narcotic-classification-lx" />
+  </npl:classifications>
+  <mpa:authorisation-procedure-lx v="1" lexicon="authorisation-procedure-lx" />
+  <npl:flags>
+    <mpa:salesstopped v="N" lexicon="yesno-lx" />
+    <mpa:biological-medprod-pharmaceutical-legislation v="N" lexicon="yesno-lx" />
+    <mpa:antimicrobial v="N" lexicon="yesno-lx" />
+  </npl:flags>
+  <npl:pharmaceutical-products>
+    <npl:pharmaceutical-product id="IDXVBL000000008329">
+      <npl:composition>
+        <npl:ingredient id="IDSXQZSUSR43869727">
+          <mpa:ingredient-role-lx v="MISC" lexicon="ingredient-role-lx" />
+          <mpa:substance-lx v="IDE4POBWU92Y4VERT1" />
+        </npl:ingredient>
+        <npl:ingredient id="IDXVBL000000008330" presentation-substance-name="Y" substance-for-reference-strength="Y">
+          <mpa:ingredient-role-lx v="ACTI" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="0.05" />
+          <mpa:quantity-unit-lx v="02" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="IDE4POBSU8ZUUVERT1" />
+        </npl:ingredient>
+        <npl:ingredient id="IDXVBL000000008332" presentation-substance-name="Y" substance-for-reference-strength="Y">
+          <mpa:ingredient-role-lx v="ACTI" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="0.1" />
+          <mpa:quantity-unit-lx v="02" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="IDE4POBXU93NFVERT1" />
+        </npl:ingredient>
+      </npl:composition>
+      <mpa:comp-ref-quantity-lx v="FGE" lexicon="comp-ref-quantity-lx" />
+    </npl:pharmaceutical-product>
+  </npl:pharmaceutical-products>
+  <npl:packages>
+    <npl:package>
+      <mpa:nplpackid>20090224102240</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Flaska, 10 ml</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2019-11-06</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="Y" lexicon="yesno-lx" />
+        <npl:restrictions>
+          <mpa:sales-restriction-lx v="4" lexicon="sales-restriction-lx" />
+        </npl:restrictions>
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDXVBL000000042250" pharmaceutical-product-id="IDXVBL000000008329">
+          <mpa:shelf-life v="24">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="3" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+  </npl:packages>
+</npl:medprod>

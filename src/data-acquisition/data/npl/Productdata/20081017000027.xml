@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<npl:medprod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mpa="urn:schemas-npl:mpa:12" xsi:schemaLocation="urn:schemas-npl:instance:12 ../schemas/npl-schema_12.0.xsd" xmlns:npl="urn:schemas-npl:instance:12">
+  <mpa:nplid>20081017000027</mpa:nplid>
+  <npl:approvalnumber>
+    <mpa:semano>415920</mpa:semano>
+    <mpa:nat-ma-no>41592</mpa:nat-ma-no>
+  </npl:approvalnumber>
+  <npl:names>
+    <mpa:medprodname v="Metformin Rosemont" />
+    <mpa:medprodnamelegal v="Metformin Rosemont" />
+  </npl:names>
+  <mpa:strength-text>
+    <mpa:v>100 mg/ml</mpa:v>
+  </mpa:strength-text>
+  <mpa:pharmaceutical-form-lx v="ORASOL" lexicon="pharmaceutical-form-lx" />
+  <npl:organizations>
+    <mpa:organization>
+      <mpa:organization-lx v="ID1EUZ5O7OVZ7U5SRV" />
+      <mpa:organization-role-lx v="AGENT" lexicon="organization-role-lx" />
+    </mpa:organization>
+    <mpa:organization>
+      <mpa:organization-lx v="IDOVA8YT1Q6TUVCMSR" />
+      <mpa:organization-role-lx v="MAH" lexicon="organization-role-lx" />
+    </mpa:organization>
+  </npl:organizations>
+  <mpa:approvaldate>2009-10-02</mpa:approvaldate>
+  <mpa:withdrawaldate>2014-10-01</mpa:withdrawaldate>
+  <mpa:productclass-lx v="MEP" lexicon="productclass-lx" />
+  <mpa:prescription-lx v="1" lexicon="prescription-lx" />
+  <npl:classifications>
+    <mpa:atc-code-lx v="A10BA02" />
+    <mpa:controlled-medicinal-product-lx v="N" lexicon="yesno-lx" />
+    <mpa:narcotic-class-lx v="0" lexicon="narcotic-classification-lx" />
+  </npl:classifications>
+  <mpa:authorisation-procedure-lx v="3" lexicon="authorisation-procedure-lx" />
+  <npl:flags>
+    <mpa:salesstopped v="N" lexicon="yesno-lx" />
+    <mpa:biological-medprod-pharmaceutical-legislation v="N" lexicon="yesno-lx" />
+    <mpa:antimicrobial v="N" lexicon="yesno-lx" />
+  </npl:flags>
+  <npl:pharmaceutical-products>
+    <npl:pharmaceutical-product id="IDXVBOHB18N5BR1MSR">
+      <npl:composition>
+        <npl:ingredient id="ID17OFVR2BBOT80SRV" related-to-id="IDXVBT4A18NVAO6MSR">
+          <mpa:ingredient-role-lx v="ARES" lexicon="ingredient-role-lx" />
+          <mpa:quantity-unit-alt-lx v="QS" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="IDE4POCHU9JK7VERT1" />
+        </npl:ingredient>
+        <npl:ingredient id="ID17OFVWOBBRFJUSRV">
+          <mpa:ingredient-role-lx v="MISC" lexicon="ingredient-role-lx" />
+          <mpa:substance-lx v="IDE4POJMUCH6VVERT1" />
+        </npl:ingredient>
+        <npl:ingredient id="ID17OFVYRBBS6M8SRV">
+          <mpa:ingredient-role-lx v="MISC" lexicon="ingredient-role-lx" />
+          <mpa:substance-lx v="IDE4POI9UCA7EVERT1" />
+        </npl:ingredient>
+        <npl:ingredient id="ID17OFW2ABBU1TISRV">
+          <mpa:ingredient-role-lx v="MISC" lexicon="ingredient-role-lx" />
+          <mpa:substance-lx v="IDE4POI5UC76XVERT1" />
+        </npl:ingredient>
+        <npl:ingredient id="IDXVBT4A18NVAO6MSR">
+          <mpa:ingredient-role-lx v="ACTI" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="100" />
+          <mpa:quantity-unit-lx v="03" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="IDE4POCKU9LPTVERT1" />
+        </npl:ingredient>
+      </npl:composition>
+      <mpa:comp-ref-quantity-lx v="ML" lexicon="comp-ref-quantity-lx" />
+    </npl:pharmaceutical-product>
+  </npl:pharmaceutical-products>
+  <npl:packages>
+    <npl:package>
+      <mpa:nplpackid>20100602100598</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Glasflaska, 100 ml</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2014-10-01</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID49OTQYHCS9R2SRV0" pharmaceutical-product-id="IDXVBOHB18N5BR1MSR">
+          <mpa:shelf-life v="1">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="3" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20090203100779</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Glasflaska, 150 ml</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2014-10-01</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID17OFWJ3BC1UXQSRV" pharmaceutical-product-id="IDXVBOHB18N5BR1MSR">
+          <mpa:shelf-life v="1">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="3" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20131212100098</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Glasflaska, 4 x 150 ml</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2014-10-01</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDGVKX2UAMRBUSSRV0" pharmaceutical-product-id="IDXVBOHB18N5BR1MSR">
+          <mpa:shelf-life v="1">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="3" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+  </npl:packages>
+</npl:medprod>

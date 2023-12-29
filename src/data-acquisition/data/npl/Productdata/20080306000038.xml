@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<npl:medprod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mpa="urn:schemas-npl:mpa:12" xsi:schemaLocation="urn:schemas-npl:instance:12 ../schemas/npl-schema_12.0.xsd" xmlns:npl="urn:schemas-npl:instance:12">
+  <mpa:nplid>20080306000038</mpa:nplid>
+  <npl:approvalnumber>
+    <mpa:semano>267210</mpa:semano>
+    <mpa:nat-ma-no>26721</mpa:nat-ma-no>
+  </npl:approvalnumber>
+  <npl:names>
+    <mpa:medprodname v="D-vitamin Vatten Avia" />
+    <mpa:medprodnamelegal v="D-vitamin Vatten Avia" />
+    <mpa:historicalmedprodname v="D-vitamin Vatten ACO" vtodate="2023-07-31" />
+    <mpa:historicalmedprodnamelegal v="D-vitamin Vatten ACO" vtodate="2023-07-31" />
+  </npl:names>
+  <mpa:strength-text>
+    <mpa:v>80 IE/droppe</mpa:v>
+  </mpa:strength-text>
+  <mpa:pharmaceutical-form-lx v="ORDRSO" lexicon="pharmaceutical-form-lx" />
+  <npl:route-of-administrations>
+    <mpa:route-of-administration-lx v="ORAL" lexicon="route-of-administration-lx" />
+  </npl:route-of-administrations>
+  <npl:organizations>
+    <mpa:organization>
+      <mpa:organization-lx v="IDO7FLOWAA9Q7JSRV0" />
+      <mpa:organization-role-lx v="MAH" lexicon="organization-role-lx" />
+    </mpa:organization>
+  </npl:organizations>
+  <mpa:approvaldate>2008-10-10</mpa:approvaldate>
+  <mpa:productclass-lx v="MEP" lexicon="productclass-lx" />
+  <mpa:prescription-lx v="0" lexicon="prescription-lx" />
+  <npl:classifications>
+    <mpa:atc-code-lx v="A11CC" />
+    <mpa:controlled-medicinal-product-lx v="N" lexicon="yesno-lx" />
+    <mpa:narcotic-class-lx v="0" lexicon="narcotic-classification-lx" />
+  </npl:classifications>
+  <mpa:authorisation-procedure-lx v="1" lexicon="authorisation-procedure-lx" />
+  <npl:flags>
+    <mpa:salesstopped v="N" lexicon="yesno-lx" />
+    <mpa:biological-medprod-pharmaceutical-legislation v="N" lexicon="yesno-lx" />
+    <mpa:antimicrobial v="N" lexicon="yesno-lx" />
+    <mpa:reserved-hum v="N" lexicon="yesno-lx" />
+  </npl:flags>
+  <npl:pharmaceutical-products>
+    <npl:pharmaceutical-product id="IDNV5863OAIDVVMSRV">
+      <npl:composition>
+        <npl:ingredient id="ID1JHJM873GS98ESRV">
+          <mpa:ingredient-role-lx v="MISC" lexicon="ingredient-role-lx" />
+          <mpa:substance-lx v="IDE4POERUAFQ8VERT1" />
+        </npl:ingredient>
+        <npl:ingredient id="IDIDYWMSRV50AISCSR">
+          <mpa:ingredient-role-lx v="MISC" lexicon="ingredient-role-lx" />
+          <mpa:substance-lx v="IDE4POBSU9040VERT1" />
+        </npl:ingredient>
+        <npl:ingredient id="IDNV5863OAIE2TMSRV" presentation-substance-name="Y" substance-for-reference-strength="Y">
+          <mpa:ingredient-role-lx v="ACTI" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="80" />
+          <mpa:quantity-unit-lx v="11" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="IDE4POBWU93ESVERT1" />
+        </npl:ingredient>
+        <npl:ingredient id="IDNV5864OAIEEZMSRV">
+          <mpa:ingredient-role-lx v="MISC" lexicon="ingredient-role-lx" />
+          <mpa:substance-lx v="IDE4POC2U982JVERT1" />
+        </npl:ingredient>
+        <npl:ingredient id="IDNV5865OAIF6BMSRV">
+          <mpa:ingredient-role-lx v="MISC" lexicon="ingredient-role-lx" />
+          <mpa:substance-lx v="IDTCIHJZDVX3J1CSRV" />
+        </npl:ingredient>
+      </npl:composition>
+      <mpa:comp-ref-quantity-lx v="DROP" lexicon="comp-ref-quantity-lx" />
+    </npl:pharmaceutical-product>
+  </npl:pharmaceutical-products>
+  <npl:packages>
+    <npl:package>
+      <mpa:nplpackid>20080415100094</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Flaska, 25 ml (850 droppar)</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="Y" lexicon="yesno-lx" />
+        <npl:restrictions>
+          <mpa:sales-restriction-lx v="3" lexicon="sales-restriction-lx" />
+        </npl:restrictions>
+      </npl:prescription>
+      <mpa:safety-features v="N" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDNV58L9OAPT9QMSRV" pharmaceutical-product-id="IDNV5863OAIDVVMSRV">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="4" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+  </npl:packages>
+</npl:medprod>

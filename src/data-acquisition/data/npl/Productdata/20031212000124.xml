@@ -1,0 +1,165 @@
+<?xml version="1.0"?>
+<npl:medprod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mpa="urn:schemas-npl:mpa:12" xsi:schemaLocation="urn:schemas-npl:instance:12 ../schemas/npl-schema_12.0.xsd" xmlns:npl="urn:schemas-npl:instance:12">
+  <mpa:nplid>20031212000124</mpa:nplid>
+  <npl:approvalnumber>
+    <mpa:semano>150760</mpa:semano>
+    <mpa:nat-ma-no>15076</mpa:nat-ma-no>
+  </npl:approvalnumber>
+  <npl:names>
+    <mpa:medprodname v="Cefotaxim Helm" />
+    <mpa:medprodnamelegal v="Cefotaxim Helm" />
+    <mpa:historicalmedprodname v="Cefotaxim Meda" vtodate="2005-04-19" />
+    <mpa:historicalmedprodnamelegal v="Cefotaxim Meda" vtodate="2005-04-19" />
+  </npl:names>
+  <mpa:pharmaceutical-form-lx v="POSOIJ" lexicon="pharmaceutical-form-lx" />
+  <npl:organizations>
+    <mpa:organization>
+      <mpa:organization-lx v="ID1LDQAHHOATYX0CSR" />
+      <mpa:organization-role-lx v="MAH" lexicon="organization-role-lx" />
+    </mpa:organization>
+  </npl:organizations>
+  <mpa:approvaldate>2003-12-12</mpa:approvaldate>
+  <mpa:withdrawaldate>2006-09-30</mpa:withdrawaldate>
+  <mpa:productclass-lx v="MEP" lexicon="productclass-lx" />
+  <mpa:prescription-lx v="1" lexicon="prescription-lx" />
+  <npl:classifications>
+    <mpa:atc-code-lx v="J01DD01" />
+    <mpa:controlled-medicinal-product-lx v="N" lexicon="yesno-lx" />
+    <mpa:narcotic-class-lx v="0" lexicon="narcotic-classification-lx" />
+  </npl:classifications>
+  <mpa:authorisation-procedure-lx v="1" lexicon="authorisation-procedure-lx" />
+  <npl:flags>
+    <mpa:salesstopped v="N" lexicon="yesno-lx" />
+    <mpa:biological-medprod-pharmaceutical-legislation v="N" lexicon="yesno-lx" />
+    <mpa:antimicrobial v="Y" lexicon="yesno-lx" />
+  </npl:flags>
+  <npl:pharmaceutical-products>
+    <npl:pharmaceutical-product id="IDE4POT4UH8DMVERT1">
+      <npl:composition>
+        <npl:ingredient id="ID1X98OQK201KVXCSR">
+          <mpa:ingredient-role-lx v="ACTI" lexicon="ingredient-role-lx" />
+          <mpa:quantity-unit-alt-lx v="QS" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="IDE4POFAUAU7JVERT1" />
+        </npl:ingredient>
+        <npl:ingredient id="IDE4QPTQ14GR66VERT" related-to-id="ID1X98OQK201KVXCSR">
+          <mpa:ingredient-role-lx v="ARES" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="1" />
+          <mpa:quantity-unit-lx v="02" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="IDE4POF9UATSTVERT1" />
+        </npl:ingredient>
+      </npl:composition>
+      <mpa:comp-ref-quantity-lx v="GACT" lexicon="comp-ref-quantity-lx" />
+    </npl:pharmaceutical-product>
+  </npl:pharmaceutical-products>
+  <npl:packages>
+    <npl:package>
+      <mpa:nplpackid>20031211100467</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Injektionsflaska, 1 x 0,5 g</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2006-09-30</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID103GU2W155SUGCSR" pharmaceutical-product-id="IDE4POT4UH8DMVERT1">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="3" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20031211100498</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Injektionsflaska, 1 x 1 g</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2006-09-30</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1QHOD2A1GP88F3CS" pharmaceutical-product-id="IDE4POT4UH8DMVERT1">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="3" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20031211100511</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Injektionsflaska, 10 x 0,5 g</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2006-09-30</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1QHOCZZ1GP7BTQCS" pharmaceutical-product-id="IDE4POT4UH8DMVERT1">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="3" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20031211100474</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Injektionsflaska, 10 x 1 g</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2006-09-30</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1QHOD0C1GP7LMQCS" pharmaceutical-product-id="IDE4POT4UH8DMVERT1">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="3" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20031211100504</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Injektionsflaska, 5 x 0,5 g</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2006-09-30</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1QHOCXJ1GP6AACCS" pharmaceutical-product-id="IDE4POT4UH8DMVERT1">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="3" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20031211100481</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Injektionsflaska, 5 x 1 g</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2006-09-30</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1QHOD0U1GP7Z3VCS" pharmaceutical-product-id="IDE4POT4UH8DMVERT1">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="3" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+  </npl:packages>
+</npl:medprod>

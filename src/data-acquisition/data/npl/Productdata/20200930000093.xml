@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<npl:medprod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mpa="urn:schemas-npl:mpa:12" xsi:schemaLocation="urn:schemas-npl:instance:12 ../schemas/npl-schema_12.0.xsd" xmlns:npl="urn:schemas-npl:instance:12">
+  <mpa:nplid>20200930000093</mpa:nplid>
+  <npl:approvalnumber>
+    <mpa:semano>612300</mpa:semano>
+    <mpa:eumano>EU/1/21/1529</mpa:eumano>
+  </npl:approvalnumber>
+  <npl:names>
+    <mpa:medprodname v="Vaxzevria" />
+    <mpa:medprodnamelegal v="Vaxzevria" />
+    <mpa:historicalmedprodname v="COVID-19 Vaccine AstraZeneca" vtodate="2021-03-24" />
+    <mpa:historicalmedprodnamelegal v="COVID-19 Vaccine AstraZeneca" vtodate="2021-03-24" />
+  </npl:names>
+  <mpa:pharmaceutical-form-lx v="SUSINJ" lexicon="pharmaceutical-form-lx" />
+  <npl:route-of-administrations>
+    <mpa:route-of-administration-lx v="INMU" lexicon="route-of-administration-lx" />
+  </npl:route-of-administrations>
+  <npl:organizations>
+    <mpa:organization>
+      <mpa:organization-lx v="IDX0000001669" />
+      <mpa:organization-role-lx v="MAH" lexicon="organization-role-lx" />
+    </mpa:organization>
+  </npl:organizations>
+  <mpa:approvaldate>2021-01-29</mpa:approvaldate>
+  <mpa:productclass-lx v="MEP" lexicon="productclass-lx" />
+  <mpa:prescription-lx v="1" lexicon="prescription-lx" />
+  <npl:classifications>
+    <mpa:atc-code-lx v="J07BN02" />
+    <mpa:controlled-medicinal-product-lx v="N" lexicon="yesno-lx" />
+    <mpa:narcotic-class-lx v="0" lexicon="narcotic-classification-lx" />
+  </npl:classifications>
+  <mpa:authorisation-procedure-lx v="2" lexicon="authorisation-procedure-lx" />
+  <npl:flags>
+    <mpa:salesstopped v="N" lexicon="yesno-lx" />
+    <mpa:additional-monitoring v="Y" lexicon="yesno-lx" />
+    <mpa:biological-medprod-pharmaceutical-legislation v="Y" lexicon="yesno-lx" />
+    <mpa:antimicrobial v="N" lexicon="yesno-lx" />
+    <mpa:reserved-hum v="N" lexicon="yesno-lx" />
+  </npl:flags>
+  <npl:pharmaceutical-products>
+    <npl:pharmaceutical-product id="IDWUCH71VTSQ69SRV0">
+      <npl:composition>
+        <npl:ingredient id="ID11YD400R4TLCXSRV">
+          <mpa:ingredient-role-lx v="MISC" lexicon="ingredient-role-lx" />
+          <mpa:substance-lx v="IDE4POBUU91KBVERT1" />
+        </npl:ingredient>
+        <npl:ingredient id="ID11YD44YR4VOXVSRV">
+          <mpa:ingredient-role-lx v="MISC" lexicon="ingredient-role-lx" />
+          <mpa:substance-lx v="IDE4POBWU92Y4VERT1" />
+        </npl:ingredient>
+        <npl:ingredient id="ID125KF312HJNI6SRV" presentation-substance-name="Y">
+          <mpa:ingredient-role-lx v="ACTI" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="8.4" />
+          <mpa:quantity-unit-lx v="33" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="NLT" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="IDN637437865136899" />
+        </npl:ingredient>
+      </npl:composition>
+      <mpa:comp-ref-quantity-lx v="DOS" lexicon="comp-ref-quantity-lx" />
+    </npl:pharmaceutical-product>
+  </npl:pharmaceutical-products>
+  <npl:packages>
+    <npl:package>
+      <mpa:nplpackid>20210116100011</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/21/1529/002</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Injektionsflaska, 10 x 10 doser</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="Y" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID11YD8GGR5G86PSRV" pharmaceutical-product-id="IDWUCH71VTSQ69SRV0">
+          <mpa:shelf-life v="9">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20210116100028</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/21/1529/001</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Injektionsflaska, 10 x 8 doser</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="Y" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID11YD8SFR5M128SRV" pharmaceutical-product-id="IDWUCH71VTSQ69SRV0">
+          <mpa:shelf-life v="9">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+  </npl:packages>
+</npl:medprod>

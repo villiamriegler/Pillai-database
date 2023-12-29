@@ -1,0 +1,379 @@
+<?xml version="1.0"?>
+<npl:medprod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mpa="urn:schemas-npl:mpa:12" xsi:schemaLocation="urn:schemas-npl:instance:12 ../schemas/npl-schema_12.0.xsd" xmlns:npl="urn:schemas-npl:instance:12">
+  <mpa:nplid>20050721000128</mpa:nplid>
+  <npl:approvalnumber>
+    <mpa:semano>227670</mpa:semano>
+    <mpa:eumano>EU/1/06/341</mpa:eumano>
+  </npl:approvalnumber>
+  <npl:names>
+    <mpa:medprodname v="ZOSTAVAX" />
+    <mpa:medprodnamelegal v="ZOSTAVAX" />
+  </npl:names>
+  <mpa:pharmaceutical-form-lx v="PSSUIP" lexicon="pharmaceutical-form-lx" />
+  <npl:route-of-administrations>
+    <mpa:route-of-administration-lx v="INMU" lexicon="route-of-administration-lx" />
+    <mpa:route-of-administration-lx v="SUCU" lexicon="route-of-administration-lx" />
+  </npl:route-of-administrations>
+  <npl:organizations>
+    <mpa:organization>
+      <mpa:organization-lx v="ID192P2HM37YLGBSRV" />
+      <mpa:organization-role-lx v="AGENT" lexicon="organization-role-lx" />
+    </mpa:organization>
+    <mpa:organization>
+      <mpa:organization-lx v="IDX0000001256" />
+      <mpa:organization-role-lx v="MAH" lexicon="organization-role-lx" />
+    </mpa:organization>
+  </npl:organizations>
+  <mpa:approvaldate>2006-05-19</mpa:approvaldate>
+  <mpa:productclass-lx v="MEP" lexicon="productclass-lx" />
+  <mpa:prescription-lx v="1" lexicon="prescription-lx" />
+  <npl:classifications>
+    <mpa:atc-code-lx v="J07BK02" />
+    <mpa:controlled-medicinal-product-lx v="N" lexicon="yesno-lx" />
+    <mpa:narcotic-class-lx v="0" lexicon="narcotic-classification-lx" />
+  </npl:classifications>
+  <mpa:authorisation-procedure-lx v="2" lexicon="authorisation-procedure-lx" />
+  <npl:flags>
+    <mpa:salesstopped v="N" lexicon="yesno-lx" />
+    <mpa:biological-medprod-pharmaceutical-legislation v="Y" lexicon="yesno-lx" />
+    <mpa:antimicrobial v="N" lexicon="yesno-lx" />
+    <mpa:reserved-hum v="N" lexicon="yesno-lx" />
+  </npl:flags>
+  <npl:pharmaceutical-products>
+    <npl:pharmaceutical-product id="ID1DSL7JY1VEN23EMS">
+      <mpa:description>
+        <mpa:v>Pulver</mpa:v>
+      </mpa:description>
+      <npl:composition>
+        <npl:ingredient id="ID1DSL7JZ1VEN2DTMS" presentation-substance-name="Y">
+          <mpa:ingredient-role-lx v="ACTI" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="19400" />
+          <mpa:quantity-unit-lx v="79" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="NLT" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="IDE4POI9UC9T8VERT1" />
+        </npl:ingredient>
+        <npl:ingredient id="ID1DSL7JZ1VEN2I6MS">
+          <mpa:ingredient-role-lx v="MISC" lexicon="ingredient-role-lx" />
+          <mpa:substance-lx v="IDE4POBUU91KBVERT1" />
+        </npl:ingredient>
+      </npl:composition>
+      <mpa:comp-ref-quantity-lx v="FGE" lexicon="comp-ref-quantity-lx" />
+    </npl:pharmaceutical-product>
+    <npl:pharmaceutical-product id="ID1DSL7JY1VEN1WGMS">
+      <mpa:description>
+        <mpa:v>Vätska</mpa:v>
+      </mpa:description>
+    </npl:pharmaceutical-product>
+  </npl:pharmaceutical-products>
+  <npl:interchangeability>
+    <mpa:interchange-strength-group id="6619" start-date="2014-08-29" lexicon="interchange-strength-group" />
+  </npl:interchangeability>
+  <npl:packages>
+    <npl:package>
+      <mpa:nplpackid>20060508100231</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/06/341/005</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Pulver i injektionsflaska, spädningsvätska i förfylld spruta 1 x (I+II)</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="Y" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1DSLE391VG8B8DMS" pharmaceutical-product-id="ID1DSL7JY1VEN1WGMS">
+          <mpa:shelf-life v="18">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1DSLE101VG7EX6MS" pharmaceutical-product-id="ID1DSL7JY1VEN23EMS">
+          <mpa:shelf-life v="18">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20060508100248</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/06/341/006</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Pulver i injektionsflaska, spädningsvätska i förfylld spruta 10 x (I+II)</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="Y" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1DSLE661VG9P27MS" pharmaceutical-product-id="ID1DSL7JY1VEN1WGMS">
+          <mpa:shelf-life v="18">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1DSLE661VG9OV9MS" pharmaceutical-product-id="ID1DSL7JY1VEN23EMS">
+          <mpa:shelf-life v="18">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20060508100255</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/06/341/007</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Pulver i injektionsflaska, spädningsvätska i förfylld spruta 20 x (I+II)</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="Y" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1DSLE671VG9PPNMS" pharmaceutical-product-id="ID1DSL7JY1VEN1WGMS">
+          <mpa:shelf-life v="18">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1DSLE671VG9PJZMS" pharmaceutical-product-id="ID1DSL7JY1VEN23EMS">
+          <mpa:shelf-life v="18">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20060508100262</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/06/341/008</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Pulver i injektionsflaska, spädningsvätska i förfylld spruta med bilagd nål 1 x (I+II)</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="Y" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1DSLE961VGB57DMS" pharmaceutical-product-id="ID1DSL7JY1VEN1WGMS">
+          <mpa:shelf-life v="18">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1DSLE961VGB5EBMS" pharmaceutical-product-id="ID1DSL7JY1VEN23EMS">
+          <mpa:shelf-life v="18">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20060508100279</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/06/341/009</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Pulver i injektionsflaska, spädningsvätska i förfylld spruta med bilagd nål 10 x (I+II)</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="Y" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1DSLK4P1VHLRHRMS" pharmaceutical-product-id="ID1DSL7JY1VEN1WGMS">
+          <mpa:shelf-life v="18">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1DSLK4P1VHLRNFMS" pharmaceutical-product-id="ID1DSL7JY1VEN23EMS">
+          <mpa:shelf-life v="18">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20060508100286</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/06/341/010</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Pulver i injektionsflaska, spädningsvätska i förfylld spruta med bilagd nål 20 x (I+II)</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="Y" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1DSLKC01VHOU2OMS" pharmaceutical-product-id="ID1DSL7JY1VEN1WGMS">
+          <mpa:shelf-life v="18">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1DSLKC01VHOU9MMS" pharmaceutical-product-id="ID1DSL7JY1VEN23EMS">
+          <mpa:shelf-life v="18">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20060508100293</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/06/341/011</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Pulver i injektionsflaska, spädningsvätska i förfylld spruta med bilagda nålar 1 x (I+II)</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="Y" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1DSLKFF1VHQM0BMS" pharmaceutical-product-id="ID1DSL7JY1VEN1WGMS">
+          <mpa:shelf-life v="18">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1DSLKFF1VHQM79MS" pharmaceutical-product-id="ID1DSL7JY1VEN23EMS">
+          <mpa:shelf-life v="18">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20140429100135</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/06/341/011</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Pulver i injektionsflaska, spädningsvätska i förfylld spruta med bilagda nålar 1 x (I+II) (PD: Pharmachim AB)</mpa:v>
+      </mpa:pack-text>
+      <npl:para-dist-organization>
+        <mpa:organization-lx v="IDX0000001792" />
+      </npl:para-dist-organization>
+      <mpa:pack-withdrawaldate>2022-01-31</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="Y" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDN7K9LA11BO1B7SRV" pharmaceutical-product-id="ID1DSL7JY1VEN1WGMS">
+          <mpa:shelf-life v="18">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDN7K9LA11BO1CISRV" pharmaceutical-product-id="ID1DSL7JY1VEN23EMS">
+          <mpa:shelf-life v="18">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20060508100309</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/06/341/012</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Pulver i injektionsflaska, spädningsvätska i förfylld spruta med bilagda nålar 10 x (I+II)</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="Y" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1DSLKHH1VHRCJ6MS" pharmaceutical-product-id="ID1DSL7JY1VEN1WGMS">
+          <mpa:shelf-life v="18">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1DSLKHH1VHRCQ4MS" pharmaceutical-product-id="ID1DSL7JY1VEN23EMS">
+          <mpa:shelf-life v="18">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20060508100316</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/06/341/013</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Pulver i injektionsflaska, spädningsvätska i förfylld spruta med bilagda nålar 20 x (I+II)</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="Y" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1DSLKHI1VHRD6MMS" pharmaceutical-product-id="ID1DSL7JY1VEN1WGMS">
+          <mpa:shelf-life v="18">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1DSLKHI1VHRDC9MS" pharmaceutical-product-id="ID1DSL7JY1VEN23EMS">
+          <mpa:shelf-life v="18">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20060508100330</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/06/341/003</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Pulver i injektionsflaska, spädningsvätska i förfylld spruta med fast nål 1 x (I+II)</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2021-02-15</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="Y" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1DSLKPT1VHV77DMS" pharmaceutical-product-id="ID1DSL7JY1VEN1WGMS">
+          <mpa:shelf-life v="18">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1DSLKPT1VHV6ZZMS" pharmaceutical-product-id="ID1DSL7JY1VEN23EMS">
+          <mpa:shelf-life v="18">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20060508100323</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/06/341/004</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Pulver i injektionsflaska, spädningsvätska i förfylld spruta med fast nål 10 x (I+II)</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2021-02-15</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="Y" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1DSLKNS1VHUHVXMS" pharmaceutical-product-id="ID1DSL7JY1VEN1WGMS">
+          <mpa:shelf-life v="18">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1DSLKNS1VHUHO3MS" pharmaceutical-product-id="ID1DSL7JY1VEN23EMS">
+          <mpa:shelf-life v="18">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+  </npl:packages>
+</npl:medprod>

@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<npl:medprod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mpa="urn:schemas-npl:mpa:12" xsi:schemaLocation="urn:schemas-npl:instance:12 ../schemas/npl-schema_12.0.xsd" xmlns:npl="urn:schemas-npl:instance:12">
+  <mpa:nplid>20071206000105</mpa:nplid>
+  <npl:approvalnumber>
+    <mpa:semano>263740</mpa:semano>
+    <mpa:eumano>EU/1/08/505</mpa:eumano>
+  </npl:approvalnumber>
+  <npl:names>
+    <mpa:medprodname v="INTANZA" />
+    <mpa:medprodnamelegal v="INTANZA" />
+  </npl:names>
+  <mpa:strength-text>
+    <mpa:v>15 mikrogram/stam</mpa:v>
+  </mpa:strength-text>
+  <mpa:pharmaceutical-form-lx v="SUINPS" lexicon="pharmaceutical-form-lx" />
+  <npl:organizations>
+    <mpa:organization>
+      <mpa:organization-lx v="ID6MDULP1S8SYJSRV0" />
+      <mpa:organization-role-lx v="AGENT" lexicon="organization-role-lx" />
+    </mpa:organization>
+    <mpa:organization>
+      <mpa:organization-lx v="ID7CQ9LZH891USRV02" />
+      <mpa:organization-role-lx v="MAH" lexicon="organization-role-lx" />
+    </mpa:organization>
+  </npl:organizations>
+  <mpa:approvaldate>2009-02-24</mpa:approvaldate>
+  <mpa:withdrawaldate>2018-08-03</mpa:withdrawaldate>
+  <mpa:productclass-lx v="MEP" lexicon="productclass-lx" />
+  <mpa:prescription-lx v="1" lexicon="prescription-lx" />
+  <npl:classifications>
+    <mpa:atc-code-lx v="J07BB02" />
+    <mpa:controlled-medicinal-product-lx v="N" lexicon="yesno-lx" />
+    <mpa:narcotic-class-lx v="0" lexicon="narcotic-classification-lx" />
+  </npl:classifications>
+  <mpa:authorisation-procedure-lx v="2" lexicon="authorisation-procedure-lx" />
+  <npl:flags>
+    <mpa:salesstopped v="N" lexicon="yesno-lx" />
+    <mpa:biological-medprod-pharmaceutical-legislation v="Y" lexicon="yesno-lx" />
+    <mpa:antimicrobial v="N" lexicon="yesno-lx" />
+  </npl:flags>
+  <npl:pharmaceutical-products>
+    <npl:pharmaceutical-product id="ID16GZ3ER5KYJ5ZSRV">
+      <npl:composition>
+        <npl:ingredient id="ID766KPSYTAG4YSRV0" presentation-substance-name="Y">
+          <mpa:ingredient-role-lx v="ACTI" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="15" />
+          <mpa:quantity-unit-lx v="04" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="IDB636089305324276" />
+        </npl:ingredient>
+        <npl:ingredient id="ID766KRTYTB52ESRV0" presentation-substance-name="Y">
+          <mpa:ingredient-role-lx v="ACTI" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="15" />
+          <mpa:quantity-unit-lx v="04" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="IDT636089311151403" />
+        </npl:ingredient>
+        <npl:ingredient id="IDRHWLRDPX24RCSRV0" presentation-substance-name="Y">
+          <mpa:ingredient-role-lx v="ACTI" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="15" />
+          <mpa:quantity-unit-lx v="04" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="IDX636354543933896" />
+        </npl:ingredient>
+      </npl:composition>
+      <mpa:comp-ref-quantity-lx v="FGE" lexicon="comp-ref-quantity-lx" />
+    </npl:pharmaceutical-product>
+  </npl:pharmaceutical-products>
+  <npl:packages>
+    <npl:package>
+      <mpa:nplpackid>20090130100057</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/08/505/004</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Förfylld spruta 1 x 0,1 ml</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2018-08-03</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID16GZ8A65LSFLASRV" pharmaceutical-product-id="ID16GZ3ER5KYJ5ZSRV">
+          <mpa:shelf-life v="1">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20090130100064</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/08/505/005</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Förfylld spruta 10 x 0,1 ml</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2018-08-03</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID16GZ8CQ5LTJKYSRV" pharmaceutical-product-id="ID16GZ3ER5KYJ5ZSRV">
+          <mpa:shelf-life v="1">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20090130100071</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/08/505/006</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Förfylld spruta 20 x 0,1 ml</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2018-08-03</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID16GZ8CR5LTKA5SRV" pharmaceutical-product-id="ID16GZ3ER5KYJ5ZSRV">
+          <mpa:shelf-life v="1">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+  </npl:packages>
+</npl:medprod>

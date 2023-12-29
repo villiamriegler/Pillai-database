@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2014 rel. 2 (x64) (http://www.altova.com) by Joachim Hellström (Läkemedelsverket) -->
+<xs:schema xmlns:lx="urn:schemas-npl:lexicon:5" xmlns:mpa="urn:schemas-npl:mpa:12" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:schemas-npl:mpa:12" elementFormDefault="qualified" attributeFormDefault="unqualified" version="12.0">
+	<xs:import namespace="urn:schemas-npl:lexicon:5" schemaLocation="commonLexicon_5.0.xsd"/>
+	<xs:element name="nplid" type="mpa:nplidType">
+		<xs:annotation>
+			<xs:documentation xml:lang="sv">NPL id för produkten</xs:documentation>
+			<xs:documentation xml:lang="en">NPL id for the produkt</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:simpleType name="nplidType">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0][0-9][0-9][0-9][0-9][0-9]"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="semano">
+		<xs:annotation>
+			<xs:documentation xml:lang="sv">Svenskt godkännandenummer</xs:documentation>
+			<xs:documentation xml:lang="en">SWE approvalno</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:minLength value="1"/>
+				<xs:maxLength value="10"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="nat-ma-no">
+		<xs:annotation>
+			<xs:documentation xml:lang="sv">Svenskt godkännandenummer</xs:documentation>
+			<xs:documentation xml:lang="en">SWE approvalno</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:minLength value="3"/>
+				<xs:maxLength value="10"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="eumano">
+		<xs:annotation>
+			<xs:documentation xml:lang="sv">EU godkännandenummer</xs:documentation>
+			<xs:documentation xml:lang="en">EU approvalno</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:minLength value="11"/>
+				<xs:maxLength value="12"/>
+				<xs:pattern value="[E][U][/][1-2][/][0-9][0-9][/][0-9][0-9][0-9]"/>
+				<xs:pattern value="[E][U][/][1-2][/][0-9][0-9][/][0-9][0-9][0-9][0-9]"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="pack-eumano">
+		<xs:annotation>
+			<xs:documentation xml:lang="sv">EU förpackningsgodkännandenummer</xs:documentation>
+			<xs:documentation xml:lang="en">EU package approvalno</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:minLength value="15"/>
+				<xs:maxLength value="16"/>
+				<xs:pattern value="[E][U][/][1-2][/][0-9][0-9][/][0-9][0-9][0-9][/][0-9][0-9][0-9]"/>
+				<xs:pattern value="[E][U][/][1-2][/][0-9][0-9][/][0-9][0-9][0-9][0-9][/][0-9][0-9][0-9]"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="parimporiginalid" type="mpa:nplidType">
+		<xs:annotation>
+			<xs:documentation xml:lang="sv">Originalid för parallellimport</xs:documentation>
+			<xs:documentation xml:lang="en">Original id for parallel import</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="approvaldate">
+		<xs:annotation>
+			<xs:documentation xml:lang="sv">Godkännandedatum</xs:documentation>
+			<xs:documentation xml:lang="en">Approval date</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:date"/>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="withdrawaldate">
+		<xs:annotation>
+			<xs:documentation xml:lang="sv">Avregistreringsdatum</xs:documentation>
+			<xs:documentation xml:lang="en">Withdrawal date</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:date"/>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="nplpackid">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:pattern value="[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][1][0-9][0-9][0-9][0-9][0-9]"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="substance-lx">
+		<xs:annotation>
+			<xs:documentation>A reference to a substance in NSL</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="v" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="18"/>
+						<xs:maxLength value="18"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="species-of-animal-lx">
+		<xs:annotation>
+			<xs:documentation>Lexicon for species of animals</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="v" type="lx:mpaIdType" use="required"/>
+			<xs:attribute name="lexicon" use="required" fixed="species-of-animal-lx"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="organization">
+		<xs:annotation>
+			<xs:documentation>A legal organization and its role with respect to this medprod</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:all>
+				<xs:element ref="mpa:organization-lx"/>
+				<xs:element ref="mpa:organization-role-lx"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="organization-role-lx">
+		<xs:annotation>
+			<xs:documentation>The role of an organization, e.g. MAH, Applicant</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="v" type="lx:mpaIdType" use="required"/>
+			<xs:attribute name="lexicon" use="required" fixed="organization-role-lx"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="organization-lx">
+		<xs:annotation>
+			<xs:documentation>Lexicon of organizations</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="v" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="6"/>
+						<xs:maxLength value="18"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="withdrawal-tissue-lx">
+		<xs:annotation>
+			<xs:documentation>Lexicon of quaratine</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="v" type="lx:mpaIdType" use="required"/>
+			<xs:attribute name="lexicon" use="required" fixed="withdrawal-tissue-lx"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="authorisation-procedure-lx">
+		<xs:annotation>
+			<xs:documentation>Lexicon of EU Regulatory Authorisation Procedures</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="v" type="lx:mpaIdType" use="required"/>
+			<xs:attribute name="lexicon" use="required" fixed="authorisation-procedure-lx"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="pharmaceutical-form-lx">
+		<xs:annotation>
+			<xs:documentation>Lexicon of pharmaceutical forms</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="v" type="lx:mpaIdType" use="required"/>
+			<xs:attribute name="lexicon" use="required" fixed="pharmaceutical-form-lx"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="route-of-administration-lx">
+		<xs:annotation>
+			<xs:documentation>Lexicon of route-of-administration-lx</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="v" type="lx:mpaIdType" use="required"/>
+			<xs:attribute name="lexicon" use="required" fixed="route-of-administration-lx"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="otc">
+		<xs:annotation>
+			<xs:documentation>A "flag", i.e. yes/no for otc</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="v" type="lx:mpaIdType" use="required"/>
+			<xs:attribute name="lexicon" use="required" fixed="yesno-lx"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="safety-features">
+		<xs:annotation>
+			<xs:documentation>A "flag", i.e. yes/no for safety features - in accordance with Article 54a(1) of Directive 2001/83/EC</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="v" type="lx:mpaIdType" use="required"/>
+			<xs:attribute name="lexicon" use="required" fixed="yesno-lx"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="salesstopped">
+		<xs:annotation>
+			<xs:documentation>A "flag", i.e. yes/no for salesstopped</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="v" type="lx:mpaIdType" use="required"/>
+			<xs:attribute name="lexicon" use="required" fixed="yesno-lx"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="atc-code-lx">
+		<xs:annotation>
+			<xs:documentation>Lexicon of ATC codes</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="v" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="8"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="productclass-lx">
+		<xs:annotation>
+			<xs:documentation>The type of product</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="v" type="lx:mpaIdType" use="required"/>
+			<xs:attribute name="lexicon" use="required" fixed="productclass-lx"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="prescription-lx">
+		<xs:annotation>
+			<xs:documentation>The prescription status of the product</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="v" type="lx:mpaIdType" use="required"/>
+			<xs:attribute name="lexicon" use="required" fixed="prescription-lx"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="shelf-life">
+		<xs:annotation>
+			<xs:documentation>Shelf life count</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="mpa:shelf-life-unit-lx" minOccurs="1" maxOccurs="1"/>
+				<xs:element ref="mpa:storage-temp-lx" minOccurs="1" maxOccurs="1"/>
+			</xs:sequence>
+			<xs:attribute name="v" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:unsignedInt">
+						<xs:totalDigits value="10"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="parallel-import-deviation">
+		<xs:annotation>
+			<xs:documentation>Deviations from original product</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="v" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="500"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="interchange-strength-group">
+		<xs:complexType>
+			<xs:attribute name="id" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="5"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="start-date" type="xs:date" use="required"/>
+			<xs:attribute name="stop-date" type="xs:date" use="optional"/>
+			<xs:attribute name="lexicon" use="required" fixed="interchange-strength-group"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="withdrawal-period">
+		<xs:annotation>
+			<xs:documentation>Withdrawal period for slaughtered animals that have been treated with this product</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="v" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:unsignedInt">
+						<xs:totalDigits value="10"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="withdrawal-period-unit-lx">
+		<xs:annotation>
+			<xs:documentation>Lexicon for withdrawal period units</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="v" type="lx:mpaIdType" use="required"/>
+			<xs:attribute name="lexicon" use="required" fixed="withdrawal-period-unit-lx"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="prescriber-lx">
+		<xs:annotation>
+			<xs:documentation>Prescription rights</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="v" type="lx:mpaIdType" use="required"/>
+			<xs:attribute name="lexicon" use="required" fixed="prescriber-lx"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="sales-restriction-lx">
+		<xs:annotation>
+			<xs:documentation>Sales restrictions</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="v" type="lx:mpaIdType" use="required"/>
+			<xs:attribute name="lexicon" use="required" fixed="sales-restriction-lx"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="exported-from-lx">
+		<xs:annotation>
+			<xs:documentation>Representation of countries</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="v" type="lx:mpaIdType" use="required"/>
+			<xs:attribute name="lexicon" use="required" fixed="country-lx"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="pack-condition-lx">
+		<xs:annotation>
+			<xs:documentation>Specifies the condition of the package</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="mpa:shelf-life"/>
+			</xs:sequence>
+			<xs:attribute name="v" type="lx:mpaIdType" use="required"/>
+			<xs:attribute name="lexicon" use="required" fixed="pack-condition-lx"/>
+			<xs:attribute name="id" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="18"/>
+						<xs:maxLength value="18"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="pharmaceutical-product-id" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="18"/>
+						<xs:maxLength value="18"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="storage-temp-lx">
+		<xs:annotation>
+			<xs:documentation>Storage temperature</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="v" type="lx:mpaIdType" use="required"/>
+			<xs:attribute name="lexicon" use="required" fixed="storage-temp-lx"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="shelf-life-unit-lx">
+		<xs:annotation>
+			<xs:documentation>Shelf life unit</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="v" type="lx:mpaIdType" use="required"/>
+			<xs:attribute name="lexicon" use="required" fixed="shelf-life-unit-lx"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="dosdisp-life">
+		<xs:annotation>
+			<xs:documentation>Shelf life after dispensing. Displayed in months</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="v" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:unsignedInt">
+						<xs:totalDigits value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="narcotic-class-lx">
+		<xs:annotation>
+			<xs:documentation>The control classes for a product e.g. narcotic</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="v" type="lx:mpaIdType" use="required"/>
+			<xs:attribute name="lexicon" use="required" fixed="narcotic-classification-lx"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="pack-text">
+		<xs:annotation>
+			<xs:documentation>Description of the package content</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="v" minOccurs="1" maxOccurs="1">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:minLength value="1"/>
+							<xs:maxLength value="255"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="controlled-medicinal-product-lx">
+		<xs:annotation>
+			<xs:documentation>Controlled medicinal products according to LVFS 2009:13</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="v" type="lx:mpaIdType" use="required"/>
+			<xs:attribute name="lexicon" use="required" fixed="yesno-lx"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="dispensing-restriction-lx">
+		<xs:annotation>
+			<xs:documentation>Dispensing restriction</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="v" type="lx:mpaIdType" use="required"/>
+			<xs:attribute name="lexicon" use="required" fixed="dispensing-restriction-lx"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="repeat-prescription-lx">
+		<xs:annotation>
+			<xs:documentation>Repeat (iteration) prescription according to LVFS 2009:13</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="v" type="lx:mpaIdType" use="required"/>
+			<xs:attribute name="lexicon" use="required" fixed="repeat-prescription-lx"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="strength-text">
+		<xs:annotation>
+			<xs:documentation>The strength, i.e. quantity of the active ingredient, expressed as text</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="v" minOccurs="0">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:minLength value="1"/>
+							<xs:maxLength value="200"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="medprodname">
+		<xs:annotation>
+			<xs:documentation>Medprodname of a product</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="v" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="100"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="medprodnamelegal">
+		<xs:annotation>
+			<xs:documentation>Legal name for medical product</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="v" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="100"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="historicalmedprodname">
+		<xs:annotation>
+			<xs:documentation>Historical name for medical product</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="v" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="100"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="vtodate" type="xs:date" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="historicalmedprodnamelegal">
+		<xs:annotation>
+			<xs:documentation>Historical legal name for medical product</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="v" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="100"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="vtodate" type="xs:date" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="description">
+		<xs:annotation>
+			<xs:documentation>Description of a pharmaceutical product, e.g. "large", "blue".</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="v" minOccurs="0">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:minLength value="1"/>
+							<xs:maxLength value="40"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ingredient-role-lx">
+		<xs:annotation>
+			<xs:documentation>The role of an ingredient in a composition</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="v" type="lx:mpaIdType" use="required"/>
+			<xs:attribute name="lexicon" use="required" fixed="ingredient-role-lx"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="quantity">
+		<xs:annotation>
+			<xs:documentation>The numerical quantity of an ingredient</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="v" use="optional">
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:totalDigits value="12"/>
+						<xs:fractionDigits value="3"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="vmax" use="optional">
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:totalDigits value="12"/>
+						<xs:fractionDigits value="3"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="quantity-unit-alt-lx">
+		<xs:annotation>
+			<xs:documentation>Additional unit to quantity of an ingredient</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="v" type="lx:mpaIdType" use="required"/>
+			<xs:attribute name="lexicon" use="required" fixed="quantity-unit-alt-lx"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="quantity-unit-lx">
+		<xs:annotation>
+			<xs:documentation>Unit to quantity of an ingredient</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="v" type="lx:mpaIdType" use="required"/>
+			<xs:attribute name="lexicon" use="required" fixed="quantity-unit-lx"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="pack-withdrawaldate">
+		<xs:annotation>
+			<xs:documentation>Avregistreringsdatum för förpackningen</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:date"/>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="comp-ref-quantity-lx">
+		<xs:annotation>
+			<xs:documentation>Unit to which the ingredient quantities refer. e.g. "per dose" or "per 10ml".</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="v" type="lx:mpaIdType" use="required"/>
+			<xs:attribute name="lexicon" use="required" fixed="comp-ref-quantity-lx"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="dosdisp">
+		<xs:annotation>
+			<xs:documentation>A flag, i.e. yes/no Dose dispensing"</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="v" type="lx:mpaIdType" use="required"/>
+			<xs:attribute name="lexicon" use="required" fixed="yesno-lx"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="additional-monitoring">
+		<xs:annotation>
+			<xs:documentation>A flag, i.e. yes/no for additional monitorning</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="v" type="lx:mpaIdType" use="required"/>
+			<xs:attribute name="lexicon" use="required" fixed="yesno-lx"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="biological-medprod-pharmaceutical-legislation">
+		<xs:annotation>
+			<xs:documentation>A flag, i.e. yes/no for biological medicinal product according to EU pharmaceutical legislation</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="v" type="lx:mpaIdType" use="required"/>
+			<xs:attribute name="lexicon" use="required" fixed="yesno-lx"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="spec-perm-stock-prep">
+		<xs:annotation>
+			<xs:documentation>A flag, i.e. yes/no "rikslicens"</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="v" type="lx:mpaIdType" use="required"/>
+			<xs:attribute name="lexicon" use="required" fixed="yesno-lx"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="antimicrobial">
+		<xs:annotation>
+			<xs:documentation>Antimicrobial drug classified according to Regulation (EU) 2019/6 art. 4:12</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="v" type="lx:mpaIdType" use="required"/>
+			<xs:attribute name="lexicon" use="required" fixed="yesno-lx"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="reserved-hum">
+		<xs:annotation>
+			<xs:documentation>Reserved for human use according to Regulation (EU) 2019/6 art. 37:5</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="v" type="lx:mpaIdType" use="required"/>
+			<xs:attribute name="lexicon" use="required" fixed="yesno-lx"/>
+		</xs:complexType>
+	</xs:element>	
+	<xs:element name="special-permission-nca-approval-country">
+		<xs:annotation>
+			<xs:documentation>Country where the drug with special permission is approved by the national authority</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="v" type="lx:mpaIdType" use="required"/>
+			<xs:attribute name="lexicon" use="required" fixed="country-lx"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="special-permission-idnumber">
+		<xs:annotation>
+			<xs:documentation>Approval number in the country where the drug with special permission is approved</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="v" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="20"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

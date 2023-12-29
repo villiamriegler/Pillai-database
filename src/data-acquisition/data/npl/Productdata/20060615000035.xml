@@ -1,0 +1,147 @@
+<?xml version="1.0"?>
+<npl:medprod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mpa="urn:schemas-npl:mpa:12" xsi:schemaLocation="urn:schemas-npl:instance:12 ../schemas/npl-schema_12.0.xsd" xmlns:npl="urn:schemas-npl:instance:12">
+  <mpa:nplid>20060615000035</mpa:nplid>
+  <npl:approvalnumber>
+    <mpa:semano>239020</mpa:semano>
+    <mpa:eumano>EU/2/06/061</mpa:eumano>
+  </npl:approvalnumber>
+  <npl:names>
+    <mpa:medprodname v="Nobilis® Influenza H5N2" />
+    <mpa:medprodnamelegal v="Nobilis Influenza H5N2" />
+    <mpa:historicalmedprodname v="Nobilis Influenza H5N2" vtodate="2007-10-22" />
+    <mpa:historicalmedprodname v="Nobilis Influenza" vtodate="2006-09-27" />
+    <mpa:historicalmedprodnamelegal v="Nobilis Influenza H5N2" vtodate="2007-10-22" />
+    <mpa:historicalmedprodnamelegal v="Nobilis Influenza" vtodate="2006-09-27" />
+  </npl:names>
+  <mpa:pharmaceutical-form-lx v="EMUINJ" lexicon="pharmaceutical-form-lx" />
+  <npl:organizations>
+    <mpa:organization>
+      <mpa:organization-lx v="ID1PH1WVQ3LVV08SRV" />
+      <mpa:organization-role-lx v="AGENT" lexicon="organization-role-lx" />
+    </mpa:organization>
+    <mpa:organization>
+      <mpa:organization-lx v="IDX0000001029" />
+      <mpa:organization-role-lx v="MAH" lexicon="organization-role-lx" />
+    </mpa:organization>
+  </npl:organizations>
+  <mpa:approvaldate>2006-09-01</mpa:approvaldate>
+  <mpa:productclass-lx v="MEP" lexicon="productclass-lx" />
+  <mpa:prescription-lx v="1" lexicon="prescription-lx" />
+  <npl:classifications>
+    <mpa:atc-code-lx v="QI01AA23" />
+    <mpa:controlled-medicinal-product-lx v="N" lexicon="yesno-lx" />
+    <mpa:narcotic-class-lx v="0" lexicon="narcotic-classification-lx" />
+  </npl:classifications>
+  <mpa:authorisation-procedure-lx v="2" lexicon="authorisation-procedure-lx" />
+  <npl:flags>
+    <mpa:salesstopped v="N" lexicon="yesno-lx" />
+    <mpa:biological-medprod-pharmaceutical-legislation v="Y" lexicon="yesno-lx" />
+    <mpa:antimicrobial v="N" lexicon="yesno-lx" />
+    <mpa:reserved-hum v="N" lexicon="yesno-lx" />
+  </npl:flags>
+  <npl:pharmaceutical-products>
+    <npl:pharmaceutical-product id="ID1HBDVS5IT5PN7MSR">
+      <npl:composition>
+        <npl:ingredient id="ID1HBDW32ITAP6BMSR" presentation-substance-name="Y">
+          <mpa:ingredient-role-lx v="ACTI" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="6" />
+          <mpa:quantity-unit-lx v="A8" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="NLT" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="ID1HBDV4XISUMS9MSR" />
+        </npl:ingredient>
+        <npl:ingredient id="ID1HBDWB5ITED62MSR">
+          <mpa:ingredient-role-lx v="ADJV" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="234.8" />
+          <mpa:quantity-unit-lx v="03" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="IDE4POJMUCGVRVERT1" />
+        </npl:ingredient>
+      </npl:composition>
+      <mpa:comp-ref-quantity-lx v="DOS" lexicon="comp-ref-quantity-lx" />
+    </npl:pharmaceutical-product>
+  </npl:pharmaceutical-products>
+  <npl:withdrawal-periods comment="Ej till fjäderfä som producerar ägg för human konsumtion.">
+    <npl:withdrawal-period>
+      <mpa:withdrawal-tissue-lx v="1" lexicon="withdrawal-tissue-lx" />
+      <mpa:withdrawal-period v="0" />
+      <mpa:withdrawal-period-unit-lx v="DAYS" lexicon="withdrawal-period-unit-lx" />
+      <npl:species-of-animals>
+        <mpa:species-of-animal-lx v="003" lexicon="species-of-animal-lx" />
+      </npl:species-of-animals>
+    </npl:withdrawal-period>
+  </npl:withdrawal-periods>
+  <npl:packages>
+    <npl:package>
+      <mpa:nplpackid>20060925100036</mpa:nplpackid>
+      <mpa:pack-eumano>EU/2/06/061/001</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Glasflaska 1 x 250 ml (500 doser à 0,5 ml)</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1KOUR2S167MYJ8MS" pharmaceutical-product-id="ID1HBDVS5IT5PN7MSR">
+          <mpa:shelf-life v="1">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20060925100067</mpa:nplpackid>
+      <mpa:pack-eumano>EU/2/06/061/002</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Glasflaska 1 x 500 ml (1000 doser à 0,5 ml)</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1KOUR83167PBTZMS" pharmaceutical-product-id="ID1HBDVS5IT5PN7MSR">
+          <mpa:shelf-life v="1">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20060925100050</mpa:nplpackid>
+      <mpa:pack-eumano>EU/2/06/061/003</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Plastflaska 1 x 250 ml (500 doser à 0,5 ml)</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1KOUR80167PA1BMS" pharmaceutical-product-id="ID1HBDVS5IT5PN7MSR">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20060925100043</mpa:nplpackid>
+      <mpa:pack-eumano>EU/2/06/061/004</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Plastflaska 1 x 500 ml (1000 doser à 0,5 ml)</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1KOUR5E167O3UNMS" pharmaceutical-product-id="ID1HBDVS5IT5PN7MSR">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="10" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+  </npl:packages>
+</npl:medprod>

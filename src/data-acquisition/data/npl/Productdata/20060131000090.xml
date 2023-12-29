@@ -1,0 +1,335 @@
+<?xml version="1.0"?>
+<npl:medprod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mpa="urn:schemas-npl:mpa:12" xsi:schemaLocation="urn:schemas-npl:instance:12 ../schemas/npl-schema_12.0.xsd" xmlns:npl="urn:schemas-npl:instance:12">
+  <mpa:nplid>20060131000090</mpa:nplid>
+  <npl:approvalnumber>
+    <mpa:semano>233220</mpa:semano>
+    <mpa:nat-ma-no>23322</mpa:nat-ma-no>
+  </npl:approvalnumber>
+  <npl:names>
+    <mpa:medprodname v="Nobilis Marexine CA 126" />
+    <mpa:medprodnamelegal v="Nobilis Marexine CA 126" />
+  </npl:names>
+  <mpa:pharmaceutical-form-lx v="CSSUIJ" lexicon="pharmaceutical-form-lx" />
+  <npl:organizations>
+    <mpa:organization>
+      <mpa:organization-lx v="IDX0000000622" />
+      <mpa:organization-role-lx v="AGENT" lexicon="organization-role-lx" />
+    </mpa:organization>
+    <mpa:organization>
+      <mpa:organization-lx v="IDX0000001029" />
+      <mpa:organization-role-lx v="MAH" lexicon="organization-role-lx" />
+    </mpa:organization>
+  </npl:organizations>
+  <mpa:approvaldate>2009-11-06</mpa:approvaldate>
+  <mpa:withdrawaldate>2012-11-06</mpa:withdrawaldate>
+  <mpa:productclass-lx v="MEP" lexicon="productclass-lx" />
+  <mpa:prescription-lx v="1" lexicon="prescription-lx" />
+  <npl:classifications>
+    <mpa:atc-code-lx v="QI01AD03" />
+    <mpa:controlled-medicinal-product-lx v="N" lexicon="yesno-lx" />
+    <mpa:narcotic-class-lx v="0" lexicon="narcotic-classification-lx" />
+  </npl:classifications>
+  <mpa:authorisation-procedure-lx v="3" lexicon="authorisation-procedure-lx" />
+  <npl:flags>
+    <mpa:salesstopped v="N" lexicon="yesno-lx" />
+    <mpa:biological-medprod-pharmaceutical-legislation v="Y" lexicon="yesno-lx" />
+    <mpa:antimicrobial v="N" lexicon="yesno-lx" />
+  </npl:flags>
+  <npl:pharmaceutical-products>
+    <npl:pharmaceutical-product id="ID17JJYS0W7FOQKMSR">
+      <mpa:description>
+        <mpa:v>Koncentrat</mpa:v>
+      </mpa:description>
+      <npl:composition>
+        <npl:ingredient id="ID17JJYS5W7FS38MSR">
+          <mpa:ingredient-role-lx v="ACTI" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="3" />
+          <mpa:quantity-unit-lx v="31" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="NLT" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="ID17JIUOCVW0R9GMSR" />
+        </npl:ingredient>
+        <npl:ingredient id="IDDNHMK109H05OMSRV">
+          <mpa:ingredient-role-lx v="MISC" lexicon="ingredient-role-lx" />
+          <mpa:substance-lx v="IDE4POBWU93CKVERT1" />
+        </npl:ingredient>
+      </npl:composition>
+      <mpa:comp-ref-quantity-lx v="DOS" lexicon="comp-ref-quantity-lx" />
+    </npl:pharmaceutical-product>
+    <npl:pharmaceutical-product id="ID1FMOI8P18CESW5MS">
+      <mpa:description>
+        <mpa:v>Spädningsvätska</mpa:v>
+      </mpa:description>
+      <npl:composition>
+        <npl:ingredient id="ID1FMOILY18CKQN1MS">
+          <mpa:ingredient-role-lx v="MISC" lexicon="ingredient-role-lx" />
+          <mpa:substance-lx v="IDE4POBUU91KBVERT1" />
+        </npl:ingredient>
+      </npl:composition>
+      <mpa:comp-ref-quantity-lx v="1000ML" lexicon="comp-ref-quantity-lx" />
+    </npl:pharmaceutical-product>
+  </npl:pharmaceutical-products>
+  <npl:withdrawal-periods>
+    <npl:withdrawal-period>
+      <mpa:withdrawal-tissue-lx v="1" lexicon="withdrawal-tissue-lx" />
+      <mpa:withdrawal-period v="0" />
+      <mpa:withdrawal-period-unit-lx v="DAYS" lexicon="withdrawal-period-unit-lx" />
+      <npl:species-of-animals>
+        <mpa:species-of-animal-lx v="003" lexicon="species-of-animal-lx" />
+      </npl:species-of-animals>
+    </npl:withdrawal-period>
+  </npl:withdrawal-periods>
+  <npl:packages>
+    <npl:package>
+      <mpa:nplpackid>20070416100018</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Koncentrat: glasampull 1000 doser</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2012-11-06</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDK7TQG1G4I8G8MSRV" pharmaceutical-product-id="ID17JJYS0W7FOQKMSR">
+          <mpa:shelf-life v="4">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="20" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20070416100025</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Koncentrat: glasampull 2000 doser</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2012-11-06</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDK7U6A1G4PAKOMSRV" pharmaceutical-product-id="ID17JJYS0W7FOQKMSR">
+          <mpa:shelf-life v="4">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="20" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20070416100070</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Spädningsvätska: glasflaska 1000 ml</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2012-11-06</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDK7VHZ1G5BIWQMSRV" pharmaceutical-product-id="ID1FMOI8P18CESW5MS">
+          <mpa:shelf-life v="4">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="3" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20070416100032</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Spädningsvätska: glasflaska 1200 ml</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2012-11-06</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDK7VF41G5A6NCMSRV" pharmaceutical-product-id="ID1FMOI8P18CESW5MS">
+          <mpa:shelf-life v="4">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="3" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20070416100087</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Spädningsvätska: glasflaska 200 ml</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2012-11-06</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDK7VI21G5BLI2MSRV" pharmaceutical-product-id="ID1FMOI8P18CESW5MS">
+          <mpa:shelf-life v="4">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="3" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20070416100049</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Spädningsvätska: glasflaska 400 ml</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2012-11-06</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDK7VHT1G5BEKXMSRV" pharmaceutical-product-id="ID1FMOI8P18CESW5MS">
+          <mpa:shelf-life v="4">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="3" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20070416100056</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Spädningsvätska: glasflaska 600 ml</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2012-11-06</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDK7VHU1G5BFE0MSRV" pharmaceutical-product-id="ID1FMOI8P18CESW5MS">
+          <mpa:shelf-life v="4">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="3" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20070416100063</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Spädningsvätska: glasflaska 800 ml</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2012-11-06</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDK7VHX1G5BHQ7MSRV" pharmaceutical-product-id="ID1FMOI8P18CESW5MS">
+          <mpa:shelf-life v="4">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="3" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20070416100131</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Spädningsvätska: plastpåse 1000 ml</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2012-11-06</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDK81WL1G6UVN1MSRV" pharmaceutical-product-id="ID1FMOI8P18CESW5MS">
+          <mpa:shelf-life v="4">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="3" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20070416100148</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Spädningsvätska: plastpåse 1200 ml</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2012-11-06</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDK81YA1G6VB4BMSRV" pharmaceutical-product-id="ID1FMOI8P18CESW5MS">
+          <mpa:shelf-life v="4">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="3" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20070416100094</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Spädningsvätska: plastpåse 200 ml</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2012-11-06</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDK7W0X1G5K5DTMSRV" pharmaceutical-product-id="ID1FMOI8P18CESW5MS">
+          <mpa:shelf-life v="4">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="3" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20070416100100</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Spädningsvätska: plastpåse 400 ml</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2012-11-06</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDK81U41G6TTRBMSRV" pharmaceutical-product-id="ID1FMOI8P18CESW5MS">
+          <mpa:shelf-life v="4">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="3" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20070416100117</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Spädningsvätska: plastpåse 600 ml</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2012-11-06</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDK81VW1G6UC7TMSRV" pharmaceutical-product-id="ID1FMOI8P18CESW5MS">
+          <mpa:shelf-life v="4">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="3" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20070416100124</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Spädningsvätska: plastpåse 800 ml</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2012-11-06</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDK81WA1G6UMWCMSRV" pharmaceutical-product-id="ID1FMOI8P18CESW5MS">
+          <mpa:shelf-life v="4">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="3" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+  </npl:packages>
+</npl:medprod>

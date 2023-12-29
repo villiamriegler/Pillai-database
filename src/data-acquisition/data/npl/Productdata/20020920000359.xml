@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<npl:medprod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mpa="urn:schemas-npl:mpa:12" xsi:schemaLocation="urn:schemas-npl:instance:12 ../schemas/npl-schema_12.0.xsd" xmlns:npl="urn:schemas-npl:instance:12">
+  <mpa:nplid>20020920000359</mpa:nplid>
+  <npl:approvalnumber>
+    <mpa:semano>182660</mpa:semano>
+    <mpa:nat-ma-no>18266</mpa:nat-ma-no>
+  </npl:approvalnumber>
+  <npl:names>
+    <mpa:medprodname v="Heminevrin" />
+    <mpa:medprodnamelegal v="Heminevrin" />
+    <mpa:historicalmedprodname v="Distraneurine" vtodate="2009-11-29" />
+    <mpa:historicalmedprodname v="Heminevrin" vtodate="2005-04-11" />
+    <mpa:historicalmedprodnamelegal v="Distraneurine" vtodate="2009-11-29" />
+    <mpa:historicalmedprodnamelegal v="Heminevrin" vtodate="2005-04-11" />
+  </npl:names>
+  <mpa:strength-text>
+    <mpa:v>300 mg</mpa:v>
+  </mpa:strength-text>
+  <mpa:pharmaceutical-form-lx v="CAPSOF" lexicon="pharmaceutical-form-lx" />
+  <npl:organizations>
+    <mpa:organization>
+      <mpa:organization-lx v="IDX0000000947" />
+      <mpa:organization-role-lx v="MAH" lexicon="organization-role-lx" />
+    </mpa:organization>
+  </npl:organizations>
+  <npl:parallel-import>
+    <mpa:parimporiginalid>19680209000025</mpa:parimporiginalid>
+    <mpa:exported-from-lx v="GBR" lexicon="country-lx" />
+    <mpa:parallel-import-deviation v="Inga avvikelser." />
+  </npl:parallel-import>
+  <mpa:approvaldate>2002-09-20</mpa:approvaldate>
+  <mpa:withdrawaldate>2016-12-31</mpa:withdrawaldate>
+  <mpa:productclass-lx v="MEP" lexicon="productclass-lx" />
+  <mpa:prescription-lx v="1" lexicon="prescription-lx" />
+  <npl:classifications>
+    <mpa:atc-code-lx v="N05CM02" />
+    <mpa:controlled-medicinal-product-lx v="Y" lexicon="yesno-lx" />
+    <mpa:repeat-prescription-lx v="001" lexicon="repeat-prescription-lx" />
+    <mpa:narcotic-class-lx v="5" lexicon="narcotic-classification-lx" />
+  </npl:classifications>
+  <mpa:authorisation-procedure-lx v="1" lexicon="authorisation-procedure-lx" />
+  <npl:flags>
+    <mpa:salesstopped v="N" lexicon="yesno-lx" />
+    <mpa:biological-medprod-pharmaceutical-legislation v="N" lexicon="yesno-lx" />
+    <mpa:antimicrobial v="N" lexicon="yesno-lx" />
+  </npl:flags>
+  <npl:pharmaceutical-products>
+    <npl:pharmaceutical-product id="IDV7S0Q375GLPGCSRV">
+      <npl:composition>
+        <npl:ingredient id="ID1BBESVS39RCZTSRV">
+          <mpa:ingredient-role-lx v="MISC" lexicon="ingredient-role-lx" />
+          <mpa:substance-lx v="IDE4POHSUBWXIVERT1" />
+        </npl:ingredient>
+        <npl:ingredient id="ID9VZW1SRV7IADKCSR">
+          <mpa:ingredient-role-lx v="MISC" lexicon="ingredient-role-lx" />
+          <mpa:substance-lx v="IDE4POBSU9040VERT1" />
+        </npl:ingredient>
+        <npl:ingredient id="ID9VZW1SRV7IC56QSR">
+          <mpa:ingredient-role-lx v="MISC" lexicon="ingredient-role-lx" />
+          <mpa:substance-lx v="IDE4POBXU93N5VERT1" />
+        </npl:ingredient>
+        <npl:ingredient id="IDV7S0Q475GMHTCSRV">
+          <mpa:ingredient-role-lx v="ACTI" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="192" />
+          <mpa:quantity-unit-lx v="03" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="IDE4POCEU9GUJVERT1" />
+        </npl:ingredient>
+        <npl:ingredient id="IDV7S0Q575GMRTCSRV" related-to-id="IDV7S0Q475GMHTCSRV">
+          <mpa:ingredient-role-lx v="ARES" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="300" />
+          <mpa:quantity-unit-lx v="03" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="IDE4POCOU9P3XVERT1" />
+        </npl:ingredient>
+      </npl:composition>
+      <mpa:comp-ref-quantity-lx v="FGE" lexicon="comp-ref-quantity-lx" />
+    </npl:pharmaceutical-product>
+  </npl:pharmaceutical-products>
+  <npl:packages>
+    <npl:package>
+      <mpa:nplpackid>20020906100868</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Burk, 300 (5 x 60) kapslar</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2016-12-31</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDY4LD2ZYF9ZKPCSRV" pharmaceutical-product-id="IDV7S0Q375GLPGCSRV">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="2" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+  </npl:packages>
+</npl:medprod>

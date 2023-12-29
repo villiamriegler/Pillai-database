@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2014 rel. 2 (x64) (http://www.altova.com) by Joachim Hellström (Läkemedelsverket) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:mpa="urn:schemas-npl:mpa:12" xmlns:npl="urn:schemas-npl:instance:12" targetNamespace="urn:schemas-npl:instance:12" elementFormDefault="qualified" attributeFormDefault="unqualified" version="12.0">
+	<xs:import namespace="urn:schemas-npl:mpa:12" schemaLocation="mpa-definitions_12.0.xsd"/>
+	<xs:element name="medprod">
+		<xs:annotation>
+			<xs:documentation>A representation of a medical product</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:all minOccurs="1" maxOccurs="1">
+				<xs:element ref="mpa:nplid" minOccurs="1" maxOccurs="1"/>
+				<xs:element name="approvalnumber" minOccurs="0" maxOccurs="1">
+					<xs:complexType>
+						<xs:all minOccurs="1" maxOccurs="1">
+							<xs:element ref="mpa:semano" minOccurs="1" maxOccurs="1"/>
+							<xs:element ref="mpa:nat-ma-no" minOccurs="0" maxOccurs="1"/>
+							<xs:element ref="mpa:eumano" minOccurs="0" maxOccurs="1"/>
+						</xs:all>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="names" minOccurs="1" maxOccurs="1">
+					<xs:annotation>
+						<xs:documentation>A list of names for this product</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence minOccurs="1" maxOccurs="1">
+							<xs:element ref="mpa:medprodname" minOccurs="1" maxOccurs="1"/>
+							<xs:element ref="mpa:medprodnamelegal" minOccurs="1" maxOccurs="1"/>
+							<xs:element ref="mpa:historicalmedprodname" minOccurs="0" maxOccurs="unbounded"/>
+							<xs:element ref="mpa:historicalmedprodnamelegal" minOccurs="0" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element ref="mpa:strength-text" minOccurs="0" maxOccurs="1"/>
+				<xs:element ref="mpa:pharmaceutical-form-lx" minOccurs="1" maxOccurs="1"/>
+				<xs:element name="route-of-administrations" minOccurs="0" maxOccurs="1">
+					<xs:complexType>
+						<xs:sequence minOccurs="1" maxOccurs="1">
+							<xs:element ref="mpa:route-of-administration-lx" minOccurs="1" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="organizations" minOccurs="1" maxOccurs="1">
+					<xs:complexType>
+						<xs:sequence minOccurs="1" maxOccurs="1">
+							<xs:element ref="mpa:organization" minOccurs="1" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="parallel-import" minOccurs="0" maxOccurs="1">
+					<xs:annotation>
+						<xs:documentation>Parallel import information. Reference to the original product and the export country.</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence minOccurs="1" maxOccurs="1">
+							<xs:element ref="mpa:parimporiginalid" minOccurs="1" maxOccurs="1"/>
+							<xs:element ref="mpa:exported-from-lx" minOccurs="1" maxOccurs="1"/>
+							<xs:element ref="mpa:parallel-import-deviation" minOccurs="0" maxOccurs="1"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="special-permission-info" minOccurs="0" maxOccurs="1">
+					<xs:annotation>
+						<xs:documentation>Information regarding drugs with special permission</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence minOccurs="1" maxOccurs="1">
+							<xs:element ref="mpa:special-permission-nca-approval-country" minOccurs="0" maxOccurs="1"/>
+							<xs:element ref="mpa:special-permission-idnumber" minOccurs="0" maxOccurs="1"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element ref="mpa:approvaldate" minOccurs="0" maxOccurs="1"/>
+				<xs:element ref="mpa:withdrawaldate" minOccurs="0" maxOccurs="1"/>
+				<xs:element ref="mpa:productclass-lx" minOccurs="1" maxOccurs="1"/>
+				<xs:element ref="mpa:prescription-lx" minOccurs="1" maxOccurs="1"/>
+				<xs:element name="classifications" minOccurs="1" maxOccurs="1">
+					<xs:annotation>
+						<xs:documentation>Classifications, e.g. ATC-code, labelled indications, adverse reactions.</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:all minOccurs="1" maxOccurs="1">
+							<xs:element ref="mpa:atc-code-lx" minOccurs="0" maxOccurs="1"/>
+							<xs:element ref="mpa:controlled-medicinal-product-lx" minOccurs="1" maxOccurs="1"/>
+							<xs:element ref="mpa:dispensing-restriction-lx" minOccurs="0" maxOccurs="1"/>
+							<xs:element ref="mpa:repeat-prescription-lx" minOccurs="0"/>
+							<xs:element ref="mpa:narcotic-class-lx" minOccurs="1" maxOccurs="1"/>
+						</xs:all>
+					</xs:complexType>
+				</xs:element>
+				<xs:element ref="mpa:authorisation-procedure-lx" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="flags" minOccurs="0" maxOccurs="1">
+					<xs:annotation>
+						<xs:documentation>A list of flags pertaining to this product</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence minOccurs="1" maxOccurs="1">
+							<xs:element ref="mpa:salesstopped" minOccurs="0" maxOccurs="1"/>
+							<xs:element ref="mpa:dosdisp" minOccurs="0" maxOccurs="1"/>
+							<xs:element ref="mpa:additional-monitoring" minOccurs="0" maxOccurs="1"/>
+							<xs:element ref="mpa:biological-medprod-pharmaceutical-legislation" minOccurs="0" maxOccurs="1"/>
+							<xs:element ref="mpa:spec-perm-stock-prep" minOccurs="0" maxOccurs="1"/>
+							<xs:element ref="mpa:antimicrobial" minOccurs="1" maxOccurs="1"/>
+							<xs:element ref="mpa:reserved-hum" minOccurs="0" maxOccurs="1"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="pharmaceutical-products" minOccurs="1" maxOccurs="1">
+					<xs:annotation>
+						<xs:documentation>A list of pharmaceutical products</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence minOccurs="1" maxOccurs="1">
+							<xs:element name="pharmaceutical-product" minOccurs="1" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>A pharmaceutical product</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:all minOccurs="1" maxOccurs="1">
+										<xs:element ref="mpa:description" minOccurs="0" maxOccurs="1"/>
+										<xs:element name="composition" minOccurs="0" maxOccurs="1">
+											<xs:annotation>
+												<xs:documentation>The composition for this pharmaceutical product</xs:documentation>
+											</xs:annotation>
+											<xs:complexType>
+												<xs:sequence minOccurs="1" maxOccurs="1">
+													<xs:element name="ingredient" minOccurs="1" maxOccurs="unbounded">
+														<xs:annotation>
+															<xs:documentation>An ingredient (active or inactive) in a composition</xs:documentation>
+														</xs:annotation>
+														<xs:complexType>
+															<xs:sequence minOccurs="1" maxOccurs="1">
+																<xs:element ref="mpa:ingredient-role-lx" minOccurs="1" maxOccurs="1"/>
+																<xs:element ref="mpa:quantity" minOccurs="0" maxOccurs="1"/>
+																<xs:element ref="mpa:quantity-unit-lx" minOccurs="0" maxOccurs="1"/>
+																<xs:element ref="mpa:quantity-unit-alt-lx" minOccurs="0" maxOccurs="1"/>
+																<xs:element ref="mpa:substance-lx" minOccurs="1" maxOccurs="1"/>
+															</xs:sequence>
+															<xs:attribute name="id" use="required">
+																<xs:simpleType>
+																	<xs:restriction base="xs:string">
+																		<xs:minLength value="18"/>
+																		<xs:maxLength value="18"/>
+																	</xs:restriction>
+																</xs:simpleType>
+															</xs:attribute>
+															<xs:attribute name="related-to-id" use="optional">
+																<xs:simpleType>
+																	<xs:restriction base="xs:string">
+																		<xs:minLength value="18"/>
+																		<xs:maxLength value="18"/>
+																	</xs:restriction>
+																</xs:simpleType>
+															</xs:attribute>
+															<xs:attribute name="presentation-substance-name" use="optional">
+																<xs:simpleType>
+																	<xs:restriction base="xs:string">
+																		<xs:minLength value="1"/>
+																		<xs:maxLength value="1"/>
+																		<xs:pattern value="Y"/>
+																	</xs:restriction>
+																</xs:simpleType>
+															</xs:attribute>
+															<xs:attribute name="substance-for-reference-strength" use="optional">
+																<xs:simpleType>
+																	<xs:restriction base="xs:string">
+																		<xs:minLength value="1"/>
+																		<xs:maxLength value="1"/>
+																		<xs:pattern value="Y"/>
+																	</xs:restriction>
+																</xs:simpleType>
+															</xs:attribute>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element ref="mpa:comp-ref-quantity-lx" minOccurs="0" maxOccurs="1"/>
+										<xs:element name="route-of-administrations" minOccurs="0" maxOccurs="1">
+											<xs:complexType>
+												<xs:sequence minOccurs="1" maxOccurs="1">
+													<xs:element ref="mpa:route-of-administration-lx" minOccurs="1" maxOccurs="unbounded"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:all>
+									<xs:attribute name="id" use="required">
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:minLength value="18"/>
+												<xs:maxLength value="18"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="interchangeability" minOccurs="0" maxOccurs="1">
+					<xs:annotation>
+						<xs:documentation>Information about how the product is interchangeable with e.g. generic products.</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence minOccurs="1" maxOccurs="1">
+							<xs:element ref="mpa:interchange-strength-group" minOccurs="1" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="withdrawal-periods" minOccurs="0" maxOccurs="1">
+					<xs:annotation>
+						<xs:documentation>A list of withdrawal periods</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence minOccurs="1" maxOccurs="1">
+							<xs:element name="withdrawal-period" minOccurs="0" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>The withdrawal period for an tissue/animal after having been treated with this medprod</xs:documentation>
+								</xs:annotation>
+								<!--quarantinetime - kan finnas flera per produkt-->
+								<xs:complexType>
+									<xs:sequence minOccurs="1" maxOccurs="1">
+										<xs:element ref="mpa:withdrawal-tissue-lx" minOccurs="1" maxOccurs="1"/>
+										<xs:element ref="mpa:withdrawal-period" minOccurs="1" maxOccurs="1"/>
+										<xs:element ref="mpa:withdrawal-period-unit-lx" minOccurs="1" maxOccurs="1"/>
+										<xs:element name="species-of-animals" minOccurs="1" maxOccurs="1">
+											<xs:annotation>
+												<xs:documentation>The species of animal for which the withdrawal period applies</xs:documentation>
+											</xs:annotation>
+											<xs:complexType>
+												<xs:sequence minOccurs="1" maxOccurs="1">
+													<xs:element ref="mpa:species-of-animal-lx" minOccurs="1" maxOccurs="unbounded"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute name="comment" use="optional">
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:minLength value="1"/>
+												<xs:maxLength value="4000"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="comment" use="optional">
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:minLength value="1"/>
+									<xs:maxLength value="4000"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:attribute>
+					</xs:complexType>
+				</xs:element>
+				<xs:element ref="mpa:dosdisp-life" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="packages" minOccurs="1" maxOccurs="1">
+					<xs:annotation>
+						<xs:documentation>A medicinal product package</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence minOccurs="1" maxOccurs="1">
+							<xs:element name="package" minOccurs="1" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>An individual package</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:all minOccurs="1" maxOccurs="1">
+										<xs:element ref="mpa:nplpackid" minOccurs="1" maxOccurs="1"/>
+										<xs:element ref="mpa:pack-eumano" minOccurs="0" maxOccurs="1"/>
+										<xs:element ref="mpa:pack-text" minOccurs="1" maxOccurs="1"/>
+										<xs:element name="para-dist-organization" minOccurs="0" maxOccurs="1">
+											<xs:annotation>
+												<xs:documentation>A Parallel distributor organization</xs:documentation>
+											</xs:annotation>
+											<xs:complexType>
+												<xs:all minOccurs="1" maxOccurs="1">
+													<xs:element ref="mpa:organization-lx" minOccurs="1" maxOccurs="1"/>
+												</xs:all>
+											</xs:complexType>
+										</xs:element>
+										<xs:element ref="mpa:pack-withdrawaldate" minOccurs="0" maxOccurs="1"/>
+										<xs:element name="prescription" minOccurs="1" maxOccurs="1">
+											<xs:annotation>
+												<xs:documentation>Prescription information for this package</xs:documentation>
+											</xs:annotation>
+											<xs:complexType>
+												<xs:sequence minOccurs="1" maxOccurs="1">
+													<xs:element ref="mpa:otc" minOccurs="1" maxOccurs="1"/>
+													<xs:element name="restrictions" minOccurs="0" maxOccurs="1">
+														<xs:complexType>
+															<xs:sequence minOccurs="1" maxOccurs="1">
+																<xs:element ref="mpa:sales-restriction-lx" minOccurs="1" maxOccurs="unbounded"/>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element ref="mpa:safety-features" minOccurs="0" maxOccurs="1"/>
+										<xs:element name="prescribers" minOccurs="0" maxOccurs="1">
+											<xs:complexType>
+												<xs:sequence minOccurs="1" maxOccurs="1">
+													<xs:element ref="mpa:prescriber-lx" minOccurs="1" maxOccurs="unbounded"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="storage" minOccurs="0" maxOccurs="1">
+											<xs:annotation>
+												<xs:documentation>Storage condition information for this package</xs:documentation>
+											</xs:annotation>
+											<xs:complexType>
+												<xs:sequence minOccurs="1" maxOccurs="1">
+													<xs:element ref="mpa:pack-condition-lx" minOccurs="1" maxOccurs="unbounded"/>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:all>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

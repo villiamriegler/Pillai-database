@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<npl:medprod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mpa="urn:schemas-npl:mpa:12" xsi:schemaLocation="urn:schemas-npl:instance:12 ../schemas/npl-schema_12.0.xsd" xmlns:npl="urn:schemas-npl:instance:12">
+  <mpa:nplid>19990915000012</mpa:nplid>
+  <npl:approvalnumber>
+    <mpa:semano>144860</mpa:semano>
+    <mpa:eumano>EU/2/99/012</mpa:eumano>
+  </npl:approvalnumber>
+  <npl:names>
+    <mpa:medprodname v="Doxirobe" />
+    <mpa:medprodnamelegal v="Doxirobe" />
+    <mpa:historicalmedprodname v="HESKA PERIOCEUTIC" vtodate="2000-10-18" />
+    <mpa:historicalmedprodname v="HESKA" vtodate="1999-09-29" />
+    <mpa:historicalmedprodnamelegal v="HESKA PERIOCEUTIC" vtodate="2000-10-18" />
+    <mpa:historicalmedprodnamelegal v="HESKA" vtodate="1999-09-29" />
+  </npl:names>
+  <mpa:strength-text>
+    <mpa:v>50 mg/dos</mpa:v>
+  </mpa:strength-text>
+  <mpa:pharmaceutical-form-lx v="GEL1" lexicon="pharmaceutical-form-lx" />
+  <npl:organizations>
+    <mpa:organization>
+      <mpa:organization-lx v="ID1SOIWHS130QI0XSR" />
+      <mpa:organization-role-lx v="MAH" lexicon="organization-role-lx" />
+    </mpa:organization>
+  </npl:organizations>
+  <mpa:approvaldate>1999-09-15</mpa:approvaldate>
+  <mpa:withdrawaldate>2004-09-15</mpa:withdrawaldate>
+  <mpa:productclass-lx v="MEP" lexicon="productclass-lx" />
+  <mpa:prescription-lx v="1" lexicon="prescription-lx" />
+  <npl:classifications>
+    <mpa:atc-code-lx v="QJ01AA02" />
+    <mpa:controlled-medicinal-product-lx v="N" lexicon="yesno-lx" />
+    <mpa:narcotic-class-lx v="0" lexicon="narcotic-classification-lx" />
+  </npl:classifications>
+  <mpa:authorisation-procedure-lx v="2" lexicon="authorisation-procedure-lx" />
+  <npl:flags>
+    <mpa:salesstopped v="N" lexicon="yesno-lx" />
+    <mpa:biological-medprod-pharmaceutical-legislation v="N" lexicon="yesno-lx" />
+    <mpa:antimicrobial v="Y" lexicon="yesno-lx" />
+  </npl:flags>
+  <npl:pharmaceutical-products>
+    <npl:pharmaceutical-product id="IDE4POPWUFLZQVERT1">
+      <mpa:description>
+        <mpa:v>Injektionsspruta A</mpa:v>
+      </mpa:description>
+    </npl:pharmaceutical-product>
+    <npl:pharmaceutical-product id="ID1XAGBW0RTC31CSRV">
+      <mpa:description>
+        <mpa:v>Injektionsspruta B</mpa:v>
+      </mpa:description>
+      <npl:composition>
+        <npl:ingredient id="ID1XAGBWARTJJ7CSRV" related-to-id="ID1XAGBXZRU02ICSRV">
+          <mpa:ingredient-role-lx v="ARES" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="44" />
+          <mpa:quantity-unit-lx v="03" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="IDE4POCFU9I6OVERT1" />
+        </npl:ingredient>
+        <npl:ingredient id="ID1XAGBXZRU02ICSRV">
+          <mpa:ingredient-role-lx v="ACTI" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="51" />
+          <mpa:quantity-unit-lx v="03" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="IDE4POERUAFHMVERT1" />
+        </npl:ingredient>
+      </npl:composition>
+      <mpa:comp-ref-quantity-lx v="FGE" lexicon="comp-ref-quantity-lx" />
+    </npl:pharmaceutical-product>
+  </npl:pharmaceutical-products>
+  <npl:packages>
+    <npl:package>
+      <mpa:nplpackid>19990915100026</mpa:nplpackid>
+      <mpa:pack-eumano>EU/2/99/012/000</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Sprutor 10 x (A+B)</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2004-09-15</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1XAGCNCS5UT5CSRV" pharmaceutical-product-id="ID1XAGBW0RTC31CSRV">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="4" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1XAGCNCS5UGWCSRV" pharmaceutical-product-id="IDE4POPWUFLZQVERT1">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="4" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>19990915100040</mpa:nplpackid>
+      <mpa:pack-eumano>EU/2/99/012/000</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Sprutor 3 x (A+B)</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2004-09-15</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1XAGCKLS4LJACSRV" pharmaceutical-product-id="ID1XAGBW0RTC31CSRV">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="4" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID1XAGC62RXOAOCSRV" pharmaceutical-product-id="IDE4POPWUFLZQVERT1">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="4" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+  </npl:packages>
+</npl:medprod>

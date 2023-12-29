@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2014 rel. 2 (x64) (http://www.altova.com) by Joachim Hellström (Läkemedelsverket) -->
+<xs:schema xmlns:lx="urn:schemas-npl:lexicon:5" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xml="http://www.w3.org/XML/1998/namespace" targetNamespace="urn:schemas-npl:lexicon:5" elementFormDefault="qualified" attributeFormDefault="unqualified" version="5.0">
+	<xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="xml.xsd"/>
+	<xs:element name="commonLexicon">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="lx:commonHeader"/>
+				<xs:element ref="lx:commonTerm" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="commonHeader">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="lexicon-name" type="lx:lexicon-nameType"/>
+				<xs:element ref="lx:lexicon-description"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="commonTerm">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="mpaId" type="lx:mpaId-LX-type"/>
+				<xs:element ref="lx:term-name" minOccurs="2" maxOccurs="unbounded"/>
+				<xs:element ref="lx:short-name" minOccurs="2" maxOccurs="unbounded"/>
+				<xs:element ref="lx:status"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:simpleType name="lexicon-nameType">
+		<xs:annotation>
+			<xs:documentation>Name of the lexicon</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="5"/>
+			<xs:maxLength value="50"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="lexicon-description">
+		<xs:annotation>
+			<xs:documentation>Description of the lexicon</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:minLength value="1"/>
+				<xs:maxLength value="255"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:simpleType name="mpaIdType">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="16"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="mpaId-LX-type">
+		<xs:simpleContent>
+			<xs:extension base="lx:mpaIdType">
+				<xs:attribute name="edqm-Id">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:minLength value="1"/>
+							<xs:maxLength value="16"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:attribute>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:element name="short-name" type="lx:nameType">
+		<xs:annotation>
+			<xs:documentation>The term short name in a given language</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="term-name" type="lx:nameType">
+		<xs:annotation>
+			<xs:documentation>The term name in a given language</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="statusType">
+		<xs:simpleContent>
+			<xs:extension base="lx:emptyType">
+				<xs:attributeGroup ref="lx:statusTypeAttributes"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:element name="status" type="lx:statusType">
+		<xs:annotation>
+			<xs:documentation>The status of the term in the Controlled Term List</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:attributeGroup name="statusTypeAttributes">
+		<xs:attribute name="status-code" type="lx:statusCodeType" use="required">
+			<xs:annotation>
+				<xs:documentation>status of the term</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:attributeGroup>
+	<xs:simpleType name="statusCodeType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="CURRENT"/>
+			<xs:enumeration value="NON_CURRENT"/>
+			<xs:enumeration value="NULLIFIED"/>
+			<xs:enumeration value="PROVISIONAL"/>
+			<xs:enumeration value="UNDER_CONSULTATION"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="emptyType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value=""/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="nameType">
+		<xs:attribute ref="xml:lang" use="required"/>
+		<xs:attribute name="v" type="lx:v" use="required"/>
+	</xs:complexType>
+	<xs:simpleType name="v">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="500"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="link-commonLexicon">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="lx:link-commonHeader"/>
+				<xs:element ref="lx:linkTerm" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="link-commonHeader">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="lexicon-name" type="lx:lexicon-nameType"/>
+				<xs:element name="link-lexicon-name" type="lx:lexicon-nameType"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="linkTerm">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="mpaId" type="lx:mpaId-LX-type"/>
+				<xs:element name="link-mpaId" type="lx:mpaId-LX-type"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

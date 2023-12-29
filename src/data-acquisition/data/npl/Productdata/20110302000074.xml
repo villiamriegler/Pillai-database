@@ -1,0 +1,239 @@
+<?xml version="1.0"?>
+<npl:medprod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mpa="urn:schemas-npl:mpa:12" xsi:schemaLocation="urn:schemas-npl:instance:12 ../schemas/npl-schema_12.0.xsd" xmlns:npl="urn:schemas-npl:instance:12">
+  <mpa:nplid>20110302000074</mpa:nplid>
+  <npl:approvalnumber>
+    <mpa:semano>459490</mpa:semano>
+    <mpa:eumano>EU/1/11/695</mpa:eumano>
+  </npl:approvalnumber>
+  <npl:names>
+    <mpa:medprodname v="Leganto" />
+    <mpa:medprodnamelegal v="Leganto" />
+  </npl:names>
+  <mpa:strength-text>
+    <mpa:v>4 mg/24 timmar</mpa:v>
+  </mpa:strength-text>
+  <mpa:pharmaceutical-form-lx v="TRAPAT" lexicon="pharmaceutical-form-lx" />
+  <npl:route-of-administrations>
+    <mpa:route-of-administration-lx v="TRDE" lexicon="route-of-administration-lx" />
+  </npl:route-of-administrations>
+  <npl:organizations>
+    <mpa:organization>
+      <mpa:organization-lx v="ID10HUP6MYCXIEYMSR" />
+      <mpa:organization-role-lx v="AGENT" lexicon="organization-role-lx" />
+    </mpa:organization>
+    <mpa:organization>
+      <mpa:organization-lx v="ID1QTA7Y3KSZURDSRV" />
+      <mpa:organization-role-lx v="MAH" lexicon="organization-role-lx" />
+    </mpa:organization>
+  </npl:organizations>
+  <mpa:approvaldate>2011-06-16</mpa:approvaldate>
+  <mpa:withdrawaldate>2021-12-13</mpa:withdrawaldate>
+  <mpa:productclass-lx v="MEP" lexicon="productclass-lx" />
+  <mpa:prescription-lx v="1" lexicon="prescription-lx" />
+  <npl:classifications>
+    <mpa:atc-code-lx v="N04BC09" />
+    <mpa:controlled-medicinal-product-lx v="N" lexicon="yesno-lx" />
+    <mpa:narcotic-class-lx v="0" lexicon="narcotic-classification-lx" />
+  </npl:classifications>
+  <mpa:authorisation-procedure-lx v="2" lexicon="authorisation-procedure-lx" />
+  <npl:flags>
+    <mpa:salesstopped v="N" lexicon="yesno-lx" />
+    <mpa:biological-medprod-pharmaceutical-legislation v="N" lexicon="yesno-lx" />
+    <mpa:antimicrobial v="N" lexicon="yesno-lx" />
+  </npl:flags>
+  <npl:pharmaceutical-products>
+    <npl:pharmaceutical-product id="IDL9SMVV1LL2MSSSRV">
+      <npl:composition>
+        <npl:ingredient id="IDL9SMVV1LL2MWOSRV" presentation-substance-name="Y">
+          <mpa:ingredient-role-lx v="ACTI" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="9" />
+          <mpa:quantity-unit-lx v="03" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="ID1BVE61DE98IUOCSR" />
+        </npl:ingredient>
+        <npl:ingredient id="IDL9SMVW1LL2NA5SRV">
+          <mpa:ingredient-role-lx v="MISC" lexicon="ingredient-role-lx" />
+          <mpa:substance-lx v="IDE4POE7UA0JCVERT1" />
+        </npl:ingredient>
+      </npl:composition>
+      <mpa:comp-ref-quantity-lx v="FGE" lexicon="comp-ref-quantity-lx" />
+    </npl:pharmaceutical-product>
+  </npl:pharmaceutical-products>
+  <npl:packages>
+    <npl:package>
+      <mpa:nplpackid>20110323100760</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/11/695/036</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Påse, 100 x 1 plåster (2 x 50)</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2016-03-08</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDL9SO7C1LLONZGSRV" pharmaceutical-product-id="IDL9SMVV1LL2MSSSRV">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="3" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20110323100715</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/11/695/029</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Påse, 20 x 1 plåster</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2016-03-08</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDL9SO6F1LLNY5CSRV" pharmaceutical-product-id="IDL9SMVV1LL2MSSSRV">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="3" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20110323100708</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/11/695/030</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Påse, 28 x 1 plåster</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2021-12-13</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="Y" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDL9SO6K1LLO208SRV" pharmaceutical-product-id="IDL9SMVV1LL2MSSSRV">
+          <mpa:shelf-life v="30">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="2" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20110323100692</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/11/695/031</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Påse, 30 x 1 plåster</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2021-12-13</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="Y" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDL9SO6N1LLO4TDSRV" pharmaceutical-product-id="IDL9SMVV1LL2MSSSRV">
+          <mpa:shelf-life v="30">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="2" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20110323100753</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/11/695/032</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Påse, 56 x 1 plåster</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2016-03-08</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDL9SO6S1LLO88MSRV" pharmaceutical-product-id="IDL9SMVV1LL2MSSSRV">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="3" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20110323100739</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/11/695/033</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Påse, 60 x 1 plåster</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2016-03-08</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDL9SO6W1LLOBRDSRV" pharmaceutical-product-id="IDL9SMVV1LL2MSSSRV">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="3" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20110323100685</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/11/695/028</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Påse, 7 x 1 plåster</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2021-12-13</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="Y" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDL9SO4L1LLNE8RSRV" pharmaceutical-product-id="IDL9SMVV1LL2MSSSRV">
+          <mpa:shelf-life v="30">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="2" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20110323100722</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/11/695/034</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Påse, 84 x 1 plåster (2 x 42)</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2021-12-13</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <mpa:safety-features v="Y" lexicon="yesno-lx" />
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDL9SO721LLOG7ISRV" pharmaceutical-product-id="IDL9SMVV1LL2MSSSRV">
+          <mpa:shelf-life v="30">
+            <mpa:shelf-life-unit-lx v="4" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="2" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>20110323100746</mpa:nplpackid>
+      <mpa:pack-eumano>EU/1/11/695/035</mpa:pack-eumano>
+      <mpa:pack-text>
+        <mpa:v>Påse, 90 x 1 plåster</mpa:v>
+      </mpa:pack-text>
+      <mpa:pack-withdrawaldate>2016-03-08</mpa:pack-withdrawaldate>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="IDL9SO761LLOJNNSRV" pharmaceutical-product-id="IDL9SMVV1LL2MSSSRV">
+          <mpa:shelf-life v="2">
+            <mpa:shelf-life-unit-lx v="5" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="3" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+  </npl:packages>
+</npl:medprod>

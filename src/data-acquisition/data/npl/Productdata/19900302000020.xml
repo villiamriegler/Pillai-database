@@ -1,0 +1,349 @@
+<?xml version="1.0"?>
+<npl:medprod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mpa="urn:schemas-npl:mpa:12" xsi:schemaLocation="urn:schemas-npl:instance:12 ../schemas/npl-schema_12.0.xsd" xmlns:npl="urn:schemas-npl:instance:12">
+  <mpa:nplid>19900302000020</mpa:nplid>
+  <npl:approvalnumber>
+    <mpa:semano>800270</mpa:semano>
+    <mpa:nat-ma-no>80027</mpa:nat-ma-no>
+  </npl:approvalnumber>
+  <npl:names>
+    <mpa:medprodname v="Ultra-TechneKow FM" />
+    <mpa:medprodnamelegal v="Ultra-TechneKow FM" />
+  </npl:names>
+  <mpa:strength-text>
+    <mpa:v>2,15-43 GBq</mpa:v>
+  </mpa:strength-text>
+  <mpa:pharmaceutical-form-lx v="RANUGE" lexicon="pharmaceutical-form-lx" />
+  <npl:route-of-administrations>
+    <mpa:route-of-administration-lx v="INVE" lexicon="route-of-administration-lx" />
+    <mpa:route-of-administration-lx v="OCUL" lexicon="route-of-administration-lx" />
+  </npl:route-of-administrations>
+  <npl:organizations>
+    <mpa:organization>
+      <mpa:organization-lx v="ID1955D7RJJE69SRV0" />
+      <mpa:organization-role-lx v="MAH" lexicon="organization-role-lx" />
+    </mpa:organization>
+  </npl:organizations>
+  <mpa:approvaldate>1990-03-02</mpa:approvaldate>
+  <mpa:productclass-lx v="RAP" lexicon="productclass-lx" />
+  <mpa:prescription-lx v="1" lexicon="prescription-lx" />
+  <npl:classifications>
+    <mpa:atc-code-lx v="V09FX01" />
+    <mpa:controlled-medicinal-product-lx v="N" lexicon="yesno-lx" />
+    <mpa:narcotic-class-lx v="0" lexicon="narcotic-classification-lx" />
+  </npl:classifications>
+  <mpa:authorisation-procedure-lx v="1" lexicon="authorisation-procedure-lx" />
+  <npl:flags>
+    <mpa:salesstopped v="N" lexicon="yesno-lx" />
+    <mpa:biological-medprod-pharmaceutical-legislation v="N" lexicon="yesno-lx" />
+    <mpa:antimicrobial v="N" lexicon="yesno-lx" />
+    <mpa:reserved-hum v="N" lexicon="yesno-lx" />
+  </npl:flags>
+  <npl:pharmaceutical-products>
+    <npl:pharmaceutical-product id="ID6GLO331Y99ZHAMSR">
+      <mpa:description>
+        <mpa:v>Eluat</mpa:v>
+      </mpa:description>
+      <npl:composition>
+        <npl:ingredient id="ID6GLO4Y1Y9AKGYMSR" presentation-substance-name="Y" substance-for-reference-strength="Y">
+          <mpa:ingredient-role-lx v="ACTI" lexicon="ingredient-role-lx" />
+          <mpa:quantity-unit-alt-lx v="QS" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="IDE4POK0UCRK7VERT1" />
+        </npl:ingredient>
+      </npl:composition>
+      <mpa:comp-ref-quantity-lx v="FGE" lexicon="comp-ref-quantity-lx" />
+    </npl:pharmaceutical-product>
+    <npl:pharmaceutical-product id="IDE4PON4UEBDHVERT1">
+      <mpa:description>
+        <mpa:v>Generator</mpa:v>
+      </mpa:description>
+      <npl:composition>
+        <npl:ingredient id="IDE4QOFR13TMRHVERT" presentation-substance-name="Y" substance-for-reference-strength="Y">
+          <mpa:ingredient-role-lx v="ACTI" lexicon="ingredient-role-lx" />
+          <mpa:quantity v="2.15" vmax="43" />
+          <mpa:quantity-unit-lx v="90" lexicon="quantity-unit-lx" />
+          <mpa:quantity-unit-alt-lx v="EQ" lexicon="quantity-unit-alt-lx" />
+          <mpa:substance-lx v="ID8AQAP11NNVXHFMSR" />
+        </npl:ingredient>
+      </npl:composition>
+      <mpa:comp-ref-quantity-lx v="FGE" lexicon="comp-ref-quantity-lx" />
+    </npl:pharmaceutical-product>
+  </npl:pharmaceutical-products>
+  <npl:packages>
+    <npl:package>
+      <mpa:nplpackid>10010101131494</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Generator (kolonn) (10,75 GBq) + injektionsflaskor, 1 + 7 st</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID6GM19T1YCISQ6MSR" pharmaceutical-product-id="ID6GLO331Y99ZHAMSR">
+          <mpa:shelf-life v="8">
+            <mpa:shelf-life-unit-lx v="1" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="4" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID6GM19T1YCISSDMSR" pharmaceutical-product-id="IDE4PON4UEBDHVERT1">
+          <mpa:shelf-life v="21">
+            <mpa:shelf-life-unit-lx v="2" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="7" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>10010101131487</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Generator (kolonn) (12,90 GBq) + injektionsflaskor, 1 + 7 st</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID6GM19T1YCIT42MSR" pharmaceutical-product-id="ID6GLO331Y99ZHAMSR">
+          <mpa:shelf-life v="8">
+            <mpa:shelf-life-unit-lx v="1" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="4" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID6GM19T1YCIT69MSR" pharmaceutical-product-id="IDE4PON4UEBDHVERT1">
+          <mpa:shelf-life v="21">
+            <mpa:shelf-life-unit-lx v="2" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="7" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>10010101131388</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Generator (kolonn) (17,20 GBq) + injektionsflaskor, 1 + 7 st</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID6GM19U1YCITWQMSR" pharmaceutical-product-id="ID6GLO331Y99ZHAMSR">
+          <mpa:shelf-life v="8">
+            <mpa:shelf-life-unit-lx v="1" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="4" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID6GM19U1YCITYWMSR" pharmaceutical-product-id="IDE4PON4UEBDHVERT1">
+          <mpa:shelf-life v="21">
+            <mpa:shelf-life-unit-lx v="2" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="7" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>10010101131302</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Generator (kolonn) (2,15 GBq) + injektionsflaskor, 1 + 7 st</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID6GM11L1YCF0TTMSR" pharmaceutical-product-id="ID6GLO331Y99ZHAMSR">
+          <mpa:shelf-life v="8">
+            <mpa:shelf-life-unit-lx v="1" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="4" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID6GM0VJ1YCC2UAMSR" pharmaceutical-product-id="IDE4PON4UEBDHVERT1">
+          <mpa:shelf-life v="21">
+            <mpa:shelf-life-unit-lx v="2" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="7" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>10010101131470</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Generator (kolonn) (21,50 GBq) + injektionsflaskor, 1 + 7 st</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID6GM19V1YCIUAMMSR" pharmaceutical-product-id="ID6GLO331Y99ZHAMSR">
+          <mpa:shelf-life v="8">
+            <mpa:shelf-life-unit-lx v="1" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="4" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID6GM19V1YCIUCSMSR" pharmaceutical-product-id="IDE4PON4UEBDHVERT1">
+          <mpa:shelf-life v="21">
+            <mpa:shelf-life-unit-lx v="2" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="7" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>10010101131432</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Generator (kolonn) (25,80 GBq) + injektionsflaskor, 1 + 7 st</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID6GM19V1YCIUOXMSR" pharmaceutical-product-id="ID6GLO331Y99ZHAMSR">
+          <mpa:shelf-life v="8">
+            <mpa:shelf-life-unit-lx v="1" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="4" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID6GM19V1YCIUR3MSR" pharmaceutical-product-id="IDE4PON4UEBDHVERT1">
+          <mpa:shelf-life v="21">
+            <mpa:shelf-life-unit-lx v="2" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="7" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>10010101131463</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Generator (kolonn) (30,10 GBq) + injektionsflaskor, 1 + 7 st</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID6GM19W1YCIV39MSR" pharmaceutical-product-id="ID6GLO331Y99ZHAMSR">
+          <mpa:shelf-life v="8">
+            <mpa:shelf-life-unit-lx v="1" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="4" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID6GM19W1YCIV5FMSR" pharmaceutical-product-id="IDE4PON4UEBDHVERT1">
+          <mpa:shelf-life v="21">
+            <mpa:shelf-life-unit-lx v="2" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="7" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>10010101131456</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Generator (kolonn) (34,40 GBq) + injektionsflaskor, 1 + 7 st</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID6GM19W1YCIVI0MSR" pharmaceutical-product-id="ID6GLO331Y99ZHAMSR">
+          <mpa:shelf-life v="8">
+            <mpa:shelf-life-unit-lx v="1" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="4" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID6GM19X1YCIVK6MSR" pharmaceutical-product-id="IDE4PON4UEBDHVERT1">
+          <mpa:shelf-life v="21">
+            <mpa:shelf-life-unit-lx v="2" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="7" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>10010101131401</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Generator (kolonn) (4,30 GBq) + injektionsflaskor, 1 + 7 st</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID6GM19R1YCIRKYMSR" pharmaceutical-product-id="ID6GLO331Y99ZHAMSR">
+          <mpa:shelf-life v="8">
+            <mpa:shelf-life-unit-lx v="1" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="4" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID6GM19R1YCIRN4MSR" pharmaceutical-product-id="IDE4PON4UEBDHVERT1">
+          <mpa:shelf-life v="21">
+            <mpa:shelf-life-unit-lx v="2" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="7" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>10010101131319</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Generator (kolonn) (43,00 GBq) + injektionsflaskor, 1 + 7 st</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID6GM19U1YCITIEMSR" pharmaceutical-product-id="ID6GLO331Y99ZHAMSR">
+          <mpa:shelf-life v="8">
+            <mpa:shelf-life-unit-lx v="1" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="4" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID6GM19U1YCITKKMSR" pharmaceutical-product-id="IDE4PON4UEBDHVERT1">
+          <mpa:shelf-life v="21">
+            <mpa:shelf-life-unit-lx v="2" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="7" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>10010101131449</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Generator (kolonn) (6,45 GBq) + injektionsflaskor, 1 + 7 st</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID6GM19S1YCIRYEMSR" pharmaceutical-product-id="ID6GLO331Y99ZHAMSR">
+          <mpa:shelf-life v="8">
+            <mpa:shelf-life-unit-lx v="1" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="4" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID6GM19S1YCIS0LMSR" pharmaceutical-product-id="IDE4PON4UEBDHVERT1">
+          <mpa:shelf-life v="21">
+            <mpa:shelf-life-unit-lx v="2" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="7" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+    <npl:package>
+      <mpa:nplpackid>10010101131296</mpa:nplpackid>
+      <mpa:pack-text>
+        <mpa:v>Generator (kolonn) (8,60 GBq) + injektionsflaskor, 1 + 7 st</mpa:v>
+      </mpa:pack-text>
+      <npl:prescription>
+        <mpa:otc v="N" lexicon="yesno-lx" />
+      </npl:prescription>
+      <npl:storage>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID6GM19S1YCISCAMSR" pharmaceutical-product-id="ID6GLO331Y99ZHAMSR">
+          <mpa:shelf-life v="8">
+            <mpa:shelf-life-unit-lx v="1" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="4" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+        <mpa:pack-condition-lx v="1" lexicon="pack-condition-lx" id="ID6GM19S1YCISEHMSR" pharmaceutical-product-id="IDE4PON4UEBDHVERT1">
+          <mpa:shelf-life v="21">
+            <mpa:shelf-life-unit-lx v="2" lexicon="shelf-life-unit-lx" />
+            <mpa:storage-temp-lx v="7" lexicon="storage-temp-lx" />
+          </mpa:shelf-life>
+        </mpa:pack-condition-lx>
+      </npl:storage>
+    </npl:package>
+  </npl:packages>
+</npl:medprod>
