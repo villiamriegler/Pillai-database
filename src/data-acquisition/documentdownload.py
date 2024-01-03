@@ -3,9 +3,6 @@ import time
 import xml.etree.ElementTree as ET
 import requests
 
-import urllib3
-import ssl
-
 
 
 def download_file(nlpid, doctype, url, lang):
@@ -16,11 +13,20 @@ def download_file(nlpid, doctype, url, lang):
     path = f"data/productdocs/{lang}/{nlpid}_{doctype}.pdf"
 
     if not os.path.exists(f"data/productdocs/{lang}"):
-        os.makedirs(path)
+        os.makedirs()
 
     with open(path, "wb") as file:
         file.write(response.content)
 
+def verify_file(nlpid, doctype, url, lang):
+    response = requests.get(url)
+    if response.status_code != 200: 
+        return  
+    
+    path = f"data/productdocs/{lang}/{nlpid}_{doctype}.pdf"
+
+    if os.path.getsize(path) != response.content.__sizeof__:
+        print(f"Filesize does not match {path}")
 
 
 def download_files():
