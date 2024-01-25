@@ -1,0 +1,19 @@
+version: '3.8'
+services:
+  db:
+    image: postgres:latest
+    restart: always
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  populate-db:
+    build: .  
+    volumes:
+      - ./scrapers:/scrapers
+      - ./dbas:/dbas
+    depends_on:
+      - db
+volumes:
+  postgres_data:
