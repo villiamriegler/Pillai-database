@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 from scraper import *
+from dbasGen import *
 from pprint import pprint
 import json
 
@@ -8,9 +9,9 @@ import json
 PAGES = {
     "bipacksedel": 7,
     "produktresume": 6,
-    "förpackningar": 30,
-    "fass-text": 3,
-    "bilder-och-delbarhet": 2000,
+    #"förpackningar": 30,
+    "fass_text": 3,
+    "bilder_och_delbarhet": 2000,
     "miljöinformation": 78,
     "skyddsinfo": 80
 }
@@ -36,9 +37,9 @@ def debug(key, result):
     DEBUGING_PAGES = {
         "bipacksedel": 0,
         "produktresume": 0,
-        "förpackningar": 0,
-        "fass-text": 0,
-        "bilder-och-delbarhet": 0,
+        #"förpackningar": 0,
+        "fass_text": 0,
+        "bilder_och_delbarhet": 0,
         "miljöinformation": 0,
         "skyddsinfo": 0
     }
@@ -81,10 +82,10 @@ def extract_page_information(page, soup):
             # 'prod-license', 'approval-number', 'approval-first-date', 'revision-date'
             
             result = extract_medical_text(soup, 'h2', True, True)
-        case "förpackningar":
+        #case "förpackningar":
             # All the package information
-            result = extract_package_info(soup)
-        case "fass-text":
+            #result = extract_package_info(soup)
+        case "fass_text":
             # Keys retrived inside the fass-text
 
             # 'indication', 'contraindication', 'dosage', 'caution',
@@ -93,7 +94,7 @@ def extract_page_information(page, soup):
             # 'pharmacokinetic', 'preclinical-info', 'composition', 'env-effect',
             # 'handling-life-shelf-storage'
             result = extract_medical_text(soup,'h2',True,True)
-        case "bilder-och-delbarhet":
+        case "bilder_och_delbarhet":
             result = extract_delbarhet(soup)
         case "miljöinformation":
             result = extract_medical_text(soup,'h2',True,True)
@@ -145,12 +146,13 @@ def crawl_pages(full_url):
 # https://www.fass.se/LIF/pharmaceuticalliststart?userType=2
 def crawl_alphabetical_list():
     ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZÅÄÖ"
-    PRODUCT_BASE_LINK = "https://www.fass.se/LIF/product?nplId="
     # Loop over every page in the a-ö list of pharmaceuticals
+    PRODUCT_BASE_LINK = "https://www.fass.se/LIF/product?nplId="
 
     for page in PAGES.keys():
         keys[page] = []
     page_information = {}
+    count = 0
     for letter in ALPHABET:
         # Get reference to current letter page
         html_ref = f"https://www.fass.se/LIF/pharmaceuticallist?page={letter}"
@@ -167,9 +169,8 @@ def crawl_alphabetical_list():
         product_ids = [link.get('href').strip()[-14:] for link in links]    # The product link is relative 
                                                                             # To get the absolute link we extract only the nplID of the link
 
-        count = 0
         # Iterate over every product beginning with current letter
-        for product_id in product_ids:
+        for (product_id, product_name) in zip(product_ids, product_names):
             count += 1
             # Full link to product
             full_url = PRODUCT_BASE_LINK + product_id
@@ -178,10 +179,14 @@ def crawl_alphabetical_list():
 
             # Retrive all information from pages
             page_information[product_id] = crawl_pages(full_url)
-            with open("data.json","w") as outfile:
-                json.dump(page_information, outfile, ensure_ascii=False)
+            page_information[product_id].update({'product_name': {'product_name': product_name}})
 
-        
+            # Generating database statements
+            write_ddl(page_information[product_id])
+            write_dml(product_id, page_information[product_id])
+
+            #with open("data.json", "w") as outfile:
+            #    json.dump(page_information, outfile, ensure_ascii=False)
 
 
 if __name__ == '__main__':
