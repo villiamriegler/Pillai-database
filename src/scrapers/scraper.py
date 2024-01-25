@@ -37,6 +37,36 @@ def extract_medical_text(soup, search_tag, recursive, nested):
 
     return data
 
+# Scarping method for extracting the bipacksedel subcategory on fass.se
+# Example page: https://www.fass.se/LIF/product?userType=2&nplId=20190822000136&docType=7&scrollPosition=352
+def extract_product_leaflet(soup):
+    data = {}
+    # Select full div containing the medical text
+    fass_content = soup.select('.fass-content')[0]
+
+    # Every section is labled with an a tag defining what information followes
+    #   used as index for our data dictionary
+    headers = fass_content.find_all('a', recursive=True, id=True)
+
+    for section in headers:
+        try:
+            title = section.get('id')
+        except:
+            continue
+    
+        # Collect all html between two <a> tags
+        html = ""
+        for tag in section.next_siblings:
+            if tag.name == 'a':
+                break
+            else:
+                html += str(tag.get_text())
+
+        # Merge and clean data
+        info = " ".join(html.split())                                         # Clean up text removing \n \t and whitespace
+        data[title] = data.get(title, "") + info
+
+    return data
 
 # Scraping method to retrive information from the fass-text subcategory
 # Example page: https://www.fass.se/LIF/product?userType=2&nplId=20190822000136&docType=3&scrollPosition=352
