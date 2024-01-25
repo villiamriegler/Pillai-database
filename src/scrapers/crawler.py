@@ -72,7 +72,7 @@ def extract_page_information(page, soup):
             # 'withdrawal', 'side-effects',
             # 'additionalMonitoringInfo', 'storage', 'information-source',
             # 'composition', 'appearance', 'prod-license'
-            result = extract_medical_text(soup,'a',False,False)
+            result = extract_product_leaflet(soup)
         case "produktresume":
             # Keys retrived from first entry
 
@@ -178,7 +178,6 @@ def crawl_alphabetical_list():
 
             # Retrive all information from pages
             page_information[product_id] = crawl_pages(full_url)
-    
             with open("data.json","w") as outfile:
                 json.dump(page_information, outfile, ensure_ascii=False)
 
