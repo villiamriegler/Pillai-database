@@ -182,11 +182,11 @@ def crawl_alphabetical_list():
             page_information[product_id].update({'product_name': {'product_name': product_name}})
 
             # Generating database statements
-            write_ddl(page_information[product_id])
-            write_dml(product_id, page_information[product_id])
+            #write_ddl(page_information[product_id])
+            #write_dml(product_id, page_information[product_id])
 
-            #with open("data.json", "w") as outfile:
-            #    json.dump(page_information, outfile, ensure_ascii=False)
+            with open("data.json", "w") as outfile:
+                json.dump(page_information, outfile, ensure_ascii=False)
 
 
 if __name__ == '__main__':
