@@ -5,15 +5,22 @@ services:
     restart: always
     ports:
       - "5432:5432"
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
     volumes:
       - postgres_data:/var/lib/postgresql/data
-
+      - ./dbas/schemas.sql:/docker-entrypoint-initdb.d/schemas.sql
   populate-db:
     build: .  
     volumes:
       - ./scrapers:/scrapers
-      - ./dbas:/dbas
     depends_on:
       - db
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
 volumes:
   postgres_data:

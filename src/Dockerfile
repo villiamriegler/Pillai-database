@@ -8,7 +8,9 @@ ENV PYTHONUNBUFFERED 1
 RUN pip install psycopg2 requests beautifulsoup4 
 
 # Copy files
-COPY scrapers /scrapers
+#COPY scrapers /scrapers/
+#COPY dbas /dbas/
+COPY test.py /test.py
 
 # Run script on start
-CMD ["python3", "/scrapers/crawler.py"]
+CMD ["python3", "/test.py"]
