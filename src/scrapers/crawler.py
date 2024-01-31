@@ -186,7 +186,7 @@ def crawl_alphabetical_list():
             #write_dml(product_id, page_information[product_id])
 
             with open("data.json", "w") as outfile:
-                json.dump(page_information, outfile, ensure_ascii=False)
+                json.dump(page_information, outfile, ensure_ascii=False, indent=4)
 
 
 if __name__ == '__main__':
