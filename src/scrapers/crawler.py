@@ -4,6 +4,7 @@ from scraper import *
 from dbasGen import *
 from pprint import pprint
 import json
+import os
 
 # viktig-patientinfo: https://www.fass.se/LIF/product?userType=2&nplId=20071201000025&docType=15&scrollPosition=0
 PAGES = {
@@ -148,10 +149,17 @@ def crawl_alphabetical_list():
     ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZÅÄÖ"
     # Loop over every page in the a-ö list of pharmaceuticals
     PRODUCT_BASE_LINK = "https://www.fass.se/LIF/product?nplId="
+    page_information = {}
+
+    file_exists = os.path.isfile("data.json")
+    if file_exists:
+        with open("data.json", "r") as outfile:
+            file = json.load(outfile)
+            page_information.update(file)
+
 
     for page in PAGES.keys():
         keys[page] = []
-    page_information = {}
     count = 0
     for letter in ALPHABET:
         # Get reference to current letter page
@@ -176,6 +184,13 @@ def crawl_alphabetical_list():
             full_url = PRODUCT_BASE_LINK + product_id
             print(
                 f"*****************************\n{full_url} {count}\n********************************")
+
+            file_exists = os.path.isfile("data.json")
+            if file_exists:
+                with open("data.json", "r") as outfile:
+                    file = json.load(outfile)
+                    if product_id in file:
+                        continue
 
             # Retrive all information from pages
             page_information[product_id] = crawl_pages(full_url)
