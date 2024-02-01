@@ -147,16 +147,17 @@ def crawl_pages(full_url):
 # https://www.fass.se/LIF/pharmaceuticalliststart?userType=2
 def crawl_alphabetical_list():
     ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZÅÄÖ"
-    # Loop over every page in the a-ö list of pharmaceuticals
     PRODUCT_BASE_LINK = "https://www.fass.se/LIF/product?nplId="
-    page_information = {}
+    summary = {}
 
-    file_exists = os.path.isfile("data.json")
-    if file_exists:
-        with open("data.json", "r") as outfile:
-            file = json.load(outfile)
-            page_information.update(file)
+    # Load existing summary if it exists
+    if os.path.isfile('summary.json'):
+        with open('summary.json', 'r') as infile:
+            summary = json.load(infile)
 
+    # Create the 'products' directory if it doesn't exist
+    if not os.path.exists('products'):
+        os.makedirs('products')
 
     for page in PAGES.keys():
         keys[page] = []
@@ -180,28 +181,31 @@ def crawl_alphabetical_list():
         # Iterate over every product beginning with current letter
         for (product_id, product_name) in zip(product_ids, product_names):
             count += 1
-            # Full link to product
             full_url = PRODUCT_BASE_LINK + product_id
-            print(
-                f"*****************************\n{full_url} {count}\n********************************")
+            print(f"*****************************\n{full_url} {count}\n********************************")
 
-            file_exists = os.path.isfile("data.json")
-            if file_exists:
-                with open("data.json", "r") as outfile:
-                    file = json.load(outfile)
-                    if product_id in file:
-                        continue
+            # Check if this product has been fully downloaded
+            if summary.get(product_id, {}).get('fully_downloaded', False):
+                continue
 
-            # Retrive all information from pages
-            page_information[product_id] = crawl_pages(full_url)
-            page_information[product_id].update({'product_name': {'product_name': product_name}})
+            # Retrieve all information from pages
+            product_info = crawl_pages(full_url)
+            product_info.update({'product_name': {'product_name': product_name}})
 
-            # Generating database statements
-            #write_ddl(page_information[product_id])
-            #write_dml(product_id, page_information[product_id])
+            product_file_path = f"products/{product_id}.json"
+            # Write to individual JSON file
+            with open(product_file_path, "w") as outfile:
+                json.dump(product_info, outfile, ensure_ascii=False, indent=4)
 
-            with open("data.json", "w") as outfile:
-                json.dump(page_information, outfile, ensure_ascii=False, indent=4)
+            # Update summary
+            summary[product_id] = {
+                'pages_found': {page: page in product_info for page in PAGES},
+                'fully_downloaded': True
+            }
+
+            # Update summary file after each NPL-ID is processed
+            with open('summary.json', 'w') as outfile:
+                json.dump(summary, outfile, ensure_ascii=False, indent=4)
 
 
 if __name__ == '__main__':
