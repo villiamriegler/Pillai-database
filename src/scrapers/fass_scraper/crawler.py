@@ -15,6 +15,8 @@ PAGES = {
     "miljöinformation": 78,
     "skyddsinfo": 80
 }
+SUMMARY_FILE = '../metadata/summary.json'
+PRODUCT_DIR = '../products'    
 
 # Fetches html content for web ardress and returns as bs4 soup
 def fetch_url(url):
@@ -141,44 +143,56 @@ def crawl_pages(full_url):
 
     return url_result
 
+# Returns a list of (product_id, product_name) tuples
+def get_listed_products_from_alphabetical(letter):
+    # Get reference to current letter page
+    html_ref = f"https://www.fass.se/LIF/pharmaceuticallist?page={letter}"
+    soup = fetch_url(html_ref)
+
+    # Get all tags containing names of drugs
+    names = soup.select('.productResultPanel .expandcontent .innerlabel')
+    # Get all tags containing links to drug info
+    links = soup.select('.productResultPanel .expandcontent .linkList a')
+
+    # Extract drug names
+    product_names = [name.get_text().strip() for name in names]
+    # Extract drug ids
+    product_ids = [link.get('href').strip()[-14:] for link in links]    # The product link is relative 
+                                                                        # To get the absolute link we extract only the nplID of the link
+
+    return zip(product_ids, product_names)
+
+# Retrives the summary file 
+def get_summary_file():
+    summary = {}
+    if os.path.isfile(SUMMARY_FILE):
+        with open(SUMMARY_FILE, 'r') as infile:
+            summary = json.load(infile)
+    return summary
+
 
 # Crawls through all the medecines in the alpabetical list of medecines found on
 # https://www.fass.se/LIF/pharmaceuticalliststart?userType=2
 def crawl_alphabetical_list():
     ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZÅÄÖ"
     PRODUCT_BASE_LINK = "https://www.fass.se/LIF/product?nplId="
-    summary = {}
+
 
     # Load existing summary if it exists
-    if os.path.isfile('../metadata/summary.json'):
-        with open('../metadata/summary.json', 'r') as infile:
-            summary = json.load(infile)
+    summary = get_summary_file()
 
     # Create the 'products' directory if it doesn't exist
-    if not os.path.exists('products'):
-        os.makedirs('products')
+    if not os.path.exists(PRODUCT_DIR):
+        os.makedirs(PRODUCT_DIR)
+
 
     for page in PAGES.keys():
         keys[page] = []
+
     count = 0
     for letter in ALPHABET:
-        # Get reference to current letter page
-        html_ref = f"https://www.fass.se/LIF/pharmaceuticallist?page={letter}"
-        soup = fetch_url(html_ref)
-
-        # Get all tags containing names of drugs
-        names = soup.select('.productResultPanel .expandcontent .innerlabel')
-        # Get all tags containing links to drug info
-        links = soup.select('.productResultPanel .expandcontent .linkList a')
-
-        # Extract drug names
-        product_names = [name.get_text().strip() for name in names]
-        # Extract drug ids
-        product_ids = [link.get('href').strip()[-14:] for link in links]    # The product link is relative 
-                                                                            # To get the absolute link we extract only the nplID of the link
-
         # Iterate over every product beginning with current letter
-        for (product_id, product_name) in zip(product_ids, product_names):
+        for (product_id, product_name) in get_listed_products_from_alphabetical(letter):
             count += 1
             full_url = PRODUCT_BASE_LINK + product_id
             print(f"*****************************\n{full_url} {count}\n********************************")
@@ -191,7 +205,7 @@ def crawl_alphabetical_list():
             product_info = crawl_pages(full_url)
             product_info.update({'product_name': {'product_name': product_name}})
 
-            product_file_path = f"../products/{product_id}.json"
+            product_file_path = PRODUCT_DIR + f"/{product_id}.json"
             # Write to individual JSON file
             with open(product_file_path, "w") as outfile:
                 json.dump(product_info, outfile, ensure_ascii=False, indent=4)
@@ -203,7 +217,7 @@ def crawl_alphabetical_list():
             }
 
             # Update summary file after each NPL-ID is processed
-            with open('../metadata/summary.json', 'w') as outfile:
+            with open(SUMMARY_FILE, 'w') as outfile:
                 json.dump(summary, outfile, ensure_ascii=False, indent=4)
 
 
