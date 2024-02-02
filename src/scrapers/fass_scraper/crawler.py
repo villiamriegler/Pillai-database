@@ -1,7 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
 from scraper import *
-from dbasGen import *
 from pprint import pprint
 import json
 import os
@@ -151,8 +150,8 @@ def crawl_alphabetical_list():
     summary = {}
 
     # Load existing summary if it exists
-    if os.path.isfile('summary.json'):
-        with open('summary.json', 'r') as infile:
+    if os.path.isfile('../metadata/summary.json'):
+        with open('../metadata/summary.json', 'r') as infile:
             summary = json.load(infile)
 
     # Create the 'products' directory if it doesn't exist
@@ -192,7 +191,7 @@ def crawl_alphabetical_list():
             product_info = crawl_pages(full_url)
             product_info.update({'product_name': {'product_name': product_name}})
 
-            product_file_path = f"products/{product_id}.json"
+            product_file_path = f"../products/{product_id}.json"
             # Write to individual JSON file
             with open(product_file_path, "w") as outfile:
                 json.dump(product_info, outfile, ensure_ascii=False, indent=4)
@@ -204,7 +203,7 @@ def crawl_alphabetical_list():
             }
 
             # Update summary file after each NPL-ID is processed
-            with open('summary.json', 'w') as outfile:
+            with open('../metadata/summary.json', 'w') as outfile:
                 json.dump(summary, outfile, ensure_ascii=False, indent=4)
 
 
