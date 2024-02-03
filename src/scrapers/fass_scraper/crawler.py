@@ -16,7 +16,7 @@ PAGES = {
     "skyddsinfo": 80
 }
 SUMMARY_FILE = '../metadata/summary.json'
-PRODUCT_DIR = '../products'    
+PRODUCT_DIR = '../data/products'    
 
 # Fetches html content for web ardress and returns as bs4 soup
 def fetch_url(url):

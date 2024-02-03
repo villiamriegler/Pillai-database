@@ -2,7 +2,7 @@ import os
 import json
 from collections import defaultdict
 from pprint import pprint
-PRODUCT_DIR = '../products'
+PRODUCT_DIR = '../data/products'
 META_DIR = '../metadata'
 OUTPUT_FILE = os.path.join(META_DIR, 'fass_keys.json')
 
