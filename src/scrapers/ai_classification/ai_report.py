@@ -158,8 +158,7 @@ def score_texts(model, tokenizer, texts):
     padded = pad_sequences(sequences, maxlen=MAX_POSITIVES, padding='post')
     return model.predict(padded)
 
-
-def main():
+def create_model():
     # Load and preprocess texts
     texts, labels = get_texts('../data/products')
     train_data, tokenizer = preprocess_texts(texts)
@@ -167,8 +166,11 @@ def main():
     # Build and train the model
     model = build_model()
     train_model(model, train_data, labels)
+    
+    return model, tokenizer
 
-    alvedon_full = """"
+def test_and_preview(model, tokenizer):
+    alvedon_full = """
     Alvedon
 500 mg munsönderfallande tabletter
 paracetamol
@@ -339,6 +341,13 @@ Vita, runda tabletter utan delningsskåra, diameter 17 mm. Tabletten har smak av
 
     # Generate a single HTML file for all text blocks with combined scores
     write_output(sentances, scores, filename="result.html")
+
+def main():
+    # Create model and text tokenizer
+    model, tokenizer = create_model()
+
+    # Test with examples
+    test_and_preview(model, tokenizer)
     
 
 if __name__ == "__main__":
