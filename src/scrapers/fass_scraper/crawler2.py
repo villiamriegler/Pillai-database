@@ -1,15 +1,18 @@
+from itertools import repeat
 from typing import Generator
 from scraper import *
 import requests
 from bs4 import BeautifulSoup
+import time
 from bs4 import SoupStrainer
-from concurrent.futures import ProcessPoolExecutor
+from queue import Queue
+from concurrent.futures import Future, ProcessPoolExecutor, ThreadPoolExecutor
 import cchardet
 from pprint import pprint
 import json
 
 
-def fetch_url(session: requests.Session, url: str, strainer: SoupStrainer) -> BeautifulSoup:
+def fetch_url(session: requests.Session, url: str, strainer: SoupStrainer ) -> BeautifulSoup:
     # Send request for html content to webserver
     response = session.get(url)
     if response.status_code == 200:     # If the request was successful
@@ -40,67 +43,60 @@ class Crawler:
                 base = self.FASS_BASE_LINK + link.get('href')[1:]
                 yield {
                     "NPLID": base[-14:],
-                    "PL": base + "&docType=7",
-                    "SmPC": base + "&docType=6",
-                    "Fass": base + "&docType=3",
-                    "Divisability": base + "&docType=2000",
-                    "env-info": base + "&docType=78",
-                    "Protection-info": base + "&docType=80"
+                    "bipacksedel": base + "&docType=7",
+                    "produktresume": base + "&docType=6",
+                    "fass_text": base + "&docType=3",
+                    "bilder_och_delbarhet": base + "&docType=2000",
+                    "miljöinformation": base + "&docType=78",
+                    "skyddsinfo": base + "&docType=80"
                 }
         session.close()
 
-    def assert_content(self, npl, result):
-        PAGES = {
-            "bipacksedel": "PL",
-            "produktresume": "SmPC",
-            "fass_text": "Fass",
-            "bilder_och_delbarhet": "Divisability",
-            "miljöinformation": "env-info",
-            "skyddsinfo": "Protection-info"
-        }
+    def assert_content(self, result):
+        original = {}
+        with open(f"../data/products/{result[0]}.json", "r") as doc:
+            original = json.load(doc)
+        if original != result[1]:
+            print(f"{result[0]} Failed")
+            with open(f"{result[0]}.json", "w") as doc:
+                json.dump(result[1], doc, indent=4, ensure_ascii=False)
 
-        error = False
-        with open(f"../data/products/{npl}.json", "r") as file:
-            content = json.load(file)
-            for key in content.keys():
-                if content[key] != result[PAGES[key]]:
-                    error = True
-                    print(f"Npl {npl} Failed on: {key}")
-                    #pprint(content[key])
-                    #pprint(result[PAGES[key]])
-        if not error:
-            print(f"Npl {npl} successful")
-
+        else:
+            print(f"{result[0]} Successful")
 
     def scrape_pages(self, links: dict):
         result = {}
-        only_content = SoupStrainer(
-            "div", {"id": "readspeaker-article-content"})
+
+        only_content = SoupStrainer("div", {"id": "readspeaker-article-content"})
 
         session = requests.Session()
         for page in links.keys():
             if page == "NPLID":
                 continue
-
             soup = fetch_url(session, links[page], only_content)
+
+            if soup is None:
+                continue
+
             match page:
-                case "PL":
+                case "bipacksedel":
                     result[page] = extract_product_leaflet(soup)
-                case "Divisability":
+                case "bilder_och_delbarhet":
                     result[page] = extract_delbarhet(soup)
                 case _:
                     result[page] = extract_medical_text(soup)
-        session.close()
-        self.assert_content(links['NPLID'], result)
 
+        return (links['NPLID'], result)
 
     def print_link(self, link):
         print(link)
 
-
     def crawl(self):
-        with ProcessPoolExecutor() as executor:
-            executor.map(self.scrape_pages, self.retrive_medecine_links())
+        with ProcessPoolExecutor() as pool:
+            scrapers = pool.map(
+                self.scrape_pages, self.retrive_medecine_links(), timeout=None, chunksize=4)
+            for result in scrapers:
+                self.assert_content(result)
 
 
 if __name__ == "__main__":

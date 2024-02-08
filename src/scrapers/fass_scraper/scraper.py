@@ -1,14 +1,9 @@
-
-PRODUCT_ID_INDEX = 5
-
-
 # Scarping method for extracting the bipacksedel subcategory on fass.se
 # Example page: https://www.fass.se/LIF/product?userType=2&nplId=20190822000136&docType=7&scrollPosition=352
 def extract_medical_text(soup):
     data = {}
-    # Select full div containing the medical text
+    
     fass_content = soup.select('.fass-content')[0]
-
     # Every section is labled with an a tag defining what information followes
     #   used as index for our data dictionary
     headers = fass_content.find_all("h2", recursive=True)
@@ -38,9 +33,7 @@ def extract_medical_text(soup):
 # Example page: https://www.fass.se/LIF/product?userType=2&nplId=20190822000136&docType=7&scrollPosition=352
 def extract_product_leaflet(soup):
     data = {}
-    # Select full div containing the medical text
     fass_content = soup.select('.fass-content')[0]
-
     # Every section is labled with an a tag defining what information followes
     #   used as index for our data dictionary
     headers = fass_content.find_all('a', recursive=True, id=True)
