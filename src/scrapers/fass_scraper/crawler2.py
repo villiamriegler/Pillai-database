@@ -38,11 +38,13 @@ class Crawler:
 
             # """.tradeNameList .expandcontent > a"""
             links = soup.select(""".linkList > a""")
+            names = soup.select(".linkList .innerlabel")
 
-            for link in links:
+            for (link, name) in zip(links, names):
                 base = self.FASS_BASE_LINK + link.get('href')[1:]
                 yield {
                     "NPLID": base[-14:],
+                    "NAME": name.get_text().strip(),
                     "bipacksedel": base + "&docType=7",
                     "produktresume": base + "&docType=6",
                     "fass_text": base + "&docType=3",
@@ -71,7 +73,7 @@ class Crawler:
 
         session = requests.Session()
         for page in links.keys():
-            if page == "NPLID":
+            if page == "NPLID" or page == "NAME":
                 continue
             soup = fetch_url(session, links[page], only_content)
 
@@ -86,10 +88,11 @@ class Crawler:
                 case _:
                     result[page] = extract_medical_text(soup)
 
+        result['product_name'] = links['NAME']
+
+        session.close()
         return (links['NPLID'], result)
 
-    def print_link(self, link):
-        print(link)
 
     def crawl(self):
         with ProcessPoolExecutor() as pool:
