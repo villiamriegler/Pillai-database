@@ -1,18 +1,15 @@
-from itertools import repeat
 from typing import Generator
 from scraper import *
 import requests
 from bs4 import BeautifulSoup
-import time
 from bs4 import SoupStrainer
-from queue import Queue
-from concurrent.futures import Future, ProcessPoolExecutor, ThreadPoolExecutor
+from concurrent.futures import ProcessPoolExecutor
+from cProfile import Profile
 import cchardet
-from pprint import pprint
 import json
 
 
-def fetch_url(session: requests.Session, url: str, strainer: SoupStrainer ) -> BeautifulSoup:
+def fetch_url(session: requests.Session, url: str, strainer: SoupStrainer) -> BeautifulSoup:
     # Send request for html content to webserver
     response = session.get(url)
     if response.status_code == 200:     # If the request was successful
@@ -69,7 +66,8 @@ class Crawler:
     def scrape_pages(self, links: dict):
         result = {}
 
-        only_content = SoupStrainer("div", {"id": "readspeaker-article-content"})
+        only_content = SoupStrainer(
+            "div", {"id": "readspeaker-article-content"})
 
         session = requests.Session()
         for page in links.keys():
@@ -88,20 +86,18 @@ class Crawler:
                 case _:
                     result[page] = extract_medical_text(soup)
 
-        result['product_name'] = links['NAME']
+        result['product_name'] = {'product_name': links['NAME']}
 
         session.close()
         return (links['NPLID'], result)
 
-
     def crawl(self):
         with ProcessPoolExecutor() as pool:
-            scrapers = pool.map(
-                self.scrape_pages, self.retrive_medecine_links(), timeout=None, chunksize=4)
-            for result in scrapers:
+            for result in pool.map(self.scrape_pages, self.retrive_medecine_links(), chunksize=4):
                 self.assert_content(result)
 
 
 if __name__ == "__main__":
     cr = Crawler()
     cr.crawl()
+
