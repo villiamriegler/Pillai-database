@@ -50,13 +50,14 @@ class MedicalPage:
         self.links = [baseLink + f"&docType={page}" for page in docTypes]
 
     def request_pages(self):
-        rnew = (grequests.get(u) for u in self.links)
-        self.responses = grequests.map(rnew)
+        rnew = [grequests.get(u) for u in self.links]
+        return rnew
+
+    def assign_responses(self, resp):
+        self.responses = resp[:len(PAGES)]
+        return resp[len(PAGES):]
 
     def scrape(self):
-        if self.responses == []:
-            raise ConnectionError("Pages were not retrived")
-
         result = {}
         only_content = SoupStrainer(
             "div", {"id": "readspeaker-article-content"})
@@ -96,10 +97,22 @@ def retrive_medecine_links() -> Generator:
 
 
 # TODO: Batch requests or else whole operation is IO bound
-def get_medical_pages() -> Generator:
+def get_medical_pages(batchsize) -> Generator:
+    rs = []
+    pages_in_batch = []
     for page in retrive_medecine_links():
-        page.request_pages()
-        yield page
+        rs += page.request_pages()
+        pages_in_batch.append(page)
+
+        if len(pages_in_batch) == batchsize:
+            responses = grequests.map(rs)
+            rs.clear()
+
+            for page_in_batch in pages_in_batch:
+                responses = page_in_batch.assign_responses(responses)
+                yield page_in_batch
+
+            pages_in_batch.clear()
 
 
 def scrape_page(page: MedicalPage):
@@ -107,12 +120,10 @@ def scrape_page(page: MedicalPage):
     return (page.nplid, res)
 
 
-def crawl():
-    batchsize = 4
+def crawl(batchsize=50):
     with Pool() as pool:
-        for result in pool.imap_unordered(scrape_page, islice(get_medical_pages(), 100), batchsize):
+        for result in pool.imap_unordered(scrape_page, get_medical_pages(batchsize), batchsize):
             assert_content(result)
-
 
 
 if __name__ == '__main__':
