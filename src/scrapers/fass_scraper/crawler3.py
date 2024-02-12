@@ -1,9 +1,7 @@
 from bs4 import BeautifulSoup, SoupStrainer
 import grequests
-from typing import Generator
-from multiprocessing import Pool
 from scraper import extract_delbarhet, extract_medical_text, extract_product_leaflet
-from itertools import chain, islice
+from multiprocessing import Pool
 import json
 
 PAGES = ["bipacksedel", "produktresume", "fass_text",
@@ -75,8 +73,8 @@ class MedicalPage:
         return result
 
 
-def retrive_medecine_links() -> Generator:
-    ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZÅÄÖ"
+def retrive_medecine_links():
+    ALPHABET = "A"  # BCDEFGHIJKLMNOPQRSTUVWXYZÅÄÖ"
     PAGE_BASE_LINK = "https://www.fass.se/LIF/pharmaceuticallist?userType=2&page="
 
     only_list = SoupStrainer("li", attrs={"class": "tradeNameList"})
@@ -95,35 +93,48 @@ def retrive_medecine_links() -> Generator:
             base = "https://www.fass.se/LIF" + link.get('href')[1:]
             yield MedicalPage(base[-14:], name.get_text().strip(), base)
 
+def medecine_batch(batchsize):
+    pages = []
+    for idx, value in enumerate(retrive_medecine_links()):
+        pages.append(value)
 
-# TODO: Batch requests or else whole operation is IO bound
-def get_medical_pages(batchsize) -> Generator:
+        if (idx % batchsize == batchsize - 1):
+            yield pages
+            pages = []
+
+    yield pages
+
+
+def get_medical_pages(batch):
     rs = []
     pages_in_batch = []
-    for page in retrive_medecine_links():
+
+    batchsize = len(batch)
+
+    for page in batch:
         rs += page.request_pages()
         pages_in_batch.append(page)
 
-        if len(pages_in_batch) == batchsize:
-            responses = grequests.map(rs)
-            rs.clear()
+    responses = grequests.map(rs, exception_handler=_request_execption_handler)
 
-            for page_in_batch in pages_in_batch:
-                responses = page_in_batch.assign_responses(responses)
-                yield page_in_batch
+    for page_in_batch in pages_in_batch:
+        responses = page_in_batch.assign_responses(responses)
 
-            pages_in_batch.clear()
+    print(f"Batch of size: {batchsize} retrived")
+
+    return pages_in_batch
 
 
-def scrape_page(page: MedicalPage):
+def scrape_page(page):
     res = page.scrape()
-    return (page.nplid, res)
+    assert_content((page.nplid, res))
 
 
-def crawl(batchsize=50):
-    with Pool() as pool:
-        for result in pool.imap_unordered(scrape_page, get_medical_pages(batchsize), batchsize):
-            assert_content(result)
+def crawl():
+    with Pool() as io_pool:
+        with Pool() as scrape_pool:
+            for requested_pages in io_pool.imap_unordered(get_medical_pages, medecine_batch(50)):
+                scrape_pool.imap_unordered(scrape_page, requested_pages)
 
 
 if __name__ == '__main__':
