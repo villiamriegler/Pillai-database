@@ -9,6 +9,7 @@ PAGES = ["bipacksedel", "produktresume", "fass_text",
          "bilder_och_delbarhet", "miljöinformation", "skyddsinfo"]
 
 # The docTypes of each page for a medical product, needs to be Aligned with PAGES
+# Bipacksedel: 7, Produktresume: 6, Förpackningar: 30, Fass_text: 3, Bilder_och_delbarhet: 2000, Miljöinformation: 78, Skyddsinfo: 80
 DOC_TYPES = [7, 6, 3, 2000, 78, 80]
 
 # Every failed request gets appended to this list so that program can retry the request later
