@@ -16,6 +16,8 @@ DOC_TYPES = [7, 6, 3, 2000, 78, 80]
 RETRY = []
 
 # Notifies when a request fails
+
+
 def _request_execption_handler(resquest, exception):
     print(f"Request: {resquest} failed with error\n\t{exception}")
 
@@ -37,8 +39,6 @@ def convert_to_soup(response, strainer):
     return None
 
 
-
-
 # Interface to keep track of an gather information about a specific medical product
 class MedicalPage:
     nplid = None  # The Id of medical product scraped from fass
@@ -53,6 +53,9 @@ class MedicalPage:
 
     # Relative link to where the json file should be stored
     PRODUCTS_DIR = "../data/products/"
+    # Strainer to only parse the relevant parts of the document
+    ONLY_CONTENT = SoupStrainer(
+        "div", {"id": "readspeaker-article-content"})
 
     def __init__(self, nplid, name, baseLink):
         self.nplid = nplid
@@ -76,14 +79,10 @@ class MedicalPage:
     def scrape(self):
         result = {}
 
-        # Strainer to only parse the relevant parts of the document
-        only_content = SoupStrainer(
-            "div", {"id": "readspeaker-article-content"})
-
         # Loops over all content retrived from fass and scrapes that page
         for response, page in zip(self.responses, PAGES):
             # Converting a request into BeutitifulSoup
-            soup = convert_to_soup(response, only_content)
+            soup = convert_to_soup(response, self.ONLY_CONTENT)
 
             # If conversion fails we need to retry this product
             if soup is None:
@@ -116,6 +115,7 @@ def retrive_medecine_links():
     ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZÅÄÖ"
     PAGE_BASE_LINK = "https://www.fass.se/LIF/pharmaceuticallist?userType=2&page="
     NPL_ID_OFFSETT = -14
+    FASS_BASE = "https://www.fass.se/LIF"
 
     only_list = SoupStrainer("li", attrs={"class": "tradeNameList"})
 
@@ -134,7 +134,7 @@ def retrive_medecine_links():
         # Creates MedicalPage objects from every link on page
         for (link, name) in zip(links, names):
             # The base links is formed by fass domain and the relative link retrived removing first char '.'
-            base = "https://www.fass.se/LIF" + link.get('href')[1:]
+            base = FASS_BASE + link.get('href')[1:]
             yield MedicalPage(base[NPL_ID_OFFSETT:], name.get_text().strip(), base)
 
     # After exausting all normal medecines yield the ones that need retrying
@@ -198,9 +198,11 @@ def crawl():
     total = 0
     with Pool() as io_pool:
         with Pool() as scrape_pool:
-            for requested_pages in io_pool.imap_unordered(get_medical_pages, medecine_batch(25)):  # Requesting the pages of N many MedicalPage:s in parallel at most N*cpu_count at once
+            # Requesting the pages of N many MedicalPage:s in parallel at most N*cpu_count at once
+            for requested_pages in io_pool.imap_unordered(get_medical_pages, medecine_batch(25)):
                 total += len(requested_pages)
-                scrape_pool.map(scrape_page, requested_pages)  # Scraping the requested pages in parallel
+                # Scraping the requested pages in parallel
+                scrape_pool.map(scrape_page, requested_pages)
     print(f"Total {total} medecines scraped")
 
 
