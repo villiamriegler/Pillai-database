@@ -14,7 +14,7 @@ def extract_medical_text(soup):
         except:
             continue
 
-        # Collect all html between two <a> tags
+        # Collect all html between two <h2> tags
         html = ""
         for tag in section.next_siblings:
             if tag.name == 'h2':
