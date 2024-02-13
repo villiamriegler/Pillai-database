@@ -4,7 +4,7 @@ def extract_medical_text(soup):
     data = {}
     
     fass_content = soup.select('.fass-content')[0]
-    # Every section is labled with an a tag defining what information followes
+    # Every section is labled with an <h2> tag defining what information followes
     #   used as index for our data dictionary
     headers = fass_content.find_all("h2", recursive=True)
 
