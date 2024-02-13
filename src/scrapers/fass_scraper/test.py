@@ -2,6 +2,17 @@ from crawler import *
 from scraper import *
 import timeit
 
+def assert_content(result):
+    original = {}
+    with open(f"../data/products/{result[0]}.json", "r") as doc:
+        original = json.load(doc)
+    if original != result[1]:
+        print(f"{result[0]} Failed")
+        with open(f"{result[0]}.json", "w") as doc:
+            json.dump(result[1], doc, indent=4, ensure_ascii=False)
+
+    else:
+        print(f"{result[0]} Successful")
 
 # Performmace testing all scrapers 
 def pref_scrapers():

@@ -16,8 +16,6 @@ DOC_TYPES = [7, 6, 3, 2000, 78, 80]
 RETRY = []
 
 # Notifies when a request fails
-
-
 def _request_execption_handler(resquest, exception):
     print(f"Request: {resquest} failed with error\n\t{exception}")
 
@@ -39,17 +37,6 @@ def convert_to_soup(response, strainer):
     return None
 
 
-def assert_content(result):
-    original = {}
-    with open(f"../data/products/{result[0]}.json", "r") as doc:
-        original = json.load(doc)
-    if original != result[1]:
-        print(f"{result[0]} Failed")
-        with open(f"{result[0]}.json", "w") as doc:
-            json.dump(result[1], doc, indent=4, ensure_ascii=False)
-
-    else:
-        print(f"{result[0]} Successful")
 
 
 # Interface to keep track of an gather information about a specific medical product
