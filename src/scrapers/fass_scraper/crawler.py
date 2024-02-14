@@ -1,225 +1,210 @@
-import requests
-from bs4 import BeautifulSoup
-from scraper import *
-from pprint import pprint
+from bs4 import BeautifulSoup, SoupStrainer
+import grequests
+from scraper import extract_delbarhet, extract_medical_text, extract_product_leaflet
+from multiprocessing import Pool
 import json
-import os
 
-# viktig-patientinfo: https://www.fass.se/LIF/product?userType=2&nplId=20071201000025&docType=15&scrollPosition=0
-PAGES = {
-    "bipacksedel": 7,
-    "produktresume": 6,
-    #"förpackningar": 30,
-    "fass_text": 3,
-    "bilder_och_delbarhet": 2000,
-    "miljöinformation": 78,
-    "skyddsinfo": 80
-}
-SUMMARY_FILE = '../metadata/summary.json'
-PRODUCT_DIR = '../data/products'    
+# Every medecine has these pages to be scraped, these are the lables
+PAGES = ["bipacksedel", "produktresume", "fass_text",
+         "bilder_och_delbarhet", "miljöinformation", "skyddsinfo"]
 
-# Fetches html content for web ardress and returns as bs4 soup
-def fetch_url(url):
-    # Send request for html content to webserver
-    response = requests.get(url)
-    if response.status_code == 200:     # If the request was successful
-        # Return html form page as bs4 soup
-        return BeautifulSoup(response.content, 'html.parser')
-    else:                               # Request was unsucessful, server responded with error or nothing
-        raise ConnectionError('Could not connect to website')
+# The docTypes of each page for a medical product, needs to be Aligned with PAGES
+# Bipacksedel: 7, Produktresume: 6, Förpackningar: 30, Fass_text: 3, Bilder_och_delbarhet: 2000, Miljöinformation: 78, Skyddsinfo: 80
+DOC_TYPES = [7, 6, 3, 2000, 78, 80]
+
+# Every failed request gets appended to this list so that program can retry the request later
+RETRY = []
+
+# Notifies when a request fails
 
 
-# Print debuging info for all parsed data
-#   params: key(index of the page that was scraped, used to differenttiate between the information we want to display)
-#           result(the scraped content from the page)
-def debug(key, result):
-    # 0 = No print
-    # 1 = Print keys
-    # 2 = Print all
-    DEBUGING_PAGES = {
-        "bipacksedel": 0,
-        "produktresume": 0,
-        #"förpackningar": 0,
-        "fass_text": 0,
-        "bilder_och_delbarhet": 0,
-        "miljöinformation": 0,
-        "skyddsinfo": 0
-    }
-
-    match DEBUGING_PAGES[key]:
-        case 2:     # Pretty print full dictionary
-            pprint(result)
-        case 1:     # Onl print the keys in the dictionary
-            print(result.keys())
-        case _:
-            pass
+def _request_execption_handler(resquest, exception):
+    print(f"Request: {resquest} failed with error\n\t{exception}")
 
 
-keys = {}
-# Scrapes the information from each page on a given url
-#       params: page(the page to scrape, used to differentiate diffrent scraping methods for diffrent pages) 
-#               soup(the html content of the page to scrape)
-def extract_page_information(page, soup):
-    result = {}
-    # NOTE: some subcategories may be scraped using the same scraping method
-    # example of this is both the fass-text and miljöinformation.
-    # This is because the inforamtion followes the same format
-    match page:
-        case "bipacksedel":
-            # Keys retrived inside the medical-text
+# Conveverts and parses the content of a request into BeautifulSoup
+def convert_to_soup(response, strainer):
+    # Avoids checking the status of NoneType when reciving a failed request
+    if response is None:
+        print("***FAILED Request***")
+        return None
 
-            # 'user-information', 'product-information', 'indication',
-            # 'caution-and-warnings', 'contraindication', 'caution',
-            # 'interaction', 'pregnancy', 'driving', 'substance-information',
-            # 'usage-and-administration', 'overdosage', 'missed',
-            # 'withdrawal', 'side-effects',
-            # 'additionalMonitoringInfo', 'storage', 'information-source',
-            # 'composition', 'appearance', 'prod-license'
-            result = extract_product_leaflet(soup)
-        case "produktresume":
-            # Keys retrived from first entry
+    # If status code is 200 then the request was fully Successful and we can return the BeautifulSoup
+    if response.status_code == 200:
+        # Parsing engine lxml is the fastest https://www.crummy.com/software/BeautifulSoup/bs4/doc/#:~:text=lenient%20than%20html5lib.-,lxml%E2%80%99s%20HTML%20parser,-BeautifulSoup(markup%2C
+        # The stainer allowes us to only parse parts of the recived html allowing speedup for parsing
+        return BeautifulSoup(response.text, 'lxml', parse_only=strainer)
 
-            # 'tradename', 'composition', 'product-form', 'clinical',
-            # 'pharmacological', 'pharmaceutical',
-            # 'prod-license', 'approval-number', 'approval-first-date', 'revision-date'
-            
-            result = extract_medical_text(soup, 'h2', True, True)
-        #case "förpackningar":
-            # All the package information
-            #result = extract_package_info(soup)
-        case "fass_text":
-            # Keys retrived inside the fass-text
-
-            # 'indication', 'contraindication', 'dosage', 'caution',
-            # 'interaction', 'pregnancy', 'breastfeeding', 'fertility',
-            # driving', 'side-effects', 'overdosage', 'pharmacodynamic',
-            # 'pharmacokinetic', 'preclinical-info', 'composition', 'env-effect',
-            # 'handling-life-shelf-storage'
-            result = extract_medical_text(soup,'h2',True,True)
-        case "bilder_och_delbarhet":
-            result = extract_delbarhet(soup)
-        case "miljöinformation":
-            result = extract_medical_text(soup,'h2',True,True)
-        case "skyddsinfo":
-            result = extract_medical_text(soup, 'h2', True, True)
-
-    debug(page, result)
-    
-    prev_len = len(keys[page])
-    for value in result.keys():
-        if value not in keys[page]:
-            keys[page].append(value)
-
-    if prev_len != len(keys[page]):
-        print(f"Keys updated {page}: {keys[page]}")
+    # Any request with other staus than 200 is considerd falty and retried
+    return None
 
 
-    return result
+# Interface to keep track of an gather information about a specific medical product
+class MedicalPage:
+    nplid = None  # The Id of medical product scraped from fass
+    name = None   # Name of the medical product
+    links = []    # A list of the links to each page in the medical product
+
+    # A list of content responses from requesting all the pages,
+    # This needs to be aligned with PAGES
+    responses = []
+    # The result after scraping all the pages
+    json = {}
+
+    # Relative link to where the json file should be stored
+    PRODUCTS_DIR = "../data/products/"
+    # Strainer to only parse the relevant parts of the document
+    ONLY_CONTENT = SoupStrainer(
+        "div", {"id": "readspeaker-article-content"})
+
+    def __init__(self, nplid, name, baseLink):
+        self.nplid = nplid
+        self.name = name
+
+        # Constructing all links to the relative pages of a medical product
+        self.links = [baseLink + f"&docType={page}" for page in DOC_TYPES]
+
+    # Creates AsyncRequest objects for every page of the medical product
+    def request_pages(self):
+        rnew = [grequests.get(u) for u in self.links]
+        return rnew
+
+    # Takes a list of responses and assigns first [len(pages)] to this product, sequentiallity is important to not mix up
+    # requests with their responses
+    def assign_responses(self, resp):
+        self.responses = resp[:len(PAGES)]
+        return resp[len(PAGES):]
+
+    # Scrapes all pages of a medical product and puts the content in a Dict
+    def scrape(self):
+        result = {}
+
+        # Loops over all content retrived from fass and scrapes that page
+        for response, page in zip(self.responses, PAGES):
+            # Converting a request into BeutitifulSoup
+            soup = convert_to_soup(response, self.ONLY_CONTENT)
+
+            # If conversion fails we need to retry this product
+            if soup is None:
+                RETRY.append(self)
+                return {}
+
+            # Diffrent pages have diffrent scraping methods
+            match page:
+                case "bipacksedel":
+                    result[page] = extract_product_leaflet(soup)
+                case "bilder_och_delbarhet":
+                    result[page] = extract_delbarhet(soup)
+                case _:
+                    result[page] = extract_medical_text(soup)
+
+        result['product_name'] = {'product_name': self.name}
+
+        self.json = result
+
+        return result
+
+    # Writes the result to file
+    def write_result(self):
+        with open(self.PRODUCTS_DIR + f"{self.nplid}.json", "w") as outfile:
+            json.dump(self.json, outfile, ensure_ascii=False, indent=4)
 
 
-# Walks all the pages for a given medecine and extracts the information
-#       params: full_url(the url of the base page to scrape)
-def crawl_pages(full_url):
-    # The url for each subcategory of medecine information can be indexed as
-    # the base_url with an appended docType selector. The docType selection
-    # uses the following magic numbers for each subcategory
-
-    url_result = {}
-    # Iterate over the information subcategories
-    for (page, number) in PAGES.items():
-        # Creates the full url of subcategory to be scraped
-        page_url = full_url + f"&docType={number}"
-
-        # Fetches html content of the page
-        soup = fetch_url(page_url)
-
-        # Check if page exists
-        if soup is None:
-            continue
-
-        # Extracting all information from medecine subcategory and stores the
-        # result by subcategory in a dictionary of dictionaries
-        url_result[page] = extract_page_information(page, soup)
-
-    return url_result
-
-# Returns a list of (product_id, product_name) tuples
-def get_listed_products_from_alphabetical(letter):
-    # Get reference to current letter page
-    html_ref = f"https://www.fass.se/LIF/pharmaceuticallist?page={letter}"
-    soup = fetch_url(html_ref)
-
-    # Get all tags containing names of drugs
-    names = soup.select('.productResultPanel .expandcontent .innerlabel')
-    # Get all tags containing links to drug info
-    links = soup.select('.productResultPanel .expandcontent .linkList a')
-
-    # Extract drug names
-    product_names = [name.get_text().strip() for name in names]
-    # Extract drug ids
-    product_ids = [link.get('href').strip()[-14:] for link in links]    # The product link is relative 
-                                                                        # To get the absolute link we extract only the nplID of the link
-
-    return zip(product_ids, product_names)
-
-# Retrives the summary file 
-def get_summary_file():
-    summary = {}
-    if os.path.isfile(SUMMARY_FILE):
-        with open(SUMMARY_FILE, 'r') as infile:
-            summary = json.load(infile)
-    return summary
-
-
-# Crawls through all the medecines in the alpabetical list of medecines found on
-# https://www.fass.se/LIF/pharmaceuticalliststart?userType=2
-def crawl_alphabetical_list():
+# For every A-Ö page we retrive every medecine listed, after all links are exausted it retuns the ones that need to be retied untill everything is scraped
+def retrive_medecine_links():
     ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZÅÄÖ"
-    PRODUCT_BASE_LINK = "https://www.fass.se/LIF/product?nplId="
+    PAGE_BASE_LINK = "https://www.fass.se/LIF/pharmaceuticallist?userType=2&page="
+    NPL_ID_OFFSETT = -14
+    FASS_BASE = "https://www.fass.se/LIF"
+
+    only_list = SoupStrainer("li", attrs={"class": "tradeNameList"})
+
+    # Batches all pages into parallel requests
+    rs = (grequests.get(PAGE_BASE_LINK + u) for u in ALPHABET)
+    # Makes all requets in parallel
+    responses = grequests.map(rs, exception_handler=_request_execption_handler)
+
+    for response in responses:
+        soup = convert_to_soup(response, only_list)
+
+        links = soup.select(".linkList > a")  # Extracts all medecine links
+        # Collects the names of medecines
+        names = soup.select(".linkList .innerlabel")
+
+        # Creates MedicalPage objects from every link on page
+        for (link, name) in zip(links, names):
+            # The base links is formed by fass domain and the relative link retrived removing first char '.'
+            base = FASS_BASE + link.get('href')[1:]
+            yield MedicalPage(base[NPL_ID_OFFSETT:], name.get_text().strip(), base)
+
+    # After exausting all normal medecines yield the ones that need retrying
+    while len(RETRY) > 0:
+        yield RETRY.pop(0)
 
 
-    # Load existing summary if it exists
-    summary = get_summary_file()
+# Batching togheter medcecines in groups instead of one by one
+def medecine_batch(batchsize):
+    pages = []
 
-    # Create the 'products' directory if it doesn't exist
-    if not os.path.exists(PRODUCT_DIR):
-        os.makedirs(PRODUCT_DIR)
+    # Looping over medecines
+    for idx, value in enumerate(retrive_medecine_links()):
+        pages.append(value)
+
+        # yield batch when big enough
+        if (idx % batchsize == batchsize - 1):
+            yield pages
+            pages = []
+
+    # If we end with less than a full batch give a partial batch
+    yield pages
 
 
-    for page in PAGES.keys():
-        keys[page] = []
+# Requesting a batch of pages in parallel and assigning the responses accordingly
+def get_medical_pages(batch):
+    rs = []
+    pages_in_batch = []
 
-    count = 0
-    for letter in ALPHABET:
-        # Iterate over every product beginning with current letter
-        for (product_id, product_name) in get_listed_products_from_alphabetical(letter):
-            count += 1
-            full_url = PRODUCT_BASE_LINK + product_id
-            print(f"*****************************\n{full_url} {count}\n********************************")
+    batchsize = len(batch)
 
-            # Check if this product has been fully downloaded
-            if summary.get(product_id, {}).get('fully_downloaded', False):
-                continue
+    # Loop over batch
+    for page in batch:
+        # Get AsyncRequest objects
+        rs += page.request_pages()
+        # Add pages as requested, needs to be aligned with rs
+        pages_in_batch.append(page)
 
-            # Retrieve all information from pages
-            product_info = crawl_pages(full_url)
-            product_info.update({'product_name': {'product_name': product_name}})
+    # Make all requests in the batch in paralell
+    responses = grequests.map(rs, exception_handler=_request_execption_handler)
 
-            product_file_path = PRODUCT_DIR + f"/{product_id}.json"
-            # Write to individual JSON file
-            with open(product_file_path, "w") as outfile:
-                json.dump(product_info, outfile, ensure_ascii=False, indent=4)
+    # Assign responses to the correct pages
+    for page_in_batch in pages_in_batch:
+        responses = page_in_batch.assign_responses(responses)
 
-            # Update summary
-            summary[product_id] = {
-                'pages_found': {page: page in product_info for page in PAGES},
-                'fully_downloaded': True
-            }
+    print(f"***Batch of size: {batchsize} retrived***")
 
-            # Update summary file after each NPL-ID is processed
-            with open(SUMMARY_FILE, 'w') as outfile:
-                json.dump(summary, outfile, ensure_ascii=False, indent=4)
+    # Return batch with Pages that have content
+    return pages_in_batch
+
+
+# Scrapes all pages of a MedicalPage and writes the result to file
+def scrape_page(page):
+    page.scrape()
+    page.write_result()
+    print(f"\tMedecine {page.nplid} has been scraped")
+
+
+# Goes through all medicalPages and requests them in parallel while scraping them in paralell
+def crawl():
+    total = 0
+    with Pool() as io_pool:
+        with Pool() as scrape_pool:
+            # Requesting the pages of N many MedicalPage:s in parallel at most N*cpu_count at once
+            for requested_pages in io_pool.imap_unordered(get_medical_pages, medecine_batch(25)):
+                total += len(requested_pages)
+                # Scraping the requested pages in parallel
+                scrape_pool.map(scrape_page, requested_pages)
+    print(f"Total {total} medecines scraped")
 
 
 if __name__ == '__main__':
-    crawl_alphabetical_list()
+    crawl()
