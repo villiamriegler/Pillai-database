@@ -3,6 +3,7 @@ name: Update fass data files
 on: 
   schedule: 
     - cron: '0 0 * * *' # Run this action everyday at 00:00
+  workflow_dispatch:
 
 jobs:
   build:
