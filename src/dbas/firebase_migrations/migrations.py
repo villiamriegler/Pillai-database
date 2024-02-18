@@ -1,3 +1,4 @@
+from tqdm import tqdm
 from os import path, walk, getenv
 from firebase_admin import initialize_app, firestore, credentials
 from dotenv import load_dotenv
@@ -18,8 +19,11 @@ app = initialize_app(cred)  # intiializes app form $GOOGLE_APPLICATION_CREDENTIA
 leaflets = firestore.client().collection('leaflets')
 
 (_, _, filenames) = next(walk(LEAFLET_DIR))  # Get all Files in product directory
-for num, file in enumerate(filenames):
+
+pbar = tqdm(filenames)  # Progress bar
+for file in pbar:
     npl = file[:NPL_LENGHT]  # Get nplID from filename
+    pbar.set_description("Migrating file with nplID=%s" % npl)
 
     # Get DATA
     with open(path.join(LEAFLET_DIR, file)) as json_file:
