@@ -1,0 +1,31 @@
+name: Migrate data to Firestore
+
+on: 
+  workflow_dispatch:
+
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: install dependencies
+        run: | 
+          python -m pip install --upgrade pip
+          pip install firebase-admin python-dotenv tqdm
+
+      - name: Migrate Data
+        working-directory: ./src/dbas/firebase_migrations
+        run: python migrations.py
+        env:
+          GOOGLE_APPLICATION_CREDENTIALS: ${{secrets.GOOGLE_APPLICATION_CREDENTIALS}}
+          
+          
+
+        
