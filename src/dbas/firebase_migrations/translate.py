@@ -8,14 +8,12 @@ nltk.download('punkt')
 from nltk.tokenize import sent_tokenize
 
 # Max characters that can be translated at a time
-MAX_CHARS = 4000
+MAX_CHARS = 4900
 
 # Initialize translator
 translator = Translator()
 
 def translate_text(text, dest_language='en'):
-    MAX_CHARS = 4900  # Google Translate maximum characters per request
-
     # Ensure text is a string
     if not isinstance(text, str):
         raise ValueError("Text must be a string.")
