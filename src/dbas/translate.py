@@ -28,6 +28,8 @@ def translate_text(text, dest_language='en'):
         else:
             # Translate the accumulated text
             translated_text += translator.translate(temp_text, dest=dest_language).text + " "
+            translated_text = translated_text.replace('. ', '.').replace('.', '. ')
+    
             
             # Start accumulating sentences again
             temp_text = sentence  
