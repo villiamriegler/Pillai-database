@@ -1,4 +1,3 @@
-
 # pip install googletrans==4.0.0-rc1 nltk
 from googletrans import Translator
 import nltk
