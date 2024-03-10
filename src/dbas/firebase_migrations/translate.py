@@ -6,6 +6,7 @@ import re
 # Download the Punkt tokenizer models to split scentances
 nltk.download('punkt')
 from nltk.tokenize import sent_tokenize
+import re
 
 
 # Max characters that can be translated at a time

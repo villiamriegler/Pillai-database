@@ -1,4 +1,3 @@
-
 # pip install googletrans==4.0.0-rc1 nltk
 from googletrans import Translator
 import nltk
@@ -28,6 +27,8 @@ def translate_text(text, dest_language='en'):
         else:
             # Translate the accumulated text
             translated_text += translator.translate(temp_text, dest=dest_language).text + " "
+            translated_text = translated_text.replace('. ', '.').replace('.', '. ')
+    
             
             # Start accumulating sentences again
             temp_text = sentence  
