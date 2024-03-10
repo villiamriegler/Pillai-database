@@ -6,6 +6,7 @@ import nltk
 # Download the Punkt tokenizer models to split scentances
 nltk.download('punkt')
 from nltk.tokenize import sent_tokenize
+import re
 
 # Max characters that can be translated at a time
 MAX_CHARS = 4900
@@ -42,6 +43,8 @@ def translate_text(text, dest_language='en'):
     if temp_text:
         try:
             translated_text += translator.translate(temp_text, dest=dest_language).text
+            translated_text = re.sub(r"\.([A-Z])", r". \1", translated_text)  # Ensure single space after period before uppercase letter
+            translated_text = re.sub(r'(?<=\d)\s*\.\s*(?=\d)', '.', translated_text)  # remove spaces inbetween " 4. 0 gram" for example
         except Exception as e:
             print(f"Error translating text: {str(e)}")
     
