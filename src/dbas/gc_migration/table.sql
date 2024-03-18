@@ -1,0 +1,22 @@
+CREATE TABLE FASS (
+    npl VARCHAR(14) PRIMARY KEY CHECK (LENGTH(npl) = 14 AND npl ~ '^\d{14}$'),
+    preclinicalInfo TEXT,
+    dosage TEXT,
+    pregnancy TEXT,
+    pharmacodynamic TEXT,
+    composition TEXT,
+    caution TEXT,
+    sideEffects TEXT,
+    pharmacokinetic TEXT,
+    fertility TEXT,
+    incompatibility TEXT,
+    driving TEXT,
+    contraindication TEXT,
+    indication TEXT,
+    breastfeeding TEXT,
+    interaction TEXT,
+    envEffect TEXT,
+    overdosage TEXT,
+    handlingLifeShelfStorage TEXT,
+    propertiesMedicine TEXT
+);
