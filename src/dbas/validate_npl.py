@@ -30,7 +30,8 @@ def get_common_eans():
         if not t:
             npl_without_ean.append(filename)
     
-    print("Total number of eans: " + str(len(data)))
+    return list_of_eans
+    # print("Total number of eans: " + str(len(data)))
 
 
 def main():

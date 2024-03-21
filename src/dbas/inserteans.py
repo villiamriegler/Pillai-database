@@ -1,55 +1,42 @@
+from os import path, walk, getenv
+from firebase_admin import initialize_app, firestore, credentials
+from dotenv import load_dotenv
+from json import load, loads
 import json
-import os
-import psycopg2
+import re
+from validate_npl import get_common_eans
+
+load_dotenv()
 
 JSON_FILE = 'ean.json'
 
-# Load environment variables
-db_name = os.getenv('POSTGRES_DB')
-db_user = os.getenv('POSTGRES_USER')
-db_pass = os.getenv('POSTGRES_PASSWORD')
-db_host = 'db'  # Docker Compose service name for the DB
+# Connecting to Firebase
+cert = loads(getenv("GOOGLE_APPLICATION_CREDENTIALS"))
+cred = credentials.Certificate(cert)
+app = initialize_app(cred)  # intiializes app form $GOOGLE_APPLICATION_CREDENTIALS
 
-# Insert data into database
-def insert_into_database():
-    # Connection to the PostgreSQL database
-    conn = psycopg2.connect(
-        dbname=db_name, 
-        user=db_user, 
-        password=db_pass, 
-        host=db_host
-    )
+# Create client for ean collection
+eans = firestore.client().collection('eans')
 
-    # Establish cursor
-    cursor = conn.cursor()
+# List of eans wanted in the database
+wanted_eans = get_common_eans()
 
-    try:
-        # Open JSON file
-        f = open(JSON_FILE)
+# Open and load from JSON file
+with open(JSON_FILE) as f:
+    data = json.load(f)
 
-        # Load data from JSON file
-        data = json.load(f)
+count = 0
+for ean, npl in data.items():
+    if ean not in wanted_eans:
+        continue
 
-        # Loop through all EAN-codes in JSON file
-        for ean in data:
-            nplID = data[ean]
-            
-            # Insert EAN-codes and nplIDs
-            query = "INSERT INTO eans (ean, nplID) VALUES (%s, %s) ON CONFLICT (ean) DO NOTHING"                  # TODO ändra så att det är rätt table med rätt attribut
-            cursor.execute(query, (ean, nplID))
+    # Skip if the ean code contains other than numbers
+    if not re.search("^\d+$", ean):
+        continue
 
-        conn.commit()
-    except psycopg2.Error as e:
-        # Handle errors
-        print(f"Database error: {e}")
-        conn.rollback()
-    finally:
-        # Close connection
-        cursor.close()
-        conn.close()
-        f.close()
+    eans.document(ean).set({
+        'npl': npl
+    })
 
-
-
-if __name__ == '__main__':
-    insert_into_database()
+    count = count + 1
+    print("Done with " + str(count))
