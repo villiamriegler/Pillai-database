@@ -1,10 +1,20 @@
 import csv
 
-# Path to your CSV file
+# Path to CSV file with all EMA drugs
 EMA_FILE = 'ema_data.csv'
+STATUS_INDEX = 7
+PATIENT_TYPE_INDEX = 0
+DRUG_LINK_INDEX = -1
 
 def get_valid_drug_links():
-    
+    """
+    Get al list of all valid links to approved human drug pages on EMA
+
+    Returns:
+        string array: all valid links
+    """
+
+    # List of all valid links
     result = []
     
     # Open the CSV file and read it
@@ -14,8 +24,9 @@ def get_valid_drug_links():
         # Iterate over each row in the CSV
         for row in reader:
             # Check if valid drug
-            if row[0] == "Human" and row[7] == "Authorised":
-                result.append(row[-1])
+            if row[PATIENT_TYPE_INDEX] == "Human" and row[STATUS_INDEX] == "Authorised":
+                # Add the link to the list
+                result.append(row[DRUG_LINK_INDEX])
                 
     return result
 
