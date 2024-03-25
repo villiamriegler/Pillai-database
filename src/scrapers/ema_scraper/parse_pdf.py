@@ -1,11 +1,12 @@
 
+import os
+import re
+
 from pdfminer.high_level import extract_pages
 from pdfminer.layout import LTChar, LTTextContainer
-import re
-import os
 
-leaflets_folder_path = 'ema_leaflets_sv/'
-txts_folder_path = 'txt_files/'
+leaflets_folder_path = 'ema_en/'
+txts_folder_path = 'en_txt_files/'
 
 def is_empty(text_item):
     text_content = element.get_text().strip()
@@ -43,16 +44,19 @@ def extract_text(pdf_file_path):
 def create_txt_files(leaflets_folder_path, txts_folder_path):
     for filename in os.listdir(leaflets_folder_path):
         if filename.endswith(".pdf"):
-            # Extract text from PDF
-            extracted_text = extract_text(leaflets_folder_path + filename)
+            try: 
+                # Extract text from PDF
+                extracted_text = extract_text(leaflets_folder_path + filename)
 
-            # Get filepath for .txt file
-            txt_filename = filename[:-4] # removes '.pdf'
-            txt_file_path = txts_folder_path + txt_filename + ".txt"
+                # Get filepath for .txt file
+                txt_filename = filename[:-4] # removes '.pdf'
+                txt_file_path = txts_folder_path + txt_filename + ".txt"
 
-            # Write the extracted text into .txt file
-            with open(txt_file_path, 'w', encoding='utf-8') as txt_file:
-                txt_file.write(extracted_text)
+                # Write the extracted text into .txt file
+                with open(txt_file_path, 'w', encoding='utf-8') as txt_file:
+                    txt_file.write(extracted_text)
+            except:
+                print("ERROR")
 
 
 def main():
